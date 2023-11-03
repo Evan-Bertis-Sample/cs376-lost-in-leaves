@@ -7,7 +7,7 @@ RWTexture2D<float4> OutputTexture;
 // Pixel shader configuration
 cbuffer Configuration
 {
-    int downscaleAmount;
+    int targetHeight;
 };
 
 cbuffer TextureInfo
@@ -19,6 +19,7 @@ cbuffer TextureInfo
 [numthreads(8,8,1)]
 void CSMain (uint3 id : SV_DispatchThreadID)
 {
+    int downscaleAmount = textureHeight / targetHeight;
     // Calculate the corresponding pixel in the input texture
     int downscale = max(1, downscaleAmount);
 

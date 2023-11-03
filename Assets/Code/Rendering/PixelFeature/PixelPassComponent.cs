@@ -13,7 +13,7 @@ namespace LostInLeaves.Rendering
         [System.Serializable, System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential)]
         public struct PixelPassConfiguration
         {
-            public int DownscaleAmount;
+            public int TargetHeight;
         }
 
         [System.Serializable]

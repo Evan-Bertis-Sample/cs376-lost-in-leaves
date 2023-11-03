@@ -54,6 +54,8 @@ namespace LostInLeaves.Rendering
                 return;
             }
 
+            
+
             // Execute compute shader
             CommandBuffer cmd = CommandBufferPool.Get();
 
@@ -71,7 +73,7 @@ namespace LostInLeaves.Rendering
                 _pixelComputer.Compute(cmd);
 
                 // Blit
-                Blit(cmd, _out, renderingData.cameraData.renderer.cameraColorTarget);  
+                Blit(cmd, _out, renderingData.cameraData.renderer.cameraColorTarget);
             }
 
             context.ExecuteCommandBuffer(cmd);

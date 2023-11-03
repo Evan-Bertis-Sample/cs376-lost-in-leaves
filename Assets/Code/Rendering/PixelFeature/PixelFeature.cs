@@ -12,6 +12,12 @@ namespace LostInLeaves.Rendering
 
         public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
         {
+            #if UNITY_EDITOR
+            if (renderingData.cameraData.cameraType == CameraType.SceneView)
+            {
+                return;
+            }
+            #endif
             if (!_initialized)
             {
                 _pixelPass.Init();
