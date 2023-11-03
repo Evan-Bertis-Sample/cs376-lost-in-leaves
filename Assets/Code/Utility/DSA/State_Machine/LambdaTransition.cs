@@ -22,9 +22,10 @@ namespace CurlyUtility.DSA
         /// Construct a LambdaTransition with a name
         /// </summary>
         /// <param name="name"> The name of the transition. Make sure it's specific. </param>
-        public LambdaTransition(string name)
+        public LambdaTransition(string name, Func<StateContextType, bool> condition = null)
         {
             Name = name;
+            _transitionCondition = condition;
         }
 
         public override string ToString()

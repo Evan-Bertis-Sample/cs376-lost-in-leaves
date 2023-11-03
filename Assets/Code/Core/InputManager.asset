@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: InputManager
   m_EditorClassIdentifier: 
   MasterActionAsset: {fileID: -944628639613478452, guid: fd7b7a027a0fc804abe4e930b42f6d37, type: 3}
-  _joinButton: Player/Jump
-  _exitButton: Misc/Join
+  _joinButton: Misc/Join
+  _exitButton: Misc/Disconnect
   AllowPlayersToJoin: 1
   _devices: []
   _playerDevices: []
