@@ -19,7 +19,17 @@ cbuffer TextureInfo
 [numthreads(8,8,1)]
 void CSMain (uint3 id : SV_DispatchThreadID)
 {
-    // TODO: insert actual code here!
+    // Calculate the corresponding pixel in the input texture
+    int downscale = max(1, downscaleAmount);
 
-    OutputTexture[id.xy] = float4(id.x & id.y, (id.x & 15)/15.0, (id.y & 15)/15.0, 0.0);
+    int inputX = (id.x / downscale) * downscale;
+    int inputY = (id.y / downscale) * downscale;
+
+    // Make sure we don't sample outside the input texture bounds
+
+    // Load the color from the input texture at the calculated coordinates
+    float4 color = InputTexture[int2(inputX, inputY)];
+
+    // Write this color to the output texture at the current pixel
+    OutputTexture[id.xy] = color;
 }

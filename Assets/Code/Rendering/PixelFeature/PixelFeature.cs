@@ -14,7 +14,6 @@ namespace LostInLeaves.Rendering
         {
             if (!_initialized)
             {
-                // init the pixel pass
                 _pixelPass.Init();
                 _initialized = true;
             }

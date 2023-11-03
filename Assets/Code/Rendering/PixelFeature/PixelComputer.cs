@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -15,7 +16,7 @@ namespace LostInLeaves.Rendering
             public int TextureHeight;
         }
 
-        private ComputeShader _pixelComputeShader;
+        private static ComputeShader _pixelComputeShader;
         private ComputeBuffer _paramBuffer;
         private ComputeBuffer _textureInfoBuffer;
 
@@ -23,9 +24,32 @@ namespace LostInLeaves.Rendering
 
         private Vector3Int _groups = new Vector3Int(8, 8, 1);
         private Vector2Int _resolution = new Vector2Int(256, 256);
+        private static string _shaderPath;
 
+#if UNITY_EDITOR
+        [MenuItem("Tools/Reload Pixel Compute Shader")]
+        public static void ReloadShader()
+        {
+            if (_shaderPath != "")
+            {
+                _pixelComputeShader = Resources.Load<ComputeShader>(_shaderPath);
+                if (_pixelComputeShader == null)
+                {
+                    Debug.LogError("PixelComputer: Could not load compute shader at path: " + _shaderPath);
+                    return;
+                }
+                
+                Debug.Log("PixelComputer: Reload successful!");
+            }
+            else
+            {
+                Debug.LogError("PixelComputer: Shader path is empty!");
+            }
+        }
+#endif
         public PixelComputer(string shaderPath)
         {
+            _shaderPath = shaderPath;
             _pixelComputeShader = Resources.Load<ComputeShader>(shaderPath);
             if (_pixelComputeShader == null)
             {
@@ -44,7 +68,7 @@ namespace LostInLeaves.Rendering
 
         public void SetInputTexture(CommandBuffer cmd, RenderTargetIdentifier identifier, Vector2Int resolution)
         {
-            cmd.SetComputeTextureParam(_pixelComputeShader, _mainKernel, "_InputTexture", identifier);
+            cmd.SetComputeTextureParam(_pixelComputeShader, _mainKernel, "InputTexture", identifier);
             _resolution = resolution;
         }
 
@@ -58,7 +82,7 @@ namespace LostInLeaves.Rendering
             PixelPassComponent.PixelPassConfiguration[] data = new PixelPassComponent.PixelPassConfiguration[1];
             data[0] = config;
             _paramBuffer.SetData(data);
-            cmd.SetComputeBufferParam(_pixelComputeShader, 0, "_PixelPassConfig", _paramBuffer);
+            cmd.SetComputeConstantBufferParam(_pixelComputeShader,"Configuration", _paramBuffer, 0, _paramBuffer.stride);
         }
 
         public void Compute(CommandBuffer cmd)
@@ -96,6 +120,7 @@ namespace LostInLeaves.Rendering
             TextureInfo[] data = new TextureInfo[1];
             data[0] = info;
             _textureInfoBuffer.SetData(data);
+            Debug.Log($"PixelComputer : Set Texture Size to {info.TextureWidth}x{info.TextureHeight}");
             cmd.SetComputeConstantBufferParam(_pixelComputeShader, "TextureInfo", _textureInfoBuffer, 0, _textureInfoBuffer.stride);
         }
     }
