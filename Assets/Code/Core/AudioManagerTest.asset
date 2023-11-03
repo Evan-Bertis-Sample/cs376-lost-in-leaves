@@ -1,0 +1,519 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6ced719b24bf442a71981651712d1f, type: 3}
+  m_Name: AudioManagerTest
+  m_EditorClassIdentifier: 
+  <AudioDirectoryRoot>k__BackingField: Assets/Audio/SoundFX
+  <DefaultGroupSettings>k__BackingField: {fileID: 0}
+  <OverrideCache>k__BackingField:
+    m_keys:
+    - Assets/Audio/SoundFX/Enviornment
+    - Assets/Audio/SoundFX/Footsteps
+    - Assets/Audio/SoundFX/Misc
+    - Assets/Audio/SoundFX/Voices
+    - Assets/Audio/SoundFX/Enviornment/Lightning
+    - Assets/Audio/SoundFX/Enviornment/Rain
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Assets/Audio/SoundFX
+    m_values:
+    - {fileID: 11400000, guid: e8f72cffbe1be394ea6759870e18e25c, type: 2}
+    - {fileID: 11400000, guid: 831f3267d3fc43f4ab85e20ca541beb6, type: 2}
+    - {fileID: 11400000, guid: 0245bfba9b280b94a9c58d0dcab0f218, type: 2}
+    - {fileID: 11400000, guid: 76854146a36f6534489903e3c9f30e7b, type: 2}
+    - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
+    - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
+    - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
+    - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
+    - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
+  <GroupCache>k__BackingField:
+    m_keys:
+    - Assets/Audio/SoundFX/Enviornment
+    - Assets/Audio/SoundFX/Footsteps
+    - Assets/Audio/SoundFX/Misc
+    - Assets/Audio/SoundFX/Voices
+    - Assets/Audio/SoundFX/Enviornment/Lightning
+    - Assets/Audio/SoundFX/Enviornment/Rain
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Assets/Audio/SoundFX
+    m_values:
+    - Override: {fileID: 11400000, guid: e8f72cffbe1be394ea6759870e18e25c, type: 2}
+      <AudioReferences>k__BackingField: []
+      PathToReference:
+        m_keys: []
+        m_values: []
+    - Override: {fileID: 11400000, guid: 831f3267d3fc43f4ab85e20ca541beb6, type: 2}
+      <AudioReferences>k__BackingField: []
+      PathToReference:
+        m_keys: []
+        m_values: []
+    - Override: {fileID: 11400000, guid: 0245bfba9b280b94a9c58d0dcab0f218, type: 2}
+      <AudioReferences>k__BackingField:
+      - m_AssetGUID: c6add41d97e85cb4b977a9477fcc4c6f
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 8bb5ecd03f41f404da024d264f04732a
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      PathToReference:
+        m_keys:
+        - Assets/Audio/SoundFX/Misc/Camera Flash.mp3
+        - Assets/Audio/SoundFX/Misc/Polaroid Shutter.mp3
+        m_values:
+        - m_AssetGUID: c6add41d97e85cb4b977a9477fcc4c6f
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 8bb5ecd03f41f404da024d264f04732a
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+    - Override: {fileID: 11400000, guid: 76854146a36f6534489903e3c9f30e7b, type: 2}
+      <AudioReferences>k__BackingField: []
+      PathToReference:
+        m_keys: []
+        m_values: []
+    - Override: {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
+      <AudioReferences>k__BackingField:
+      - m_AssetGUID: c11df33324e1a114daad5279ecaa42ad
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: d4a1d22bfee002c4ba55a82cac4ac7e1
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 8a77b4d5c5d1bbd458cc4307e16e4059
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 69a18aa5bf7f1624fb1e5bbbc3553e76
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      PathToReference:
+        m_keys:
+        - Assets/Audio/SoundFX/Enviornment/Lightning/Lightning.wav
+        - Assets/Audio/SoundFX/Enviornment/Lightning/Lightning2.wav
+        - Assets/Audio/SoundFX/Enviornment/Lightning/Lightning3.wav
+        - Assets/Audio/SoundFX/Enviornment/Lightning/Lightning4.wav
+        m_values:
+        - m_AssetGUID: c11df33324e1a114daad5279ecaa42ad
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: d4a1d22bfee002c4ba55a82cac4ac7e1
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 8a77b4d5c5d1bbd458cc4307e16e4059
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 69a18aa5bf7f1624fb1e5bbbc3553e76
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+    - Override: {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
+      <AudioReferences>k__BackingField:
+      - m_AssetGUID: 852f22fcbf943d64c89ef75bc734571e
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      PathToReference:
+        m_keys:
+        - Assets/Audio/SoundFX/Enviornment/Rain/Rain.wav
+        m_values:
+        - m_AssetGUID: 852f22fcbf943d64c89ef75bc734571e
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+    - Override: {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
+      <AudioReferences>k__BackingField:
+      - m_AssetGUID: f766a0bea3a08e34eb80d6d95daf51b9
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 5d9a223ee449b8649a688c261820a0d8
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: f6be84ff39f1091459d75716d379c27a
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 0fc4bc4cd56740440a4705e4d6821e74
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 00898389ca20ddf4bb76f2caf9565107
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: d195217a0c819b548a95be9067715c13
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 312bdc0b270160349bf0dc4821c7a246
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: c8dd6998fe08cc74b95d6f2606eff2c9
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 763dd706a6592d341970e7d42b71b82d
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 34de49debcc564744ab76faebde34a19
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 127a8db446e2aeb43953a57a9fb3d808
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 21d2f5fa61be15d42b404e3a540ed80d
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 4764a23a9f8dc0d498c41bc743f2460f
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 9980e6b2a9947bb4587210fe43523481
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      PathToReference:
+        m_keys:
+        - Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepA.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepB.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepC.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepD.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepE.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepF.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepG.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-A-www.fesliyanstudios.com.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-B-www.fesliyanstudios.com.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-C-www.fesliyanstudios.com.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-D-www.fesliyanstudios.com.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-E-www.fesliyanstudios.com.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-F-www.fesliyanstudios.com.mp3
+        - Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-G-www.fesliyanstudios.com.mp3
+        m_values:
+        - m_AssetGUID: f766a0bea3a08e34eb80d6d95daf51b9
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 5d9a223ee449b8649a688c261820a0d8
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: f6be84ff39f1091459d75716d379c27a
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 0fc4bc4cd56740440a4705e4d6821e74
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 00898389ca20ddf4bb76f2caf9565107
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: d195217a0c819b548a95be9067715c13
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 312bdc0b270160349bf0dc4821c7a246
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: c8dd6998fe08cc74b95d6f2606eff2c9
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 763dd706a6592d341970e7d42b71b82d
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 34de49debcc564744ab76faebde34a19
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 127a8db446e2aeb43953a57a9fb3d808
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 21d2f5fa61be15d42b404e3a540ed80d
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 4764a23a9f8dc0d498c41bc743f2460f
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 9980e6b2a9947bb4587210fe43523481
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+    - Override: {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
+      <AudioReferences>k__BackingField:
+      - m_AssetGUID: 8005b2f177ae5f546bf5dc1f01e302f1
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: d6c951fed113a0848b74ba42f2cccbe2
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: a86db1220f40a5a4c897b27ef8882325
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 7cf728ac1a91dcb4c97c7b50b8219ec2
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: e36655d9b4deaab4593fbfe323db37ab
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 1a68287beb72c5744a14605924797e43
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: e842a0651b6354249a7746791d3714d1
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: a0a26731f2aa02c41ba9271ad393d354
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: d347892fb873bc44294963cb6a8756a6
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: d7d4202878900434f8ae995623525563
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 69b60904fde11c745a286fe75a5fd5be
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 51ae4021bbfbcde4e9ab98179b0d07d0
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: e5c17d709a7367c4ebbda78728b1226d
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 470c457b0a3613748accb1349622bb7c
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: def4076803d72c84f983ae716f8e4c23
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: d23847e60f3a4494d955b25570e885d8
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 6d574d540506c4f419753ce70981991b
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 35881f2c7cdb4f147adb7bd3a659ba52
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 76cb4375e2b2a9241b708ed9d835be5b
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 33dd50ed517fba643b384daa8603766f
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: edf972206de825b4a93c8b3c97cda4d9
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 8bb440d6cceddd247a6f01163fc43cfa
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 34605e812dd1a0342a0813f12b6a3cea
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 73484b31bafd7664e92b19a79d3e07a4
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 92646f2df85bc224da862d00973beed9
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 267749b1299a7014493efdb5f6e7b6cd
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      PathToReference:
+        m_keys:
+        - Assets/Audio/SoundFX/Voices/Evan/EvanA.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanB.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanC.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanD.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanE.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanF.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanG.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanH.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanI.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanJ.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanK.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanL.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanM.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanN.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanO.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanP.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanQ.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanR.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanS.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanT.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanU.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanV.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanW.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanX.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanY.mp3
+        - Assets/Audio/SoundFX/Voices/Evan/EvanZ.mp3
+        m_values:
+        - m_AssetGUID: 8005b2f177ae5f546bf5dc1f01e302f1
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: d6c951fed113a0848b74ba42f2cccbe2
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: a86db1220f40a5a4c897b27ef8882325
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 7cf728ac1a91dcb4c97c7b50b8219ec2
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: e36655d9b4deaab4593fbfe323db37ab
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 1a68287beb72c5744a14605924797e43
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: e842a0651b6354249a7746791d3714d1
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: a0a26731f2aa02c41ba9271ad393d354
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: d347892fb873bc44294963cb6a8756a6
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: d7d4202878900434f8ae995623525563
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 69b60904fde11c745a286fe75a5fd5be
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 51ae4021bbfbcde4e9ab98179b0d07d0
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: e5c17d709a7367c4ebbda78728b1226d
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 470c457b0a3613748accb1349622bb7c
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: def4076803d72c84f983ae716f8e4c23
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: d23847e60f3a4494d955b25570e885d8
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 6d574d540506c4f419753ce70981991b
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 35881f2c7cdb4f147adb7bd3a659ba52
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 76cb4375e2b2a9241b708ed9d835be5b
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 33dd50ed517fba643b384daa8603766f
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: edf972206de825b4a93c8b3c97cda4d9
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 8bb440d6cceddd247a6f01163fc43cfa
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 34605e812dd1a0342a0813f12b6a3cea
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 73484b31bafd7664e92b19a79d3e07a4
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 92646f2df85bc224da862d00973beed9
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 267749b1299a7014493efdb5f6e7b6cd
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+    - Override: {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
+      <AudioReferences>k__BackingField: []
+      PathToReference:
+        m_keys: []
+        m_values: []
+  StartingSourceCount: 10
+  SourceGrowthRate: 1.5

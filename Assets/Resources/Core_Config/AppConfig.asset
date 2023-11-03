@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e13e64acaf3a04087f4fb823b7e97b, type: 3}
+  m_Name: AppConfig
+  m_EditorClassIdentifier: 
+  <Booters>k__BackingField:
+  - {fileID: 11400000, guid: 3f20d00c5830d844faefde26c913202a, type: 2}
+  - {fileID: 11400000, guid: 050b6b33eb36bcb42bb2174f81fb20e3, type: 2}
+  - {fileID: 11400000, guid: e5df7ba6ef7663a41a3ae3af553e0b6a, type: 2}
+  - {fileID: 11400000, guid: d577fc83f5d8456478e3ae9f4d50ee27, type: 2}
+  - {fileID: 11400000, guid: c707d80cd9aacc945805a953469db9c4, type: 2}
+  <SceneMaster>k__BackingField: {fileID: 11400000, guid: 3f20d00c5830d844faefde26c913202a, type: 2}
+  <InputManager>k__BackingField: {fileID: 11400000, guid: 050b6b33eb36bcb42bb2174f81fb20e3, type: 2}
+  <Logger>k__BackingField: {fileID: 11400000, guid: e5df7ba6ef7663a41a3ae3af553e0b6a, type: 2}
+  <AudioManger>k__BackingField: {fileID: 11400000, guid: d577fc83f5d8456478e3ae9f4d50ee27, type: 2}
+  <GlobalDefaultSystems>k__BackingField:
+  - {fileID: 11400000, guid: e5df7ba6ef7663a41a3ae3af553e0b6a, type: 2}
+  - {fileID: 11400000, guid: 050b6b33eb36bcb42bb2174f81fb20e3, type: 2}
+  - {fileID: 11400000, guid: c707d80cd9aacc945805a953469db9c4, type: 2}
+  - {fileID: 11400000, guid: 3f20d00c5830d844faefde26c913202a, type: 2}
+  - {fileID: 11400000, guid: d577fc83f5d8456478e3ae9f4d50ee27, type: 2}
+  PersistentObjects: []

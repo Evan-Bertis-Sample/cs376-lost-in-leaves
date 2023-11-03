@@ -1,0 +1,385 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Audio
+  m_EditorClassIdentifier: 
+  m_GroupName: Audio
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 50f995c5abf60ee4ebd54d8dd747249c
+  m_SerializeEntries:
+  - m_GUID: c8223c43c1f46d549befd3ffee6f6450
+    m_Address: Assets/Audio/Music
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 10bbb6b7255d6614f90fd878cac0c045
+    m_Address: Assets/Audio/SoundFX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 66b10e98edcea1443a13f34d1d70b0c3
+    m_Address: Assets/Audio/SoundFX/Enviornment
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX
+    - AudioDirectory
+  - m_GUID: c11df33324e1a114daad5279ecaa42ad
+    m_Address: Assets/Audio/SoundFX/Enviornment/Lightning.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Enviornment/Lightning
+    - Clips
+  - m_GUID: d4a1d22bfee002c4ba55a82cac4ac7e1
+    m_Address: Assets/Audio/SoundFX/Enviornment/Lightning2.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Enviornment/Lightning
+    - Clips
+  - m_GUID: 8a77b4d5c5d1bbd458cc4307e16e4059
+    m_Address: Assets/Audio/SoundFX/Enviornment/Lightning3.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Enviornment/Lightning
+    - Clips
+  - m_GUID: 69a18aa5bf7f1624fb1e5bbbc3553e76
+    m_Address: Assets/Audio/SoundFX/Enviornment/Lightning4.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Enviornment/Lightning
+    - Clips
+  - m_GUID: 852f22fcbf943d64c89ef75bc734571e
+    m_Address: Assets/Audio/SoundFX/Enviornment/Rain.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Enviornment/Rain
+    - Clips
+  - m_GUID: e8f72cffbe1be394ea6759870e18e25c
+    m_Address: Assets/Audio/SoundFX/Enviornment/AudioOverrideGroup.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Enviornment
+    - Override
+  - m_GUID: 543cece89914d8d4e912bad2774b40ff
+    m_Address: Assets/Audio/SoundFX/Footsteps
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX
+    - AudioDirectory
+  - m_GUID: 831f3267d3fc43f4ab85e20ca541beb6
+    m_Address: Assets/Audio/SoundFX/Footsteps/AudioOverrideGroup.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps
+    - Override
+  - m_GUID: ab7285970ac234443b384c8d4b9dfdf1
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps
+    - AudioDirectory
+  - m_GUID: f766a0bea3a08e34eb80d6d95daf51b9
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepA.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: 5d9a223ee449b8649a688c261820a0d8
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepB.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: f6be84ff39f1091459d75716d379c27a
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepC.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: 0fc4bc4cd56740440a4705e4d6821e74
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepD.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: 00898389ca20ddf4bb76f2caf9565107
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepE.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: d195217a0c819b548a95be9067715c13
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepF.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: 312bdc0b270160349bf0dc4821c7a246
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/GrassFootstepG.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: c8dd6998fe08cc74b95d6f2606eff2c9
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-A-www.fesliyanstudios.com.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: 763dd706a6592d341970e7d42b71b82d
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-B-www.fesliyanstudios.com.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: 34de49debcc564744ab76faebde34a19
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-C-www.fesliyanstudios.com.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: 127a8db446e2aeb43953a57a9fb3d808
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-D-www.fesliyanstudios.com.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: 21d2f5fa61be15d42b404e3a540ed80d
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-E-www.fesliyanstudios.com.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: 4764a23a9f8dc0d498c41bc743f2460f
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-F-www.fesliyanstudios.com.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: 9980e6b2a9947bb4587210fe43523481
+    m_Address: Assets/Audio/SoundFX/Footsteps/Grass/Single-footstep-in-grass-G-www.fesliyanstudios.com.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Footsteps/Grass
+    - Clips
+  - m_GUID: a101032b744e6d64da912aefc26e3e75
+    m_Address: Assets/Audio/SoundFX/Misc
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX
+    - AudioDirectory
+  - m_GUID: c6add41d97e85cb4b977a9477fcc4c6f
+    m_Address: Assets/Audio/SoundFX/Misc/Camera Flash.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Misc
+    - Clips
+  - m_GUID: 8bb5ecd03f41f404da024d264f04732a
+    m_Address: Assets/Audio/SoundFX/Misc/Polaroid Shutter.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Misc
+    - Clips
+  - m_GUID: 0245bfba9b280b94a9c58d0dcab0f218
+    m_Address: Assets/Audio/SoundFX/Misc/AudioOverrideGroup.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Misc
+    - Override
+  - m_GUID: 6c17b22ea135f5344b15a8280b344921
+    m_Address: Assets/Audio/SoundFX/Voices
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX
+    - AudioDirectory
+  - m_GUID: 76854146a36f6534489903e3c9f30e7b
+    m_Address: Assets/Audio/SoundFX/Voices/AudioOverrideGroup.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices
+    - Override
+  - m_GUID: 486c959976f79ce4e85c72767c1aa606
+    m_Address: Assets/Audio/SoundFX/Voices/Evan
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices
+    - AudioDirectory
+  - m_GUID: 8005b2f177ae5f546bf5dc1f01e302f1
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanA.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: d6c951fed113a0848b74ba42f2cccbe2
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanB.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: a86db1220f40a5a4c897b27ef8882325
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanC.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 7cf728ac1a91dcb4c97c7b50b8219ec2
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanD.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: e36655d9b4deaab4593fbfe323db37ab
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanE.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 1a68287beb72c5744a14605924797e43
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanF.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: e842a0651b6354249a7746791d3714d1
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanG.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: a0a26731f2aa02c41ba9271ad393d354
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanH.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: d347892fb873bc44294963cb6a8756a6
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanI.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: d7d4202878900434f8ae995623525563
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanJ.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 69b60904fde11c745a286fe75a5fd5be
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanK.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 51ae4021bbfbcde4e9ab98179b0d07d0
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanL.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: e5c17d709a7367c4ebbda78728b1226d
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanM.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 470c457b0a3613748accb1349622bb7c
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanN.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: def4076803d72c84f983ae716f8e4c23
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanO.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: d23847e60f3a4494d955b25570e885d8
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanP.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 6d574d540506c4f419753ce70981991b
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanQ.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 35881f2c7cdb4f147adb7bd3a659ba52
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanR.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 76cb4375e2b2a9241b708ed9d835be5b
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanS.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 33dd50ed517fba643b384daa8603766f
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanT.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: edf972206de825b4a93c8b3c97cda4d9
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanU.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 8bb440d6cceddd247a6f01163fc43cfa
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanV.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 34605e812dd1a0342a0813f12b6a3cea
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanW.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 73484b31bafd7664e92b19a79d3e07a4
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanX.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 92646f2df85bc224da862d00973beed9
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanY.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: 267749b1299a7014493efdb5f6e7b6cd
+    m_Address: Assets/Audio/SoundFX/Voices/Evan/EvanZ.mp3
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Voices/Evan
+    - Clips
+  - m_GUID: a88b04ef6b882754f8ae452071474034
+    m_Address: Assets/Audio/SoundFX/Enviornment/Lightning
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Enviornment
+    - AudioDirectory
+  - m_GUID: 6c29fd20159e8f444966059e5b21843a
+    m_Address: Assets/Audio/SoundFX/Enviornment/Rain
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/SoundFX/Enviornment
+    - AudioDirectory
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 8bf41b2f4f13e9b42a85e4f9bc8cecca, type: 2}
+  m_SchemaSet:
+    m_Schemas: []

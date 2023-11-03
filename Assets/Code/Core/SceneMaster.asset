@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d1aee8f52d2fd4284e33ed8515e2d5, type: 3}
+  m_Name: SceneMaster
+  m_EditorClassIdentifier: 
+  ScenePath: Assets/Scenes
+  DefaultInTransition: {fileID: 11400000, guid: 78a697d850c09d3488cea813ce875b19, type: 2}
+  DefaultOutTransition: {fileID: 11400000, guid: b9ee17547ba5ebf479c1a69362013065, type: 2}

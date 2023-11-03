@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9db5b56fd2f15934cbb0cf63b9754a5a, type: 3}
+  m_Name: Logger
+  m_EditorClassIdentifier: 
+  <LogToFile>k__BackingField: 1
+  <MaxLogCount>k__BackingField: 3
+  <LoggingPath>k__BackingField: D:/Documents/Code/Personal-Projects/curly-unity-starter/Logs/CurlyLogs
+  <LoggingEnumPath>k__BackingField: Assets/Code/Core/Logger/LoggingGroupID.cs
+  <LoggingGroups>k__BackingField:
+  - GroupName: App
+    LoggingColor: {r: 0.9716981, g: 0.31626022, b: 0.31626022, a: 1}
+    EnableLogging: 1
+  - GroupName: Gameplay
+    LoggingColor: {r: 0.72156864, g: 0.49803922, b: 0.9137255, a: 1}
+    EnableLogging: 1
+  _logContents: 'LOG SESSION (9/11/2023 9:48:46 PM)
+
+    ----------------------------------------
+
+    App
+    (21:48:46): Test Injection!
+
+    App (21:49:01): Quitting Sequence Started
+
+    App
+    (21:49:01): Finishing Logging Session
+
+'
+  Groups:
+  - GroupName: App
+    LoggingColor: {r: 0.9716981, g: 0.31626022, b: 0.31626022, a: 1}
+    EnableLogging: 1
+  - GroupName: Gameplay
+    LoggingColor: {r: 0.72156864, g: 0.49803922, b: 0.9137255, a: 1}
+    EnableLogging: 1
