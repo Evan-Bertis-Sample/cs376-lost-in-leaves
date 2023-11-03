@@ -1,0 +1,25 @@
+#pragma kernel CSMain
+
+// Texture references
+Texture2D<float4> InputTexture;
+RWTexture2D<float4> OutputTexture;
+
+// Pixel shader configuration
+cbuffer Configuration
+{
+    int downscaleAmount;
+};
+
+cbuffer TextureInfo
+{
+    int textureWidth;
+    int textureHeight;
+};
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    // TODO: insert actual code here!
+
+    OutputTexture[id.xy] = float4(id.x & id.y, (id.x & 15)/15.0, (id.y & 15)/15.0, 0.0);
+}
