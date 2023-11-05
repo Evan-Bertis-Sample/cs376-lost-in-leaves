@@ -28,6 +28,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Control:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -84,6 +88,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
+    - _Border_Width: 0.5
     - _Boundary_Threshold: 0.5
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -97,7 +102,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Gradient_Noise_Scale: 5
+    - _Gradient_Noise_Scale: 0.5
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -121,8 +126,11 @@ Material:
     - _AlbedoColor: {r: 1, g: 1, b: 1, a: 1}
     - _Ambient: {r: 0, g: 0, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Border_Color: {r: 1, g: 0.29126266, b: 0.2688679, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Path_Primary_Color: {r: 0.8867924, g: 0.5172409, b: 0.25516194, a: 0}
+    - _Path_Secondary_Color: {r: 0.7735849, g: 0.42279655, b: 0.22258809, a: 0}
     - _Primary_Color: {r: 0.73108774, g: 0.8396226, b: 0.43169275, a: 1}
     - _Secondary_Color: {r: 0.67806625, g: 0.83137256, b: 0.31764704, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
