@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-752952840371419444
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 5
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -20,12 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: default-lit
-  m_Shader: {fileID: -6465566751694194690, guid: a20aa64607225954385de6dd67feecd4, type: 3}
+  m_Name: grass-object
+  m_Shader: {fileID: -6465566751694194690, guid: 78582eb5690a5934d9b4092bb23020c8, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 6
-  m_EnableInstancingVariants: 1
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -38,6 +25,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Control:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -97,9 +88,15 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
+    - _Border_Width: 0.5
+    - _Boundary_Threshold: 0.5
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _Clif_Noise_Multiplier: -0.83
+    - _Clif_Noise_Scale: 0.16
+    - _Cliff_Band_Frequency: 1.18
+    - _Cliff_Threshold: 0.37
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -109,6 +106,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _Gradient_Noise_Scale: 0.5
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -119,19 +117,42 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Steps: 4
+    - _Steepness_Threshold: 0.9
+    - _Steps: 5
     - _Surface: 0
-    - _Toon_Ramp_Offset: 0.6
-    - _Toon_Ramp_Offset_Point: 0.6
+    - _Toon_Ramp_Offset: -0.3
+    - _Toon_Ramp_Offset_Point: 0
     - _Toon_Ramp_Smoothness: 0
+    - _Vornoli_Angle_Offset: 1
+    - _Vornoli_Noise_Density: 0.59
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _AlbedoColor: {r: 0.6865752, g: 0.34718758, b: 0.8867924, a: 0}
-    - _Ambient: {r: 0, g: 0, b: 0, a: 1}
-    - _BaseColor: {r: 0.85490197, g: 0.5137255, b: 0.19607843, a: 1}
-    - _Color: {r: 0.85490197, g: 0.5137255, b: 0.19607843, a: 1}
+    - _AlbedoColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Ambient: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Border_Color: {r: 1, g: 0.29126266, b: 0.2688679, a: 1}
+    - _Cliff_Primary_Color: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 0}
+    - _Cliff_Secondary_Color: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Path_Primary_Color: {r: 0.8867924, g: 0.5172409, b: 0.25516194, a: 0}
+    - _Path_Secondary_Color: {r: 0.7735849, g: 0.42279655, b: 0.22258809, a: 0}
+    - _Primary_Color: {r: 0.73108774, g: 0.8396226, b: 0.43169275, a: 1}
+    - _Secondary_Color: {r: 0.67806625, g: 0.83137256, b: 0.31764704, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
-    - _Toon_Ramp_Tinting: {r: 0.053221796, g: 0.059135, b: 0.49056602, a: 0}
+    - _Toon_Ramp_Tinting: {r: 0, g: 0.03934165, b: 0.2641509, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &6066142038058528879
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
