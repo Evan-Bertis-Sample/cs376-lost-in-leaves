@@ -93,6 +93,10 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _Clif_Noise_Multiplier: -0.83
+    - _Clif_Noise_Scale: 0.16
+    - _Cliff_Band_Frequency: 1.18
+    - _Cliff_Threshold: 0.37
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -113,10 +117,11 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Steps: 3
+    - _Steepness_Threshold: 0.9
+    - _Steps: 5
     - _Surface: 0
-    - _Toon_Ramp_Offset: 0.5
-    - _Toon_Ramp_Offset_Point: 0.5
+    - _Toon_Ramp_Offset: -0.3
+    - _Toon_Ramp_Offset_Point: 0
     - _Toon_Ramp_Smoothness: 0
     - _Vornoli_Angle_Offset: 1
     - _Vornoli_Noise_Density: 0.59
@@ -124,9 +129,11 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _AlbedoColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Ambient: {r: 0, g: 0, b: 0, a: 1}
+    - _Ambient: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Border_Color: {r: 1, g: 0.29126266, b: 0.2688679, a: 1}
+    - _Cliff_Primary_Color: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 0}
+    - _Cliff_Secondary_Color: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Path_Primary_Color: {r: 0.8867924, g: 0.5172409, b: 0.25516194, a: 0}
