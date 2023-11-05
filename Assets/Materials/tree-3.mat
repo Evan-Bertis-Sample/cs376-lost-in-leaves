@@ -93,7 +93,7 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DisplacementMagnitude: 0.5
-    - _Displacement_Magnitude: 0.1
+    - _Displacement_Magnitude: 0.2
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
@@ -117,7 +117,7 @@ Material:
     - _Toon_Ramp_Offset_Point: 0.6
     - _Toon_Ramp_Smoothness: 0
     - _WindSpeed: 0.1
-    - _Wind_Speed: 0.1
+    - _Wind_Speed: 0.05
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:

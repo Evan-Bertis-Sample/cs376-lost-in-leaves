@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ground-lit
-  m_Shader: {fileID: -6465566751694194690, guid: a20aa64607225954385de6dd67feecd4, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 0567698115c9cd241b76b35c336fe5d8, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -84,6 +84,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _Blend: 0
+    - _Boundary_Threshold: 0.5
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -96,6 +97,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _Gradient_Noise_Scale: 5
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -106,19 +108,23 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Steps: 4
+    - _Steps: 3
     - _Surface: 0
-    - _Toon_Ramp_Offset: 0.6
-    - _Toon_Ramp_Offset_Point: 0.6
+    - _Toon_Ramp_Offset: 0.5
+    - _Toon_Ramp_Offset_Point: 0.5
     - _Toon_Ramp_Smoothness: 0
+    - _Vornoli_Angle_Offset: 1
+    - _Vornoli_Noise_Density: 0.59
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _AlbedoColor: {r: 0.59501004, g: 0.8584906, b: 0.36040404, a: 0}
+    - _AlbedoColor: {r: 1, g: 1, b: 1, a: 1}
     - _Ambient: {r: 0, g: 0, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Primary_Color: {r: 0.73108774, g: 0.8396226, b: 0.43169275, a: 1}
+    - _Secondary_Color: {r: 0.67806625, g: 0.83137256, b: 0.31764704, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _Toon_Ramp_Tinting: {r: 0, g: 0.03934165, b: 0.2641509, a: 0}
   m_BuildTextureStacks: []
