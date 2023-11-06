@@ -120,7 +120,7 @@ namespace LostInLeaves.Rendering
             TextureInfo[] data = new TextureInfo[1];
             data[0] = info;
             _textureInfoBuffer.SetData(data);
-            Debug.Log($"PixelComputer : Set Texture Size to {info.TextureWidth}x{info.TextureHeight}");
+            // Debug.Log($"PixelComputer : Set Texture Size to {info.TextureWidth}x{info.TextureHeight}");
             cmd.SetComputeConstantBufferParam(_pixelComputeShader, "TextureInfo", _textureInfoBuffer, 0, _textureInfoBuffer.stride);
         }
     }

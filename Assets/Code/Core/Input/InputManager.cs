@@ -125,7 +125,7 @@ namespace CurlyCore.Input
             return GetContext(path, player).action.WasReleasedThisFrame();
         }
 
-        public bool GetButtonINput(string path, int player = 0)
+        public bool GetButtonInput(string path, int player = 0)
         {
             if (player >= _playerDevices.Count) return false;
             if (_playerDevices[player] == null) return false;
