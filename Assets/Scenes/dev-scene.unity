@@ -123,43 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &945110
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 945111}
-  m_Layer: 0
-  m_Name: GameObject (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &945111
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945110}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 924164965}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &39899128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2438245746009712502, guid: 6adc3979b33bd644eba59fcab2e53d36, type: 3}
   m_PrefabInstance: {fileID: 449094003}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &310067791
+--- !u!1 &187451038
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,23 +136,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 310067792}
+  - component: {fileID: 187451039}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Point-0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &310067792
+--- !u!4 &187451039
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310067791}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.25, y: 6.77, z: 0}
+  m_GameObject: {fileID: 187451038}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.2967544, y: 7.290081, z: -4.655426}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -575,13 +544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9221683e23843bf47807f50030b10b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _positions: []
-  _loop: 0
-  _time: 0
-  _ballGizmoSize: 0.5
-  _ballGizmoColor: {r: 1, g: 0, b: 0, a: 1}
-  _timeGizmoColor: {r: 0, g: 1, b: 0, a: 1}
-  _trackGizmoColor: {r: 0, g: 0, b: 1, a: 1}
+  <Positions>k__BackingField: []
+  <Loop>k__BackingField: 0
 --- !u!65 &678414866
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5811,16 +5775,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9221683e23843bf47807f50030b10b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _positions:
-  - {fileID: 310067791}
-  - {fileID: 945110}
-  - {fileID: 958293173}
-  _loop: 1
-  _time: 0.5
-  _ballGizmoSize: 0.5
-  _ballGizmoColor: {r: 1, g: 0, b: 0, a: 1}
-  _timeGizmoColor: {r: 0, g: 1, b: 0, a: 1}
-  _trackGizmoColor: {r: 0, g: 0, b: 1, a: 1}
+  <Positions>k__BackingField:
+  - {fileID: 187451038}
+  - {fileID: 1270385442}
+  <Loop>k__BackingField: 1
 --- !u!4 &924164965
 Transform:
   m_ObjectHideFlags: 0
@@ -5833,9 +5791,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 310067792}
-  - {fileID: 945111}
-  - {fileID: 958293174}
+  - {fileID: 187451039}
+  - {fileID: 1270385443}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5844,37 +5801,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6697268485448966616, guid: 7d8c90baced48b243af6c9d7a81d9cfc, type: 3}
   m_PrefabInstance: {fileID: 6697268484769643842}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &958293173
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 958293174}
-  m_Layer: 0
-  m_Name: GameObject (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &958293174
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958293173}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.6, z: -10.39}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 924164965}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1006251502
 GameObject:
   m_ObjectHideFlags: 0
@@ -6081,6 +6007,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46958e16377443343b70a346ca94d671, type: 3}
+--- !u!1 &1270385442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270385443}
+  m_Layer: 0
+  m_Name: Point-1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1270385443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270385442}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.305, y: 4.242923, z: -2.155}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 924164965}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1307587284
 GameObject:
   m_ObjectHideFlags: 0
@@ -6770,13 +6727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9221683e23843bf47807f50030b10b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _positions: []
-  _loop: 0
-  _time: 0
-  _ballGizmoSize: 0.5
-  _ballGizmoColor: {r: 1, g: 0, b: 0, a: 1}
-  _timeGizmoColor: {r: 0, g: 1, b: 0, a: 1}
-  _trackGizmoColor: {r: 0, g: 0, b: 1, a: 1}
+  <Positions>k__BackingField: []
+  <Loop>k__BackingField: 0
 --- !u!65 &1656327014
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7445,13 +7397,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9221683e23843bf47807f50030b10b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _positions: []
-  _loop: 0
-  _time: 0
-  _ballGizmoSize: 0.5
-  _ballGizmoColor: {r: 1, g: 0, b: 0, a: 1}
-  _timeGizmoColor: {r: 0, g: 1, b: 0, a: 1}
-  _trackGizmoColor: {r: 0, g: 0, b: 1, a: 1}
+  <Positions>k__BackingField: []
+  <Loop>k__BackingField: 0
 --- !u!65 &1887552678
 BoxCollider:
   m_ObjectHideFlags: 0

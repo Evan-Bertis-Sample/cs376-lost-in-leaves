@@ -120,7 +120,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Gradient: {r: 0.22116414, g: 0.36057386, b: 0.6603774, a: 0}
+    - _Gradient: {r: 1, g: 1, b: 1, a: 0}
     - _GradientDirection: {r: 0, g: 0, b: -1, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _Toon_Ramp_Tinting: {r: 0.116011046, g: 0.14516178, b: 0.31132078, a: 0}
