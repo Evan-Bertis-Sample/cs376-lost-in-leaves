@@ -101,6 +101,30 @@
         },
         {
             "m_Id": "ff0f0636da484bb98dc313c4532aa3ef"
+        },
+        {
+            "m_Id": "e1feabb677a945f39726491ec5eaed29"
+        },
+        {
+            "m_Id": "9e5da78f4cb249679529f27257d81124"
+        },
+        {
+            "m_Id": "1eb1e3b39f5b404d9817178ec3f56641"
+        },
+        {
+            "m_Id": "1ca8ea7acde84d34ae9842692fc72bb8"
+        },
+        {
+            "m_Id": "0d13936c8de2449f8fbe80ac241fd1ab"
+        },
+        {
+            "m_Id": "b571ef07f61d429b9f439d4df8ee0ba2"
+        },
+        {
+            "m_Id": "bbbe57cec07c4f759f7f317460d025df"
+        },
+        {
+            "m_Id": "1ece9d091ba9440a85d7ea996aeafc66"
         }
     ],
     "m_Keywords": [],
@@ -290,6 +314,30 @@
         },
         {
             "m_Id": "7487a5e586bc47b4b1d10c3a08bb751f"
+        },
+        {
+            "m_Id": "30acb2e0fdc8409290d5bdf1164ef674"
+        },
+        {
+            "m_Id": "1e97ce53b3954fdca476e6698df97272"
+        },
+        {
+            "m_Id": "4c321b97945a42e1a9229808802aa655"
+        },
+        {
+            "m_Id": "a2d155ceee174129a5c268cd878daf51"
+        },
+        {
+            "m_Id": "6de92ee8ea74496686525af36de869a6"
+        },
+        {
+            "m_Id": "ed601f3176c9470d8fb3d9d41155d734"
+        },
+        {
+            "m_Id": "59cb95eed8c5484eb522387c0a0799d2"
+        },
+        {
+            "m_Id": "b9ee837d22f94253a260bbef03ab3020"
         }
     ],
     "m_GroupDatas": [],
@@ -396,6 +444,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "1e97ce53b3954fdca476e6698df97272"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "26d66bfdfc804385840f429474d2aaa7"
+                },
+                "m_SlotId": -1496866010
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "26d66bfdfc804385840f429474d2aaa7"
                 },
                 "m_SlotId": 1
@@ -433,6 +495,20 @@
                     "m_Id": "707a069fa2dd4dffb6ad32d2dbee288e"
                 },
                 "m_SlotId": -1433267835
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "30acb2e0fdc8409290d5bdf1164ef674"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "26d66bfdfc804385840f429474d2aaa7"
+                },
+                "m_SlotId": -1723892200
             }
         },
         {
@@ -536,6 +612,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "4c321b97945a42e1a9229808802aa655"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "26d66bfdfc804385840f429474d2aaa7"
+                },
+                "m_SlotId": -2036085257
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "4fabe859d0594e5b98a556b237f1dc20"
                 },
                 "m_SlotId": 2
@@ -606,6 +696,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "59cb95eed8c5484eb522387c0a0799d2"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "26d66bfdfc804385840f429474d2aaa7"
+                },
+                "m_SlotId": 988172377
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "5cdb2711a3014851a2b8160a2cd02a89"
                 },
                 "m_SlotId": 0
@@ -629,6 +733,20 @@
                     "m_Id": "065ddc0b4ab8439c84e56191f85f6493"
                 },
                 "m_SlotId": -240261214
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "6de92ee8ea74496686525af36de869a6"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "26d66bfdfc804385840f429474d2aaa7"
+                },
+                "m_SlotId": 1988714008
             }
         },
         {
@@ -760,6 +878,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "a2d155ceee174129a5c268cd878daf51"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "26d66bfdfc804385840f429474d2aaa7"
+                },
+                "m_SlotId": -484543047
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "a523865990764177926a6313a7daa610"
                 },
                 "m_SlotId": 0
@@ -839,6 +971,20 @@
                     "m_Id": "1d1abfcdabca4d858e6219c77f5d1b42"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "b9ee837d22f94253a260bbef03ab3020"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "26d66bfdfc804385840f429474d2aaa7"
+                },
+                "m_SlotId": 2044270014
             }
         },
         {
@@ -998,6 +1144,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "ed601f3176c9470d8fb3d9d41155d734"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "26d66bfdfc804385840f429474d2aaa7"
+                },
+                "m_SlotId": 1207226211
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "ef4223a52fee4fe28fc7f06dca245b1e"
                 },
                 "m_SlotId": 1
@@ -1138,6 +1298,21 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "04a6d756f44e40c682ca74b83b60823e",
+    "m_Id": 0,
+    "m_DisplayName": "Sand Rock Power",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -1491,6 +1666,21 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "0ca7f8ab2d494b86af50a41814bd1b14",
+    "m_Id": 1988714008,
+    "m_DisplayName": "Sand Color Variation Secondary Scale",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Sand_Color_Variation_Secondary_Scale",
+    "m_StageCapability": 2,
+    "m_Value": 2.3299999237060549,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "0cf17137b8e8435aba6790a260b10f66",
     "m_Id": 0,
     "m_DisplayName": "Boundary Threshold",
@@ -1501,6 +1691,33 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "0d13936c8de2449f8fbe80ac241fd1ab",
+    "m_Guid": {
+        "m_GuidSerialized": "91fc503c-eb73-433b-bda8-bd6cd0e79c76"
+    },
+    "m_Name": "Sand Color Variation Secondary Scale",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Sand Color Variation Secondary Scale",
+    "m_DefaultReferenceName": "_Sand_Color_Variation_Secondary_Scale",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 2.3299999237060549,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
 }
 
 {
@@ -1528,6 +1745,31 @@
         "x": 0.0,
         "y": 1.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "0d40172f5b054e67b400e29a51267e4c",
+    "m_Id": 0,
+    "m_DisplayName": "Sand Rock Color",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
 }
 
 {
@@ -1563,6 +1805,31 @@
     "m_Property": {
         "m_Id": "7d764588e3ac48d093c792af36d30e6a"
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "0e56d6f84e634a74bef559b3e9509b63",
+    "m_Id": -1496866010,
+    "m_DisplayName": "Sand Secondary Color",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Sand_Secondary_Color",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 0.7547169923782349,
+        "y": 0.605431079864502,
+        "z": 0.3025988042354584,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
 }
 
 {
@@ -1698,6 +1965,33 @@
 }
 
 {
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "1ca8ea7acde84d34ae9842692fc72bb8",
+    "m_Guid": {
+        "m_GuidSerialized": "d5e8a129-c0f5-401b-b27f-2ed31d4fbc3f"
+    },
+    "m_Name": "Sand Color Variation Primary Scale",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Sand Color Variation Primary Scale",
+    "m_DefaultReferenceName": "_Sand_Color_Variation_Primary_Scale",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.10000000149011612,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.MultiplyNode",
     "m_ObjectId": "1d1abfcdabca4d858e6219c77f5d1b42",
@@ -1765,6 +2059,41 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "1e97ce53b3954fdca476e6698df97272",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 876.0000610351563,
+            "y": 715.0000610351563,
+            "width": 194.00006103515626,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "d6873c05c8c64fac93ff223b28359bae"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "9e5da78f4cb249679529f27257d81124"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicValueMaterialSlot",
     "m_ObjectId": "1e9e4983b21849f7b2dfb792c82b8f57",
     "m_Id": 2,
@@ -1808,6 +2137,62 @@
         "e31": 0.0,
         "e32": 0.0,
         "e33": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 3,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
+    "m_ObjectId": "1eb1e3b39f5b404d9817178ec3f56641",
+    "m_Guid": {
+        "m_GuidSerialized": "0dd4e07d-f67c-4d7e-911a-810d37e27bf6"
+    },
+    "m_Name": "Sand Rock Color",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Sand Rock Color",
+    "m_DefaultReferenceName": "_Sand_Rock_Color",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "r": 0.5,
+        "g": 0.3955337107181549,
+        "b": 0.17688679695129395,
+        "a": 1.0
+    },
+    "isMainColor": false,
+    "m_ColorMode": 0
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "1ece9d091ba9440a85d7ea996aeafc66",
+    "m_Guid": {
+        "m_GuidSerialized": "bc2d0220-0d35-46e5-9a96-6c077db77493"
+    },
+    "m_Name": "Sand Rock Threshold",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Sand Rock Threshold",
+    "m_DefaultReferenceName": "_Sand_Rock_Threshold",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.6000000238418579,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
     }
 }
 
@@ -1915,6 +2300,30 @@
         },
         {
             "m_Id": "ff0f0636da484bb98dc313c4532aa3ef"
+        },
+        {
+            "m_Id": "e1feabb677a945f39726491ec5eaed29"
+        },
+        {
+            "m_Id": "9e5da78f4cb249679529f27257d81124"
+        },
+        {
+            "m_Id": "1eb1e3b39f5b404d9817178ec3f56641"
+        },
+        {
+            "m_Id": "1ca8ea7acde84d34ae9842692fc72bb8"
+        },
+        {
+            "m_Id": "0d13936c8de2449f8fbe80ac241fd1ab"
+        },
+        {
+            "m_Id": "b571ef07f61d429b9f439d4df8ee0ba2"
+        },
+        {
+            "m_Id": "bbbe57cec07c4f759f7f317460d025df"
+        },
+        {
+            "m_Id": "1ece9d091ba9440a85d7ea996aeafc66"
         }
     ]
 }
@@ -1930,6 +2339,21 @@
     "m_ShaderOutputName": "Out",
     "m_StageCapability": 3,
     "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "2232418da4644293be4dfc6beb8f9108",
+    "m_Id": 1207226211,
+    "m_DisplayName": "Sand Rock Noise Scale",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Sand_Rock_Noise_Scale",
+    "m_StageCapability": 2,
+    "m_Value": 2.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
 }
@@ -2024,9 +2448,9 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": 1186.0,
-            "y": 407.99993896484377,
+            "y": 405.0,
             "width": 283.0,
-            "height": 517.9999389648438
+            "height": 518.0
         }
     },
     "m_Slots": [
@@ -2064,6 +2488,27 @@
             "m_Id": "96352fe0ef8246049052a387c3a9e965"
         },
         {
+            "m_Id": "0e56d6f84e634a74bef559b3e9509b63"
+        },
+        {
+            "m_Id": "9d7cb2f20a3b4ac88a07590651f1b7f1"
+        },
+        {
+            "m_Id": "33913b14613b43e6b0b52d13bbd6a280"
+        },
+        {
+            "m_Id": "0ca7f8ab2d494b86af50a41814bd1b14"
+        },
+        {
+            "m_Id": "2232418da4644293be4dfc6beb8f9108"
+        },
+        {
+            "m_Id": "2c3348de82e04c44a8a4a92d2b56f1e2"
+        },
+        {
+            "m_Id": "a95d2a324c2a43d9b077286dbb84e991"
+        },
+        {
             "m_Id": "5b101c0eac08410a8c30d755878d7dc9"
         }
     ],
@@ -2086,7 +2531,14 @@
         "2929dac5-22ff-4b88-afe1-094422fc867c",
         "be8c89fa-a291-4130-b725-aa798fb2c9f9",
         "01109982-ce2f-4fc3-be01-0c8ef370a58a",
-        "16cd3332-2525-4b53-b2ca-494cbda2e888"
+        "16cd3332-2525-4b53-b2ca-494cbda2e888",
+        "c7176586-e2b7-4fbd-9919-27e18e3d4acf",
+        "7939b603-6053-485e-addb-fb2a0ac03f9d",
+        "520130ce-f47c-4659-8460-49a48fd10f53",
+        "b0a466e2-85cb-4849-b231-ebcb838c8f45",
+        "fe53ccc5-654f-4b8a-bde1-bd795487908b",
+        "4987efdd-b9ba-46c2-a306-b3089d00103d",
+        "901d4f91-f90a-4596-8197-2577a43477db"
     ],
     "m_PropertyIds": [
         427296071,
@@ -2099,7 +2551,14 @@
         1513022903,
         2145369171,
         1249519328,
-        -1723892200
+        -1723892200,
+        -1496866010,
+        -2036085257,
+        -484543047,
+        1988714008,
+        1207226211,
+        988172377,
+        2044270014
     ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []
@@ -2265,6 +2724,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "2c3348de82e04c44a8a4a92d2b56f1e2",
+    "m_Id": 988172377,
+    "m_DisplayName": "Sand Rock Power",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Sand_Rock_Power",
+    "m_StageCapability": 2,
+    "m_Value": 10.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "2d0ea64a7d98468390903a887973d99e",
     "m_Group": {
@@ -2405,6 +2879,41 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "30acb2e0fdc8409290d5bdf1164ef674",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 888.0000610351563,
+            "y": 688.0000610351563,
+            "width": 177.99993896484376,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "da76aece6d6a43ad87e6f9330a3ed23d"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "e1feabb677a945f39726491ec5eaed29"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "31d3042c907e4655996ac0692895e001",
     "m_Id": 0,
@@ -2429,6 +2938,21 @@
     "m_ShaderOutputName": "Out",
     "m_StageCapability": 3,
     "m_BareResource": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "33913b14613b43e6b0b52d13bbd6a280",
+    "m_Id": -484543047,
+    "m_DisplayName": "Sand Color Variation Primary Scale",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Sand_Color_Variation_Primary_Scale",
+    "m_StageCapability": 2,
+    "m_Value": 0.10000000149011612,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -3022,6 +3546,41 @@
 }
 
 {
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "4c321b97945a42e1a9229808802aa655",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 906.0000610351563,
+            "y": 742.0000610351563,
+            "width": 164.00006103515626,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "0d40172f5b054e67b400e29a51267e4c"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "1eb1e3b39f5b404d9817178ec3f56641"
+    }
+}
+
+{
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
     "m_ObjectId": "4c8ebcc530ae4ccbae99e2a2811eafc0",
@@ -3393,6 +3952,41 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "59cb95eed8c5484eb522387c0a0799d2",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 899.0,
+            "y": 878.0,
+            "width": 167.0,
+            "height": 34.00006103515625
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "04a6d756f44e40c682ca74b83b60823e"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "bbbe57cec07c4f759f7f317460d025df"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "5b101c0eac08410a8c30d755878d7dc9",
     "m_Id": 1,
@@ -3564,6 +4158,41 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "SurfaceDescription.Smoothness"
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "6de92ee8ea74496686525af36de869a6",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 793.0,
+            "y": 810.0,
+            "width": 273.0,
+            "height": 34.00006103515625
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "81632ba5f7c24d0dad67b01bdd33ff47"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "0d13936c8de2449f8fbe80ac241fd1ab"
+    }
 }
 
 {
@@ -4211,6 +4840,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "81632ba5f7c24d0dad67b01bdd33ff47",
+    "m_Id": 0,
+    "m_DisplayName": "Sand Color Variation Secondary Scale",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "81c789c7e1ea48ecaf07a03ff38c118b",
     "m_Group": {
@@ -4723,10 +5367,10 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "96352fe0ef8246049052a387c3a9e965",
     "m_Id": -1723892200,
-    "m_DisplayName": "Sand Color",
+    "m_DisplayName": "Sand Primary Color",
     "m_SlotType": 0,
     "m_Hidden": false,
-    "m_ShaderOutputName": "_Sand_Color",
+    "m_ShaderOutputName": "_Sand_Primary_Color",
     "m_StageCapability": 2,
     "m_Value": {
         "x": 0.8773584961891174,
@@ -4848,6 +5492,21 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "9b2410fadec34f088f7736eaa2aec1cc",
+    "m_Id": 0,
+    "m_DisplayName": "Sand Rock Threshold",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "9b400021d8124697b3c6d2dbd02e3a4e",
     "m_Id": 0,
     "m_DisplayName": "Slope Shading Offset",
@@ -4857,6 +5516,31 @@
     "m_StageCapability": 3,
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "9d7cb2f20a3b4ac88a07590651f1b7f1",
+    "m_Id": -2036085257,
+    "m_DisplayName": "Sand Rock Color",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Sand_Rock_Color",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 0.44299572706222536,
+        "y": 0.4642835259437561,
+        "z": 0.5188679099082947,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
     "m_Labels": []
 }
 
@@ -4883,6 +5567,35 @@
         "w": 0.0
     },
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 3,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
+    "m_ObjectId": "9e5da78f4cb249679529f27257d81124",
+    "m_Guid": {
+        "m_GuidSerialized": "ed1f1de9-9c84-4569-9cda-7cdc440837d4"
+    },
+    "m_Name": "Sand Secondary Color",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Sand Secondary Color",
+    "m_DefaultReferenceName": "_Sand_Secondary_Color",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "r": 0.7529411911964417,
+        "g": 0.6039215922355652,
+        "b": 0.3019607961177826,
+        "a": 0.0
+    },
+    "isMainColor": false,
+    "m_ColorMode": 0
 }
 
 {
@@ -5017,6 +5730,41 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "a2d155ceee174129a5c268cd878daf51",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 810.0,
+            "y": 776.0,
+            "width": 256.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "a526f2e3833e408e867953a4b1a4b181"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "1ca8ea7acde84d34ae9842692fc72bb8"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "a523865990764177926a6313a7daa610",
     "m_Group": {
         "m_Id": ""
@@ -5047,6 +5795,21 @@
     "m_Property": {
         "m_Id": "572d6ef6205b4c42a70851ddd78b35f9"
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "a526f2e3833e408e867953a4b1a4b181",
+    "m_Id": 0,
+    "m_DisplayName": "Sand Color Variation Primary Scale",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -5097,6 +5860,21 @@
     "m_Property": {
         "m_Id": "f84ce4bd4ccb436190fe35742bb43ee9"
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "a95d2a324c2a43d9b077286dbb84e991",
+    "m_Id": 2044270014,
+    "m_DisplayName": "Sand Rock Threshold",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Sand_Rock_Threshold",
+    "m_StageCapability": 2,
+    "m_Value": 0.6000000238418579,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -5354,6 +6132,33 @@
 {
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "b571ef07f61d429b9f439d4df8ee0ba2",
+    "m_Guid": {
+        "m_GuidSerialized": "6bbb5b8f-ac32-4927-bf6b-76c4da59283b"
+    },
+    "m_Name": "Sand Rock Noise Scale",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Sand Rock Noise Scale",
+    "m_DefaultReferenceName": "_Sand_Rock_Noise_Scale",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 2.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
     "m_ObjectId": "b61fa70447fd49859175cd5d9bf5e2bf",
     "m_Guid": {
         "m_GuidSerialized": "a1474b11-0242-4f72-b180-012cec79b523"
@@ -5554,6 +6359,68 @@
     },
     "m_Property": {
         "m_Id": "ac22cf64b89849bbbca24c87cdc80a18"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "b9ee837d22f94253a260bbef03ab3020",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 876.0,
+            "y": 912.0000610351563,
+            "width": 186.0,
+            "height": 33.99993896484375
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "9b2410fadec34f088f7736eaa2aec1cc"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "1ece9d091ba9440a85d7ea996aeafc66"
+    }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "bbbe57cec07c4f759f7f317460d025df",
+    "m_Guid": {
+        "m_GuidSerialized": "e0d56081-f347-4da5-b48a-75b66b008d1d"
+    },
+    "m_Name": "Sand Rock Power",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Sand Rock Power",
+    "m_DefaultReferenceName": "_Sand_Rock_Power",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 10.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
     }
 }
 
@@ -6190,6 +7057,31 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "d6873c05c8c64fac93ff223b28359bae",
+    "m_Id": 0,
+    "m_DisplayName": "Sand Secondary Color",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "d84052ea74624a4c9dc6fa9799dc0382",
     "m_Id": 0,
@@ -6236,6 +7128,31 @@
     "m_Property": {
         "m_Id": "8516f3ec8a234a0aa708c531597d9605"
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "da76aece6d6a43ad87e6f9330a3ed23d",
+    "m_Id": 0,
+    "m_DisplayName": "Sand Primary Color",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
 }
 
 {
@@ -6292,6 +7209,35 @@
 }
 
 {
+    "m_SGVersion": 3,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
+    "m_ObjectId": "e1feabb677a945f39726491ec5eaed29",
+    "m_Guid": {
+        "m_GuidSerialized": "afbfa002-ea79-412e-ae36-aa473510f5fc"
+    },
+    "m_Name": "Sand Primary Color",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Sand Primary Color",
+    "m_DefaultReferenceName": "_Sand_Primary_Color",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "r": 0.8784313797950745,
+        "g": 0.7764706015586853,
+        "b": 0.3686274588108063,
+        "a": 0.0
+    },
+    "isMainColor": false,
+    "m_ColorMode": 0
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Texture2DInputMaterialSlot",
     "m_ObjectId": "e3d9ebfcd25545e1b50168045fcadc51",
@@ -6315,6 +7261,21 @@
     "m_ObjectId": "e3f166e0afda47d895827b7db1867d8b",
     "m_Id": 0,
     "m_DisplayName": "Slope Shading Offset",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "e5d5859601544ae8878712f96b6d5de7",
+    "m_Id": 0,
+    "m_DisplayName": "Sand Rock Noise Scale",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -6530,6 +7491,41 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "ed601f3176c9470d8fb3d9d41155d734",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 871.0,
+            "y": 844.0000610351563,
+            "width": 195.0,
+            "height": 33.99993896484375
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "e5d5859601544ae8878712f96b6d5de7"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "b571ef07f61d429b9f439d4df8ee0ba2"
+    }
 }
 
 {
