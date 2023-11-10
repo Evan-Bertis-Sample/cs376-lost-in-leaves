@@ -41,6 +41,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DepthColor_b7f61f68bc0a44979a9257e884202132_Texture2D9433604A_3443508605:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -67,6 +71,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normals_Texture:
+        m_Texture: {fileID: 2800000, guid: a41da5f5671718b47bbc71e9ef691103, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -102,19 +110,32 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
+    - _Depth_Distance: 1
+    - _Depth_Steps: 4
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
+    - _Foam_Angle_Offset: 1
+    - _Foam_Blending: 0.54
+    - _Foam_Distortion_Strength: 0.6
+    - _Foam_Oscillation_Amplitude: 5
+    - _Foam_Oscillation_Speed: 0.25
+    - _Foam_Scale: 0.1
+    - _Foam_Strength: 2.5
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
+    - _Minimum_Foam_Density: 5
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _Reflection_Fresnel: 0
+    - _Reflection_Strength: 0.1
+    - _Refraction: 0.06
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -131,7 +152,12 @@ Material:
     - _Ambient: {r: 0, g: 0, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Deep_Color: {r: 0.2713154, g: 0.3981451, b: 0.6320754, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Foam_Color: {r: 0.4392132, g: 0.710867, b: 0.8867924, a: 0}
+    - _Foam_Drift_Direction: {r: 0.01, g: 0.01, b: 0, a: 0}
+    - _Normals_Movement_Direction: {r: 0.1, g: 63.11, b: 0, a: 0}
+    - _Shallow_Color: {r: 0.5276789, g: 0.7629539, b: 0.9245283, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _Toon_Ramp_Tinting: {r: 0, g: 0.03934165, b: 0.2641509, a: 0}
   m_BuildTextureStacks: []
