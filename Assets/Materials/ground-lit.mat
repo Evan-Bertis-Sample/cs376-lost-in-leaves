@@ -113,6 +113,11 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
+    - _Slope_Highlight_Strength: 0.2
+    - _Slope_Shading_Expansion: 1.13
+    - _Slope_Shading_Offset: 0.125
+    - _Slope_Shading_Steps: 4
+    - _Slope_Shading_Strength: 0.125
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -138,8 +143,11 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Path_Primary_Color: {r: 0.8867924, g: 0.5172409, b: 0.25516194, a: 0}
     - _Path_Secondary_Color: {r: 0.7735849, g: 0.42279655, b: 0.22258809, a: 0}
-    - _Primary_Color: {r: 0.73108774, g: 0.8396226, b: 0.43169275, a: 1}
-    - _Secondary_Color: {r: 0.67806625, g: 0.83137256, b: 0.31764704, a: 1}
+    - _Primary_Color: {r: 0.6507444, g: 0.7924528, b: 0.3476326, a: 1}
+    - _Secondary_Color: {r: 0.56007206, g: 0.745283, b: 0.3058473, a: 1}
+    - _Slope_Highlight_Color: {r: 0.9433962, g: 0.76878804, b: 0.14684942, a: 0}
+    - _Slope_Shading_Color: {r: 0.27971223, g: 0.1462264, b: 0.5849056, a: 0}
+    - _Slope_Shading_Direction: {r: -1, g: 0, b: 1, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _Toon_Ramp_Tinting: {r: 0, g: 0.03934165, b: 0.2641509, a: 0}
   m_BuildTextureStacks: []

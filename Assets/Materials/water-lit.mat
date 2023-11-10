@@ -126,7 +126,7 @@ Material:
     - _EnvironmentReflections: 1
     - _Foam_Angle_Offset: 1
     - _Foam_Blending: 0.5
-    - _Foam_Distortion_Strength: 0.4
+    - _Foam_Distortion_Strength: 0.6
     - _Foam_Oscillation_Amplitude: 5
     - _Foam_Oscillation_Speed: 0.25
     - _Foam_Scale: 0.1
@@ -177,4 +177,6 @@ Material:
     - _Shallow_Color: {r: 0.5276789, g: 0.7629539, b: 0.9245283, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _Toon_Ramp_Tinting: {r: 0, g: 0.03934165, b: 0.2641509, a: 0}
+    - _Wave_Directions: {r: 0, g: 0.64, b: 1, a: 0.33}
+    - _Wave_Visuals: {r: 0.132, g: 7.9, b: 1.38, a: 0}
   m_BuildTextureStacks: []
