@@ -62,6 +62,33 @@
         },
         {
             "m_Id": "d8acd814003e4a9abce2646cb2973752"
+        },
+        {
+            "m_Id": "edd1d8400fce402988d234217fe393bf"
+        },
+        {
+            "m_Id": "133559b1a5fe407882e36f1a2956b4b3"
+        },
+        {
+            "m_Id": "9008e84700844d3cafd0391ce3687872"
+        },
+        {
+            "m_Id": "6a34eefd6aa94d9798fa8ed2d2a88dcd"
+        },
+        {
+            "m_Id": "659295f7edf748cc907aa222daedc113"
+        },
+        {
+            "m_Id": "21be05bb066c473e8214b4fbcf2384f5"
+        },
+        {
+            "m_Id": "d09c5d4e705140529bf7c5ed6d6476e9"
+        },
+        {
+            "m_Id": "bd06f4e88d194cb0be91cd2358b8255a"
+        },
+        {
+            "m_Id": "f2cfb0f9bdaf4737aad800cc7590159c"
         }
     ],
     "m_Keywords": [],
@@ -176,11 +203,61 @@
         },
         {
             "m_Id": "8e406ab6895649378ef54ec5f6a351d4"
+        },
+        {
+            "m_Id": "bbdb1205307f4ebc93206e31dc69d09e"
+        },
+        {
+            "m_Id": "f4fcdc14616746d9ba1184bcfdeaf767"
+        },
+        {
+            "m_Id": "cabf7fc0403f4421b55be48ebbb28398"
+        },
+        {
+            "m_Id": "ce8adfd1bb8b4121bebefd87a3fdbe0e"
+        },
+        {
+            "m_Id": "92ad22400b934ead9581a56c65b2bcc4"
+        },
+        {
+            "m_Id": "db00c60d20b844fbafea1f3bdcb33c5e"
+        },
+        {
+            "m_Id": "ce626891a66343e7a943774db35de2d2"
+        },
+        {
+            "m_Id": "fc1f458b97214a51b48e58a75b016ba2"
+        },
+        {
+            "m_Id": "0692a38b95dd4b80a00f239ad6b7a15e"
+        },
+        {
+            "m_Id": "3edecee0abfc47e1b9dd9051ee2fddfa"
+        },
+        {
+            "m_Id": "0423b9299d0949c79fe01f188355068b"
+        },
+        {
+            "m_Id": "dbd2f34c41084a4bbb6132e60c876d5c"
         }
     ],
     "m_GroupDatas": [],
     "m_StickyNoteDatas": [],
     "m_Edges": [
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "0423b9299d0949c79fe01f188355068b"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "8c5d5cfeef0140e7a564250709edd031"
+                },
+                "m_SlotId": -349770724
+            }
+        },
         {
             "m_OutputSlot": {
                 "m_Node": {
@@ -235,6 +312,20 @@
                     "m_Id": "7aae1a99065c4d4f8df61eb7f2860553"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "3edecee0abfc47e1b9dd9051ee2fddfa"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "dbd2f34c41084a4bbb6132e60c876d5c"
+                },
+                "m_SlotId": 920571755
             }
         },
         {
@@ -347,6 +438,20 @@
                     "m_Id": "5c85916ded7645b4a9d1f9c1fcffa89d"
                 },
                 "m_SlotId": -786098627
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "5695d80b84494b8b91898a88bf5c4bd5"
+                },
+                "m_SlotId": 2
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "dbd2f34c41084a4bbb6132e60c876d5c"
+                },
+                "m_SlotId": 1288850055
             }
         },
         {
@@ -470,9 +575,23 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "2830fd37a51c446ca5cdc7c225f00a05"
+                    "m_Id": "f4fcdc14616746d9ba1184bcfdeaf767"
+                },
+                "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "92ad22400b934ead9581a56c65b2bcc4"
                 },
                 "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "dbd2f34c41084a4bbb6132e60c876d5c"
+                },
+                "m_SlotId": -890932899
             }
         },
         {
@@ -548,6 +667,62 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "bbdb1205307f4ebc93206e31dc69d09e"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "dbd2f34c41084a4bbb6132e60c876d5c"
+                },
+                "m_SlotId": 1142316541
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "cabf7fc0403f4421b55be48ebbb28398"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "dbd2f34c41084a4bbb6132e60c876d5c"
+                },
+                "m_SlotId": -1597871166
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "ce626891a66343e7a943774db35de2d2"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "dbd2f34c41084a4bbb6132e60c876d5c"
+                },
+                "m_SlotId": 1760759757
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "ce8adfd1bb8b4121bebefd87a3fdbe0e"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "dbd2f34c41084a4bbb6132e60c876d5c"
+                },
+                "m_SlotId": 1001386186
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "d44ec631bbb64da0b2447f76ab6b59fa"
                 },
                 "m_SlotId": 0
@@ -571,6 +746,34 @@
                     "m_Id": "8c5d5cfeef0140e7a564250709edd031"
                 },
                 "m_SlotId": 319678706
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "db00c60d20b844fbafea1f3bdcb33c5e"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "dbd2f34c41084a4bbb6132e60c876d5c"
+                },
+                "m_SlotId": -133674482
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "dbd2f34c41084a4bbb6132e60c876d5c"
+                },
+                "m_SlotId": 1
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "f4fcdc14616746d9ba1184bcfdeaf767"
+                },
+                "m_SlotId": 0
             }
         },
         {
@@ -600,12 +803,54 @@
                 },
                 "m_SlotId": -1306133307
             }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "e7f1400d080544d6b024c10b5b83caef"
+                },
+                "m_SlotId": 3
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "dbd2f34c41084a4bbb6132e60c876d5c"
+                },
+                "m_SlotId": 2147048844
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "f4fcdc14616746d9ba1184bcfdeaf767"
+                },
+                "m_SlotId": 2
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "2830fd37a51c446ca5cdc7c225f00a05"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "fc1f458b97214a51b48e58a75b016ba2"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "dbd2f34c41084a4bbb6132e60c876d5c"
+                },
+                "m_SlotId": -1316344453
+            }
         }
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 891.0,
-            "y": -127.00004577636719
+            "x": 1573.0,
+            "y": -345.0000305175781
         },
         "m_Blocks": [
             {
@@ -621,8 +866,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 891.0,
-            "y": 72.99996185302735
+            "x": 1573.0,
+            "y": -145.00003051757813
         },
         "m_Blocks": [
             {
@@ -669,6 +914,91 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Vector1_365CC52E",
     "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "0423b9299d0949c79fe01f188355068b",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -883.0,
+            "y": -676.0,
+            "width": 0.0,
+            "height": 0.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "74b8d6edae2c47428f1740b2bf0b2965"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "bd06f4e88d194cb0be91cd2358b8255a"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "0692a38b95dd4b80a00f239ad6b7a15e",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -915.0,
+            "y": -679.0,
+            "width": 202.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "fb77c9c565a343aab66bbc0574a44d12"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "d09c5d4e705140529bf7c5ed6d6476e9"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "078fb077af5e4f53905c9f8c904f4f4f",
+    "m_Id": 0,
+    "m_DisplayName": "Intersection Foam Cutoff",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
@@ -756,6 +1086,21 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "0dcf318dd8564a9bbe912d721ad0840b",
+    "m_Id": 0,
+    "m_DisplayName": "Intersection Foam Steps",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "0df1130eeaf341c7970790ea77170376",
     "m_Id": 0,
     "m_DisplayName": "Reflection Strength",
@@ -766,6 +1111,35 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
+    "m_ObjectId": "133559b1a5fe407882e36f1a2956b4b3",
+    "m_Guid": {
+        "m_GuidSerialized": "e27db685-fb0b-40dd-9fd1-fa0ad441edc5"
+    },
+    "m_Name": "Intersection Foam Texture",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Intersection Foam Texture",
+    "m_DefaultReferenceName": "_Intersection_Foam_Texture",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"fcabffd57a8d737448ad0269a9d3092d\",\"type\":3}}",
+        "m_Guid": ""
+    },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
+    "m_Modifiable": true,
+    "m_DefaultType": 0
 }
 
 {
@@ -829,6 +1203,31 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "17b9508377a047d98b677ef362631387",
+    "m_Id": 1,
+    "m_DisplayName": "Out_Vector4",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "OutVector4",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
 }
 
 {
@@ -963,9 +1362,63 @@
             "m_Id": "7a76a0498a13491cb0952c051f633b2f"
         },
         {
+            "m_Id": "bd06f4e88d194cb0be91cd2358b8255a"
+        },
+        {
             "m_Id": "d8acd814003e4a9abce2646cb2973752"
+        },
+        {
+            "m_Id": "edd1d8400fce402988d234217fe393bf"
+        },
+        {
+            "m_Id": "133559b1a5fe407882e36f1a2956b4b3"
+        },
+        {
+            "m_Id": "659295f7edf748cc907aa222daedc113"
+        },
+        {
+            "m_Id": "9008e84700844d3cafd0391ce3687872"
+        },
+        {
+            "m_Id": "6a34eefd6aa94d9798fa8ed2d2a88dcd"
+        },
+        {
+            "m_Id": "21be05bb066c473e8214b4fbcf2384f5"
+        },
+        {
+            "m_Id": "d09c5d4e705140529bf7c5ed6d6476e9"
+        },
+        {
+            "m_Id": "f2cfb0f9bdaf4737aad800cc7590159c"
         }
     ]
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "21be05bb066c473e8214b4fbcf2384f5",
+    "m_Guid": {
+        "m_GuidSerialized": "2d50ad49-d6e7-4020-bdfc-8fac4aca5e72"
+    },
+    "m_Name": "Intersection Foam Border Size",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Intersection Foam Border Size",
+    "m_DefaultReferenceName": "_Intersection_Foam_Border_Size",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 2.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
 }
 
 {
@@ -1074,6 +1527,29 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
+    "m_ObjectId": "2b2e27e0250a4743ad3117dadab467ed",
+    "m_Id": 2147048844,
+    "m_DisplayName": "Vector3",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Vector3",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "2e4b37a430ce45a7826684bfeb558775",
     "m_Group": {
@@ -1134,6 +1610,30 @@
     },
     "isMainColor": false,
     "m_ColorMode": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "3248e016ab5445fba9afc54c3c5be9d0",
+    "m_Id": 1,
+    "m_DisplayName": "B",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "B",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
 }
 
 {
@@ -1253,6 +1753,41 @@
     ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "3edecee0abfc47e1b9dd9051ee2fddfa",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -897.0,
+            "y": -1291.0,
+            "width": 202.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "c3fac01b0b30441ea4ba2b4fda5393b3"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "f2cfb0f9bdaf4737aad800cc7590159c"
+    }
 }
 
 {
@@ -1412,6 +1947,21 @@
         "z": 0.0,
         "w": 0.0
     },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "47ebf9a812b24c1d92bee02202ae9a39",
+    "m_Id": 0,
+    "m_DisplayName": "Intersection Foam Border Size",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
     "m_Labels": []
 }
 
@@ -1591,6 +2141,30 @@
     },
     "m_Property": {
         "m_Id": "6aecab2a2b194002aefd8c789b9db026"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "5303974aa8f04b35bef4640fb7ae4e0c",
+    "m_Id": 2,
+    "m_DisplayName": "Out",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
     }
 }
 
@@ -1879,6 +2453,48 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "64df62058c66461d9502c898694480e5",
+    "m_Id": 1142316541,
+    "m_DisplayName": "Intersection Foam Distance",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Intersection_Foam_Distance",
+    "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "659295f7edf748cc907aa222daedc113",
+    "m_Guid": {
+        "m_GuidSerialized": "6712eaba-1f59-4fdf-8cd3-d19da6c9f861"
+    },
+    "m_Name": "Intersection Foam Texture Scale",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Intersection Foam Texture Scale",
+    "m_DefaultReferenceName": "_Intersection_Foam_Texture_Scale",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.5,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "66303e632ee14f5ab2d3362b7fd1d420",
     "m_Id": -734618737,
     "m_DisplayName": "Minimum Foam Density",
@@ -1920,6 +2536,31 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "675081175ad544f1b2f57db4b1d07a17",
+    "m_Id": 920571755,
+    "m_DisplayName": "Intersection Foam Color",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Intersection_Foam_Color",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "6850e37f79e240f6948071da1d72b28d",
     "m_Group": {
@@ -1950,6 +2591,33 @@
     },
     "m_Property": {
         "m_Id": "d3751007553f4dee8cd604f7176a85f9"
+    }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "6a34eefd6aa94d9798fa8ed2d2a88dcd",
+    "m_Guid": {
+        "m_GuidSerialized": "d1020d56-4414-4ef7-9cbb-9ed6401b5cd6"
+    },
+    "m_Name": "Intersection Foam Cutoff",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Intersection Foam Cutoff",
+    "m_DefaultReferenceName": "_Intersection_Foam_Cutoff",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.5,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
     }
 }
 
@@ -2071,6 +2739,21 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "6d991b4a1dcb4f2db3c45a60efeacf1d",
+    "m_Id": -1316344453,
+    "m_DisplayName": "Intersection Foam Steps",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Intersection_Foam_Steps",
+    "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "6f6f6a644f984fd9a4e7c28c2db2525e",
     "m_Id": 0,
     "m_DisplayName": "Foam Blending",
@@ -2150,6 +2833,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "74b8d6edae2c47428f1740b2bf0b2965",
+    "m_Id": 0,
+    "m_DisplayName": "Foam Steps",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "76b6c20b81df46c3a46b4d7ea0b120db",
     "m_Group": {
@@ -2179,6 +2877,30 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "SurfaceDescription.Occlusion"
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
+    "m_ObjectId": "76f45c321fdc44fea43cb8865c9d2dc0",
+    "m_Id": 0,
+    "m_DisplayName": "A",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "A",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
 }
 
 {
@@ -2381,6 +3103,24 @@
         "m_SerializableColors": []
     },
     "m_SerializedDescriptor": "VertexDescription.Normal"
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Texture2DInputMaterialSlot",
+    "m_ObjectId": "8152b469a0884cfe81a31d475f2bd351",
+    "m_Id": -1597871166,
+    "m_DisplayName": "Intersection Foam Texture",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Intersection_Foam_Texture",
+    "m_StageCapability": 2,
+    "m_BareResource": false,
+    "m_Texture": {
+        "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
+        "m_Guid": ""
+    },
+    "m_DefaultType": 0
 }
 
 {
@@ -2594,6 +3334,9 @@
             "m_Id": "d5e03d470c80462e987093512ad9a789"
         },
         {
+            "m_Id": "9f0b8ed4f8a04ed09eb75eb4167015a4"
+        },
+        {
             "m_Id": "ffd23c7b8b8946adbb21c2846c035fdc"
         }
     ],
@@ -2615,7 +3358,8 @@
         "370035d0-dc12-421d-8e62-c441b10f9b70",
         "275d27d5-2edf-42a0-95a8-771d6d49876b",
         "3de384c8-7aeb-47fe-ad52-1c824b50244a",
-        "009e7e21-1a32-472b-901e-9dad341198ec"
+        "009e7e21-1a32-472b-901e-9dad341198ec",
+        "59b02d71-df1b-4882-acea-c5b2daf4d148"
     ],
     "m_PropertyIds": [
         -1741677173,
@@ -2627,10 +3371,32 @@
         1145210109,
         319678706,
         -1306133307,
-        112225207
+        112225207,
+        -349770724
     ],
     "m_Dropdowns": [],
     "m_DropdownSelectedEntries": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "8cbe81dffab84e09bc43abdb4003e707",
+    "m_Id": 1288850055,
+    "m_DisplayName": "Vector2",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Vector2",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
 }
 
 {
@@ -2678,6 +3444,33 @@
 {
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "9008e84700844d3cafd0391ce3687872",
+    "m_Guid": {
+        "m_GuidSerialized": "e62d5055-fdc7-4f39-a237-e21f4f78b9d6"
+    },
+    "m_Name": "Intersection Foam Distortion Strength",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Intersection Foam Distortion Strength",
+    "m_DefaultReferenceName": "_Intersection_Foam_Distortion_Strength",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.6000000238418579,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
     "m_ObjectId": "903a34ae2e0c4bbfa53e04c139d01c1e",
     "m_Guid": {
         "m_GuidSerialized": "dd87e491-0204-4208-9f25-6ced0385115a"
@@ -2699,6 +3492,41 @@
     "m_RangeValues": {
         "x": 0.0,
         "y": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "92ad22400b934ead9581a56c65b2bcc4",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -897.0,
+            "y": -1381.0,
+            "width": 205.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "078fb077af5e4f53905c9f8c904f4f4f"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "6a34eefd6aa94d9798fa8ed2d2a88dcd"
     }
 }
 
@@ -2795,6 +3623,21 @@
     "m_Property": {
         "m_Id": "599077f10a41427396a02abea804cfde"
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "9f0b8ed4f8a04ed09eb75eb4167015a4",
+    "m_Id": -349770724,
+    "m_DisplayName": "Foam Steps",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Foam_Steps",
+    "m_StageCapability": 3,
+    "m_Value": 4.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -2962,6 +3805,21 @@
 }
 
 {
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "ae36cf23f7ab4853935d28da5bd7fff5",
+    "m_Id": -133674482,
+    "m_DisplayName": "Intersection Foam Texture Scale",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Intersection_Foam_Texture_Scale",
+    "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
     "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
     "m_ObjectId": "b28a1664c020489d9c463ce09edd7574",
@@ -3063,6 +3921,36 @@
         "b": 0.5,
         "a": 1.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "b66b60d759ca4c5abc37e48a63a592d3",
+    "m_Id": 1001386186,
+    "m_DisplayName": "Intersection Foam Distortion Strength",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Intersection_Foam_Distortion_Strength",
+    "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "b6785985c2574d55bae547c3c3ec3783",
+    "m_Id": 0,
+    "m_DisplayName": "Intersection Foam Distortion Strength",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
 }
 
 {
@@ -3172,6 +4060,41 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "bbdb1205307f4ebc93206e31dc69d09e",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -897.0,
+            "y": -1411.0,
+            "width": 218.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "e0898b4ee98d497885b39412e2dddaac"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "edd1d8400fce402988d234217fe393bf"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "bc23c4b774934b7da7157f28bb93ac77",
     "m_Id": -1741677173,
@@ -3183,6 +4106,33 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "bd06f4e88d194cb0be91cd2358b8255a",
+    "m_Guid": {
+        "m_GuidSerialized": "193ffd09-f835-4702-8673-136fd3e1e754"
+    },
+    "m_Name": "Foam Steps",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Foam Steps",
+    "m_DefaultReferenceName": "_Foam_Steps",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 4.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
 }
 
 {
@@ -3359,6 +4309,31 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
+    "m_ObjectId": "c3fac01b0b30441ea4ba2b4fda5393b3",
+    "m_Id": 0,
+    "m_DisplayName": "Intersection Foam Color",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "c41fa5f1a484470ba6be6d5664c9454a",
     "m_Id": 0,
@@ -3398,6 +4373,153 @@
     "m_ObjectId": "c59735c7c7e849249d6621c98c030e6f",
     "m_Id": 0,
     "m_DisplayName": "Depth Steps",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "cabf7fc0403f4421b55be48ebbb28398",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -897.0,
+            "y": -1561.0,
+            "width": 221.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "e7dbec54fb68465190a106f624135e82"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "133559b1a5fe407882e36f1a2956b4b3"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "ce626891a66343e7a943774db35de2d2",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -897.0,
+            "y": -1351.0,
+            "width": 233.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "47ebf9a812b24c1d92bee02202ae9a39"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "21be05bb066c473e8214b4fbcf2384f5"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "ce8adfd1bb8b4121bebefd87a3fdbe0e",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -897.0,
+            "y": -1531.0,
+            "width": 270.9998779296875,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "b6785985c2574d55bae547c3c3ec3783"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "9008e84700844d3cafd0391ce3687872"
+    }
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "d09c5d4e705140529bf7c5ed6d6476e9",
+    "m_Guid": {
+        "m_GuidSerialized": "88a191c9-9919-44da-8b26-23234246d94b"
+    },
+    "m_Name": "Intersection Foam Steps",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Intersection Foam Steps",
+    "m_DefaultReferenceName": "_Intersection_Foam_Steps",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 3.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "d11184bbb20748e1a8227e3999981495",
+    "m_Id": 0,
+    "m_DisplayName": "Intersection Foam Texture Scale",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -3464,9 +4586,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1114.0,
-            "y": -233.0000457763672,
-            "width": 128.99993896484376,
+            "x": -1044.0,
+            "y": -208.0,
+            "width": 129.0,
             "height": 34.0
         }
     },
@@ -3617,6 +4739,130 @@
 }
 
 {
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "db00c60d20b844fbafea1f3bdcb33c5e",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -897.0,
+            "y": -1471.0,
+            "width": 244.0,
+            "height": 33.9998779296875
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "d11184bbb20748e1a8227e3999981495"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "659295f7edf748cc907aa222daedc113"
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.SubGraphNode",
+    "m_ObjectId": "dbd2f34c41084a4bbb6132e60c876d5c",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "dynamic-intersection-foam",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -526.0,
+            "y": -1594.0001220703125,
+            "width": 362.99993896484377,
+            "height": 494.0001220703125
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "8152b469a0884cfe81a31d475f2bd351"
+        },
+        {
+            "m_Id": "b66b60d759ca4c5abc37e48a63a592d3"
+        },
+        {
+            "m_Id": "2b2e27e0250a4743ad3117dadab467ed"
+        },
+        {
+            "m_Id": "ae36cf23f7ab4853935d28da5bd7fff5"
+        },
+        {
+            "m_Id": "8cbe81dffab84e09bc43abdb4003e707"
+        },
+        {
+            "m_Id": "64df62058c66461d9502c898694480e5"
+        },
+        {
+            "m_Id": "e3ca83579300407ab8da007b33280487"
+        },
+        {
+            "m_Id": "f3f00c288632415998cf6bcc427c9056"
+        },
+        {
+            "m_Id": "6d991b4a1dcb4f2db3c45a60efeacf1d"
+        },
+        {
+            "m_Id": "675081175ad544f1b2f57db4b1d07a17"
+        },
+        {
+            "m_Id": "17b9508377a047d98b677ef362631387"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SerializedSubGraph": "{\n    \"subGraph\": {\n        \"fileID\": -5475051401550479605,\n        \"guid\": \"2c29626246edcf7449abceefb1d87019\",\n        \"type\": 3\n    }\n}",
+    "m_PropertyGuids": [
+        "14902a53-5d58-4eaf-ac6f-a76565735a9f",
+        "e6a7e49a-801b-4872-9b07-abaad093d13f",
+        "d1b89a8a-da58-411e-a0c5-7a2bfed825c4",
+        "c0107034-2047-4ff4-a497-2b93d98dc7e4",
+        "2ed8ffdb-051c-4f94-8eea-f2b8ce5a6c95",
+        "939c5512-7f70-485d-9a2a-a300055d749f",
+        "a09ffe78-2e11-4e0d-a9f5-d0df9d54a7fb",
+        "1c3f3921-57f1-4e7d-b270-d9feaf1168c4",
+        "dbd2d05b-469b-490a-8b75-c11530ce9336",
+        "48132904-9ef4-4e91-9e72-c956050a9566"
+    ],
+    "m_PropertyIds": [
+        -1597871166,
+        1001386186,
+        2147048844,
+        -133674482,
+        1288850055,
+        1142316541,
+        -890932899,
+        1760759757,
+        -1316344453,
+        920571755
+    ],
+    "m_Dropdowns": [],
+    "m_DropdownSelectedEntries": []
+}
+
+{
     "m_SGVersion": 1,
     "m_Type": "UnityEditor.ShaderGraph.Internal.Vector2ShaderProperty",
     "m_ObjectId": "de39cf21256646bc8d9aefdb53d0f53b",
@@ -3672,6 +4918,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "e0898b4ee98d497885b39412e2dddaac",
+    "m_Id": 0,
+    "m_DisplayName": "Intersection Foam Distance",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "e3c3700572a74bb281899c879e4fed53",
     "m_Id": 1,
@@ -3692,6 +4953,21 @@
         "z": 0.0,
         "w": 0.0
     },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "e3ca83579300407ab8da007b33280487",
+    "m_Id": -890932899,
+    "m_DisplayName": "Intersection Foam Cutoff",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Intersection_Foam_Cutoff",
+    "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
     "m_Labels": []
 }
 
@@ -3723,6 +4999,19 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
+    "m_ObjectId": "e7dbec54fb68465190a106f624135e82",
+    "m_Id": 0,
+    "m_DisplayName": "Intersection Foam Texture",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_BareResource": false
 }
 
 {
@@ -3820,6 +5109,33 @@
 }
 
 {
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "edd1d8400fce402988d234217fe393bf",
+    "m_Guid": {
+        "m_GuidSerialized": "67c395e1-d23c-4edb-83cf-53686a1e65bc"
+    },
+    "m_Name": "Intersection Foam Distance",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Intersection Foam Distance",
+    "m_DefaultReferenceName": "_Intersection_Foam_Distance",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 1.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "eebebde3e568448fba1b624ba115235d",
@@ -3877,6 +5193,92 @@
 }
 
 {
+    "m_SGVersion": 3,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
+    "m_ObjectId": "f2cfb0f9bdaf4737aad800cc7590159c",
+    "m_Guid": {
+        "m_GuidSerialized": "274fdcc7-0cd5-46a3-8cb2-aae17282e28b"
+    },
+    "m_Name": "Intersection Foam Color",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Intersection Foam Color",
+    "m_DefaultReferenceName": "_Intersection_Foam_Color",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.0
+    },
+    "isMainColor": false,
+    "m_ColorMode": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "f3f00c288632415998cf6bcc427c9056",
+    "m_Id": 1760759757,
+    "m_DisplayName": "Intersection Foam Border Size",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "_Intersection_Foam_Border_Size",
+    "m_StageCapability": 2,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.AddNode",
+    "m_ObjectId": "f4fcdc14616746d9ba1184bcfdeaf767",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Add",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 1272.0,
+            "y": -830.0000610351563,
+            "width": 208.0001220703125,
+            "height": 302.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "76f45c321fdc44fea43cb8865c9d2dc0"
+        },
+        {
+            "m_Id": "3248e016ab5445fba9afc54c3c5be9d0"
+        },
+        {
+            "m_Id": "5303974aa8f04b35bef4640fb7ae4e0c"
+        }
+    ],
+    "synonyms": [
+        "addition",
+        "sum",
+        "plus"
+    ],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    }
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "f689559dbdc24c42a2a92ae818f11941",
@@ -3889,6 +5291,56 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "fb77c9c565a343aab66bbc0574a44d12",
+    "m_Id": 0,
+    "m_DisplayName": "Intersection Foam Steps",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "fc1f458b97214a51b48e58a75b016ba2",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -897.0,
+            "y": -1321.0,
+            "width": 202.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "0dcf318dd8564a9bbe912d721ad0840b"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "d09c5d4e705140529bf7c5ed6d6476e9"
+    }
 }
 
 {
