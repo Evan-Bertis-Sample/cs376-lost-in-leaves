@@ -40,10 +40,10 @@ namespace LostInLeaves.Components
             switch (_positionModifier)
             {
                 case PositionModifier.Local:
-                    transform.localPosition = new Vector3(_startPosition.x, y, _startPosition.z);
+                    transform.localPosition = new Vector3(_startPosition.x, _startPosition.y + y, _startPosition.z);
                     break;
                 case PositionModifier.World:
-                    transform.position = new Vector3(_startPosition.x, y, _startPosition.z);
+                    transform.position = new Vector3(_startPosition.x, _startPosition.y + y, _startPosition.z);
                     break;
             }
         }
