@@ -90,9 +90,41 @@ namespace CurlyCore.Input
             return _playerDevices[player].GetStatusByPath(path);
         }
 
-        public T ReadInput<T>(string path, int player = 0) where T : struct
+        public T ReadInput<T>(string path, int player = -1) where T : struct
         {
             if (player >= _playerDevices.Count) return default;
+
+            if (player == -1)
+            {
+                foreach (var device in _playerDevices)
+                {
+                    if (device == null) continue;
+                    if (device.GetContextByPath(path).action != null)
+                    {
+                        var context = device.GetContextByPath(path);
+                        if (typeof(T) == typeof(Vector2))
+                        {
+                            var value = context.ReadValue<Vector2>();
+                            if (value.magnitude != 0)
+                            {
+                                return (T)(object)value;
+                            }
+                        }
+                        else if (typeof(T) == typeof(float))
+                        {
+                            var value = context.ReadValue<float>();
+                            if (value != 0)
+                            {
+                                return (T)(object)value;
+                            }
+                        }
+                    }
+                }
+
+                // else return whatever the first player's input is
+                return GetContext(path, 0).ReadValue<T>();
+            }
+
             if (_playerDevices[player] == null) return default;
 
             return GetContext(path, player).ReadValue<T>();
@@ -106,20 +138,60 @@ namespace CurlyCore.Input
             return GetActionStatus(path, player).State == expectedState;
         }
 
-        public bool GetInputDown(string path, int player = 0)
+        public bool GetInputDown(string path, int player = -1)
         {
             if (player >= _playerDevices.Count) return false;
+
+            // If player is -1, check all players, return true if any of them are true
+            if (player == -1)
+            {
+                foreach (var device in _playerDevices)
+                {
+                    if (device == null) continue;
+                    if (device.GetContextByPath(path).action != null)
+                    {
+                        var con = device.GetContextByPath(path);
+                        if (con.action.WasPressedThisFrame())
+                        {
+                            return true;
+                        }
+                    }
+                }
+
+                return false;
+            }
+
             if (_playerDevices[player] == null) return false;
-            
+
             var context = GetContext(path, player);
             if (context.action == null) return false;
-            
+
             return context.action.WasPressedThisFrame();
         }
 
         public bool GetInputUp(string path, int player = 0)
         {
             if (player >= _playerDevices.Count) return false;
+
+            // If player is -1, check all players, return true if any of them are true
+            if (player == -1)
+            {
+                foreach (var device in _playerDevices)
+                {
+                    if (device == null) continue;
+                    if (device.GetContextByPath(path).action != null)
+                    {
+                        var con = device.GetContextByPath(path);
+                        if (con.action.WasReleasedThisFrame())
+                        {
+                            return true;
+                        }
+                    }
+                }
+
+                return false;
+            }
+
             if (_playerDevices[player] == null) return false;
 
             return GetContext(path, player).action.WasReleasedThisFrame();
@@ -128,11 +200,31 @@ namespace CurlyCore.Input
         public bool GetButtonInput(string path, int player = 0)
         {
             if (player >= _playerDevices.Count) return false;
+
+            // If player is -1, check all players, return true if any of them are true
+            if (player == -1)
+            {
+                foreach (var device in _playerDevices)
+                {
+                    if (device == null) continue;
+                    if (device.GetContextByPath(path).action != null)
+                    {
+                        var con = device.GetContextByPath(path);
+                        if (con.action.ReadValue<float>() > 0)
+                        {
+                            return true;
+                        }
+                    }
+                }
+
+                return false;
+            }
+
             if (_playerDevices[player] == null) return false;
 
             return GetContext(path, player).action.ReadValue<float>() > 0;
         }
-        
+
         #region Utilities
         private bool IsInputAssigned(string actionName, string mapName)
         {
