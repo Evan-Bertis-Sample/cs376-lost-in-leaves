@@ -20,7 +20,6 @@ namespace LostInLeaves.Dialogue
         public Vector3 AnchorPosition => DialoguePosition != null ? DialoguePosition.transform.position : transform.position;
         
         private List<DialogueInquirer> _regsteredInquirers = new List<DialogueInquirer>();
-        private GameObject _displayPromptInstance;
 
         public delegate void DialogueEventHandler(string eventName, object[] parameters);
         public event DialogueEventHandler OnDialogueEvent;
@@ -45,7 +44,7 @@ namespace LostInLeaves.Dialogue
             }
 
             // add yourself to nearby DialogueInquirers
-            var colliders = Physics2D.OverlapCircleAll(transform.position, _detectionRadius, _interactableLayer);
+            var colliders = Physics.OverlapSphere(transform.position, _detectionRadius, _interactableLayer);
             foreach (var collider in colliders)
             {
                 var inquirer = collider.GetComponent<DialogueInquirer>();
@@ -55,16 +54,20 @@ namespace LostInLeaves.Dialogue
                     _regsteredInquirers.Add(inquirer);
                 }
             }
-
-            // show display prompt if there are nearby DialogueInquirers
-            _displayPromptInstance.SetActive(_regsteredInquirers.Count > 0);
         }
 
         private bool HasLineOfSight(Transform target)
         {
-            RaycastHit2D hit = Physics2D.Linecast(transform.position, target.position, _obstacleLayer);
-            return hit.collider == null || hit.transform == target; // No obstacle or the obstacle is the target
+            LayerMask mask = ~_obstacleLayer;
+            return Physics.Linecast(transform.position, target.position, mask);
         }
 
+        private void OnDrawGizmos()
+        {
+            // Draw detection radius
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, _detectionRadius);
+            Gizmos.color = Color.white;
+        }
     }
 }

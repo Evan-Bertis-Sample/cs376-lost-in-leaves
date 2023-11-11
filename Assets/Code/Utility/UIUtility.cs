@@ -8,14 +8,13 @@ namespace CurlyUtility
 {
     public static class UIUtility
     {
-        public static GameObject SpawnTextBoxUI(Vector3 worldPosition, TMPDrawer drawer, Canvas to, out TextMeshProUGUI tmproUI, out RectTransform rectTransform, string text = "", Canvas canvas = null)
+        public static GameObject SpawnTextBoxUI(Vector3 worldPosition, TMPDrawer drawer, Canvas canvas, out TextMeshProUGUI tmproUI, out RectTransform rectTransform, string text = "")
         {
             Debug.Log("spawning text box");
             GameObject textObject = new GameObject("Textbox");
             rectTransform = textObject.AddComponent<RectTransform>();
             rectTransform.position = WorldToCanvasSpace(worldPosition);
-            if (canvas != null) rectTransform.parent = to.GetComponent<Transform>();
-            else rectTransform.parent = canvas.transform;
+            rectTransform.SetParent(canvas.transform);
             tmproUI = textObject.AddComponent<TextMeshProUGUI>();
             drawer.ApplySettings(tmproUI);
             tmproUI.text = text;

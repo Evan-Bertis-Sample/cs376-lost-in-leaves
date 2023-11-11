@@ -1,3 +1,4 @@
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using CurlyCore.Input;
@@ -8,7 +9,9 @@ namespace LostInLeaves.Dialogue
 {
     public static class Typewriter
     {
-        public static async Task ApplyTo(TextMeshProUGUI textMesh, string text, float charactersPerSecond, CancellationToken token = default, InputManager inputManager = null, string inputPrompt = null)
+        public static async Task ApplyTo(TMP_Text textMesh, string text, float charactersPerSecond, 
+                                        CancellationToken token = default, InputManager inputManager = null, string inputPrompt = null,
+                                        Action onReveal = null)
         {
             textMesh.text = "";
             var characterDelay = 1f / charactersPerSecond;
@@ -22,6 +25,7 @@ namespace LostInLeaves.Dialogue
                 }
 
                 textMesh.text += text[i];
+                onReveal?.Invoke();
                 await Task.Delay((int)(characterDelay * 1000), token);
             }
         }

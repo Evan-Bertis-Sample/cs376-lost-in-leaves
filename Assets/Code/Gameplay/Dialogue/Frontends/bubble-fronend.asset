@@ -12,3 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d481d2e23df2d9c408ffd52ddcc56c56, type: 3}
   m_Name: bubble-fronend
   m_EditorClassIdentifier: 
+  _speechBubblePrefab: {fileID: 3893873122643066893, guid: ac9d73ecc996bfc4f834d66556bc3858, type: 3}
+  _charactersPerSecond: 30
+  _continuePrompt: Player/Interact
+  _anchorOffset: {x: 0, y: 1.5, z: 0}

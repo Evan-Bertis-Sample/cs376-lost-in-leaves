@@ -46,11 +46,13 @@ namespace LostInLeaves.Dialogue
 
         public void RegisterEmitter(DialogueEmitter emitter)
         {
+            Debug.Log("Registering emitter");
             _emittersInRange.Add(emitter);
         }
 
         public void UnregisterEmitter(DialogueEmitter emitter)
         {
+            Debug.Log("Unregistering emitter");
             _emittersInRange.Remove(emitter);
         }
 
