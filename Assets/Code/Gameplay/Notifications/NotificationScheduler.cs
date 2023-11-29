@@ -1,5 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using CurlyCore;
+using CurlyCore.CurlyApp;
+using CurlyUtility;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -197,7 +200,21 @@ namespace LostInLeaves.Notifications
 
         }
 
+        private enum NotificationFrontendState
+        {
+            Closed, Open, Displaying
+        }
+
+        [GlobalDefault] private CoroutineRunner _coroutineRunner = null;
         private NotificationSchedule _notificationSchedule = new NotificationSchedule();
+        private Dictionary<INotificationFrontend, NotificationFrontendState> _frontendStates = new Dictionary<INotificationFrontend, NotificationFrontendState>();
+        // threads to manage the display of notifications; one for each frontend
+        private Dictionary<INotificationFrontend, Coroutine> _notificationDisplayThreads = new Dictionary<INotificationFrontend, Coroutine>();
+
+        public NotificationScheduler()
+        {
+            DependencyInjector.InjectDependencies(this);
+        }
 
         public void PushNotification(Notification notification, INotificationFrontend frontend)
         {
@@ -206,7 +223,66 @@ namespace LostInLeaves.Notifications
 
         public void DisplayNotifications()
         {
+            // oki so lets grab all the notifications that we can display
+            List<(Notification, INotificationFrontend)> notificationTuples = _notificationSchedule.GetNext(); // this will promote queued notifications to active notifications as well
 
+            // now we need to display them
+            foreach (var (notification, frontend) in notificationTuples)
+            {
+                RunNotifications(frontend);
+            }
+        }
+
+        private void RunNotifications(INotificationFrontend frontend)
+        {
+            if (_frontendStates.ContainsKey(frontend) && _frontendStates[frontend] >= NotificationFrontendState.Open) // if the frontend is already open or displaying, we don't need to do anything
+            {
+                return;
+            }
+
+            // update the state of the frontend
+            _frontendStates[frontend] = NotificationFrontendState.Open;
+            // now we need to start the thread that will manage the display of notifications for this frontend
+            _notificationDisplayThreads[frontend] = _coroutineRunner.StartCoroutine(DisplayNotifications(frontend));
+        }
+
+        IEnumerator DisplayNotifications(INotificationFrontend frontend)
+        {
+            // open the frontend
+            yield return TaskUtility.TaskAsCoroutine(frontend.BeginNotificationStream());
+
+            while (true)
+            {
+                List<Notification> notifications = _notificationSchedule.GetAllNotificationsForFrontend(frontend);
+
+                if (notifications.Count == 0)
+                {
+                    yield return new WaitForSeconds(frontend.WaitTime);
+
+                    // check again
+                    notifications = _notificationSchedule.GetAllNotificationsForFrontend(frontend);
+                    // if there are still no notifications, close the frontend
+                    if (notifications.Count == 0)
+                    {
+                        break;
+                    }
+                }
+
+                // update the state of the frontend
+                _frontendStates[frontend] = NotificationFrontendState.Displaying; // this will tell the rest of the system that this frontend is currently displaying notifications
+
+                // we have things to display!!!
+                foreach (var notification in notifications)
+                {
+                    yield return TaskUtility.TaskAsCoroutine(frontend.DisplayNotification(notification));
+                    
+                    // tell the scheduler that this notification has been displayed
+                    _notificationSchedule.CloseActiveNotification(frontend, notification);
+                }
+            }
+
+            // close the frontend
+            yield return TaskUtility.TaskAsCoroutine(frontend.EndNotificationStream());
         }
     }
 }

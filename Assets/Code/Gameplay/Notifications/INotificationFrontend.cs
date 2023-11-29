@@ -9,6 +9,7 @@ namespace LostInLeaves.Notifications
     {
         bool AllowMultipleNotifications { get; set; } // Whether to allow multiple notifications to be displayed at once
         bool MustBeAlone { get; set; } // Whether this notification frontend should be shown alone, even if other notifications are queued
+        float WaitTime { get; set; } // How long to wait befor closing the frontend after the last notification is displayed
         
         /// <summary>
         /// Called at the start of a series of notifications
@@ -36,6 +37,7 @@ namespace LostInLeaves.Notifications
     {
         public bool AllowMultipleNotifications { get; set; } = false;
         public bool MustBeAlone { get; set; } = false;
+        public float WaitTime { get; set; } = 0f;
         
         public virtual async Task BeginNotificationStream() {}
         public virtual async Task DisplayNotification(Notification notification) {}

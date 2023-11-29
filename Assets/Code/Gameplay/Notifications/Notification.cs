@@ -11,8 +11,8 @@ namespace LostInLeaves.Notifications
         public string Body { get; set; } // The text of the notification
         public float Delay { get; set; } = 0f; // How long to wait before showing the notification
         public float Duration { get; set; } = 5f; // How long to show the notification
-        public bool RequireManualDismissal {get; set;} = false; // Whether the notification has to be dismissed by the user
-        
+        // public bool RequireManualDismissal {get; set;} = false; // Whether the notification has to be dismissed by the user
+
         public Dictionary<string, object> NotificationData { get; set; } = new Dictionary<string, object>(); // Any additional data you want to pass to the notification
 
         public Notification(string body)
