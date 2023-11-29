@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace LostInLeaves.Notifications
 {
-    public static class NotificationBuider
+    public static class NotificationBuilder
     {
         /// <summary>
         /// Builds a notification for a phone call
