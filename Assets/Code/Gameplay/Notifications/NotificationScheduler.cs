@@ -239,7 +239,12 @@ namespace LostInLeaves.Notifications
             {
                 return;
             }
-
+            // if the frontend is closed, stop the thread that was managing it
+            if (_frontendStates.ContainsKey(frontend) && _frontendStates[frontend] == NotificationFrontendState.Closed)
+            {
+                _coroutineRunner.StopCoroutine(_notificationDisplayThreads[frontend]);
+            }
+            
             // update the state of the frontend
             _frontendStates[frontend] = NotificationFrontendState.Open;
             // now we need to start the thread that will manage the display of notifications for this frontend
