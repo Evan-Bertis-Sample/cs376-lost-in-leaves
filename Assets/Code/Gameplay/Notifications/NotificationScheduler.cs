@@ -205,7 +205,7 @@ namespace LostInLeaves.Notifications
             Closed, Open, Displaying
         }
 
-        [GlobalDefault] private CoroutineRunner _coroutineRunner = null;
+        private CoroutineRunner _coroutineRunner => App.Instance.CoroutineRunner;
         private NotificationSchedule _notificationSchedule = new NotificationSchedule();
         private Dictionary<INotificationFrontend, NotificationFrontendState> _frontendStates = new Dictionary<INotificationFrontend, NotificationFrontendState>();
         // threads to manage the display of notifications; one for each frontend
@@ -213,7 +213,7 @@ namespace LostInLeaves.Notifications
 
         public NotificationScheduler()
         {
-            DependencyInjector.InjectDependencies(this);
+            // DependencyInjector.InjectDependencies(this);
         }
 
         public void PushNotification(Notification notification, INotificationFrontend frontend)
@@ -221,7 +221,7 @@ namespace LostInLeaves.Notifications
             _notificationSchedule.QueueNotification(notification, frontend);
         }
 
-        public void DisplayNotifications()
+        public void HandleNotifications()
         {
             // oki so lets grab all the notifications that we can display
             List<(Notification, INotificationFrontend)> notificationTuples = _notificationSchedule.GetNext(); // this will promote queued notifications to active notifications as well
@@ -244,7 +244,7 @@ namespace LostInLeaves.Notifications
             {
                 _coroutineRunner.StopCoroutine(_notificationDisplayThreads[frontend]);
             }
-            
+
             // update the state of the frontend
             _frontendStates[frontend] = NotificationFrontendState.Open;
             // now we need to start the thread that will manage the display of notifications for this frontend

@@ -18,6 +18,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e5df7ba6ef7663a41a3ae3af553e0b6a, type: 2}
   - {fileID: 11400000, guid: d577fc83f5d8456478e3ae9f4d50ee27, type: 2}
   - {fileID: 11400000, guid: c707d80cd9aacc945805a953469db9c4, type: 2}
+  - {fileID: 11400000, guid: 6bdd9d1c4553bba40ab3e19e879cee8d, type: 2}
   <SceneMaster>k__BackingField: {fileID: 11400000, guid: 3f20d00c5830d844faefde26c913202a, type: 2}
   <InputManager>k__BackingField: {fileID: 11400000, guid: 050b6b33eb36bcb42bb2174f81fb20e3, type: 2}
   <Logger>k__BackingField: {fileID: 11400000, guid: e5df7ba6ef7663a41a3ae3af553e0b6a, type: 2}
@@ -28,4 +29,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c707d80cd9aacc945805a953469db9c4, type: 2}
   - {fileID: 11400000, guid: 3f20d00c5830d844faefde26c913202a, type: 2}
   - {fileID: 11400000, guid: d577fc83f5d8456478e3ae9f4d50ee27, type: 2}
+  - {fileID: 11400000, guid: 6bdd9d1c4553bba40ab3e19e879cee8d, type: 2}
   PersistentObjects: []

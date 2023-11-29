@@ -56,10 +56,10 @@ namespace CurlyCore.CurlyApp
                 return Task.CompletedTask;
             }
 
+            SpawnCoroutineMaster();
             RegisterDefaults();
             HandleBooters();
             DressScene();
-            SpawnCoroutineMaster();
 
             return Task.CompletedTask;
         }
