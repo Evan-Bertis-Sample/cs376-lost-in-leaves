@@ -15,7 +15,7 @@ namespace LostInLeaves.Notifications
     /// </summary>
     public class NotificationScheduler
     {
-        internal class NotificationSchedule
+        public class NotificationSchedule
         {
             private Dictionary<INotificationFrontend, Queue<Notification>> _queuedNotificationsByFrontend = new Dictionary<INotificationFrontend, Queue<Notification>>();
             private Dictionary<INotificationFrontend, List<Notification>> _activeNotificationsByFrontend = new Dictionary<INotificationFrontend, List<Notification>>();
@@ -61,7 +61,7 @@ namespace LostInLeaves.Notifications
                     {
                         return new List<(Notification, INotificationFrontend)>();
                     }
-                }   
+                }
 
                 // there are no active notification that must be alone, check if there is a frontend with queued notifications that must be alone
                 foreach (var (frontend, notificationQueue) in _queuedNotificationsByFrontend)
@@ -193,6 +193,16 @@ namespace LostInLeaves.Notifications
                 return notifications;
             }
 
+            public IReadOnlyDictionary<INotificationFrontend, Queue<Notification>> GetQueuedNotifications()
+            {
+                return _queuedNotificationsByFrontend;
+            }
+
+            public IReadOnlyDictionary<INotificationFrontend, List<Notification>> GetActiveNotifications()
+            {
+                return _activeNotificationsByFrontend;
+            }
+
             public bool HasQueuedNotificationsForFrontend(INotificationFrontend frontend)
             {
                 return GetQueuedNotificationsForFrontend(frontend).Count > 0;
@@ -205,8 +215,9 @@ namespace LostInLeaves.Notifications
             Closed, Open, Displaying
         }
 
+        public NotificationSchedule Schedule { get; private set; } = new NotificationSchedule();
+
         private CoroutineRunner _coroutineRunner => App.Instance.CoroutineRunner;
-        private NotificationSchedule _notificationSchedule = new NotificationSchedule();
         private Dictionary<INotificationFrontend, NotificationFrontendState> _frontendStates = new Dictionary<INotificationFrontend, NotificationFrontendState>();
         // threads to manage the display of notifications; one for each frontend
         private Dictionary<INotificationFrontend, Coroutine> _notificationDisplayThreads = new Dictionary<INotificationFrontend, Coroutine>();
@@ -218,13 +229,13 @@ namespace LostInLeaves.Notifications
 
         public void PushNotification(Notification notification, INotificationFrontend frontend)
         {
-            _notificationSchedule.QueueNotification(notification, frontend);
+            Schedule.QueueNotification(notification, frontend);
         }
 
         public void HandleNotifications()
         {
             // oki so lets grab all the notifications that we can display
-            List<(Notification, INotificationFrontend)> notificationTuples = _notificationSchedule.GetNext(); // this will promote queued notifications to active notifications as well
+            List<(Notification, INotificationFrontend)> notificationTuples = Schedule.GetNext(); // this will promote queued notifications to active notifications as well
 
             // now we need to display them
             foreach (var (notification, frontend) in notificationTuples)
@@ -258,14 +269,14 @@ namespace LostInLeaves.Notifications
 
             while (true)
             {
-                List<Notification> notifications = _notificationSchedule.GetAllNotificationsForFrontend(frontend);
+                List<Notification> notifications = Schedule.GetAllNotificationsForFrontend(frontend);
 
                 if (notifications.Count == 0)
                 {
                     yield return new WaitForSeconds(frontend.WaitTime);
 
                     // check again
-                    notifications = _notificationSchedule.GetAllNotificationsForFrontend(frontend);
+                    notifications = Schedule.GetAllNotificationsForFrontend(frontend);
                     // if there are still no notifications, close the frontend
                     if (notifications.Count == 0)
                     {
@@ -280,9 +291,9 @@ namespace LostInLeaves.Notifications
                 foreach (var notification in notifications)
                 {
                     yield return TaskUtility.TaskAsCoroutine(frontend.DisplayNotification(notification));
-                    
+
                     // tell the scheduler that this notification has been displayed
-                    _notificationSchedule.CloseActiveNotification(frontend, notification);
+                    Schedule.CloseActiveNotification(frontend, notification);
                 }
             }
 

@@ -10,14 +10,15 @@ namespace LostInLeaves.Notifications
     [CreateAssetMenu(fileName = "NotificationManager", menuName = "Lost In Leaves/Notifications/Notification Manager")]
     public class NotificationManager : RuntimeScriptableObject
     {
+        public NotificationScheduler Scheduler;
+        [SerializeField] private bool _debug;
+        
         private CoroutineRunner _coroutineRunner => App.Instance.CoroutineRunner;
-
-        private static NotificationScheduler _scheduler;
         private static bool _shouldListen = true;
 
         public override void OnBoot(App app, Scene startingScene)
         {
-            _scheduler = new NotificationScheduler();
+            Scheduler = new NotificationScheduler();
             _coroutineRunner.StartCoroutine(Listen());
         }
 
@@ -31,15 +32,16 @@ namespace LostInLeaves.Notifications
         {
             while (Application.isPlaying && _shouldListen)
             {
-                Debug.Log("Listening for notifications");
-                _scheduler.HandleNotifications();
+                Scheduler.HandleNotifications();
                 yield return null;
             }
         }
 
         public void PushNotification(Notification notification, INotificationFrontend frontend)
         {
-            _scheduler.PushNotification(notification, frontend);
+            if (_debug) Debug.Log($"NotificationManager: Pushing notification: {notification.Body}");
+
+            Scheduler.PushNotification(notification, frontend);
         }
 
         public void Start()
