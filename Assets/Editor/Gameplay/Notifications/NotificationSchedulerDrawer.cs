@@ -54,9 +54,11 @@ namespace CurlyCore
 
                 EditorGUILayout.BeginHorizontal("Box");
                 EditorGUILayout.LabelField(frontend.ToString());
+                GUILayout.FlexibleSpace();
                 (GUIContent content, Color statusColor) = GetStateContent(state);
+                float width = EditorStyles.label.CalcSize(content).x;
                 GUI.color = statusColor;
-                EditorGUILayout.LabelField(content);
+                EditorGUILayout.LabelField(content, GUILayout.Width(width));
                 GUI.color = Color.white;
                 EditorGUILayout.EndHorizontal();
             }
@@ -80,7 +82,7 @@ namespace CurlyCore
                 case NotificationScheduler.NotificationFrontendState.Open:
                     iconName = "d_winbtn_mac_max";
                     statusText = "Open";
-                    statusColor = Color.green;
+                    statusColor = Color.yellow;
                     break;
                 case NotificationScheduler.NotificationFrontendState.Closed:
                     iconName = "d_winbtn_mac_close";
@@ -90,13 +92,13 @@ namespace CurlyCore
                 case NotificationScheduler.NotificationFrontendState.Displaying:
                     iconName = "d_winbtn_mac_inact";
                     statusText = "Displaying";
-                    statusColor = Color.yellow;
+                    statusColor = Color.green;
                     break;
             }
 
             // Create the guicontent
             Texture icon = EditorGUIUtility.IconContent(iconName).image;
-            GUIContent content = new GUIContent(icon, statusText);
+            GUIContent content = new GUIContent(statusText, icon);
 
             return (content, statusColor);
         }

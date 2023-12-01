@@ -5,7 +5,6 @@ using CurlyCore;
 using CurlyCore.CurlyApp;
 using CurlyUtility;
 using UnityEngine;
-using UnityEngine.Playables;
 
 namespace LostInLeaves.Notifications
 {
@@ -20,7 +19,6 @@ namespace LostInLeaves.Notifications
         {
             private Dictionary<INotificationFrontend, Queue<Notification>> _queuedNotificationsByFrontend = new Dictionary<INotificationFrontend, Queue<Notification>>();
             private Dictionary<INotificationFrontend, List<Notification>> _activeNotificationsByFrontend = new Dictionary<INotificationFrontend, List<Notification>>();
-
             /// <summary>
             /// Queues a notification to be displayed by the given frontend
             /// </summary>
@@ -60,6 +58,7 @@ namespace LostInLeaves.Notifications
                 {
                     if (frontend.MustBeAlone && notificationList.Count > 0)
                     {
+                        Debug.Log($"NotificationScheduler: No next set, {frontend} must be alone, and is currently displaying a notification");
                         return new List<(Notification, INotificationFrontend)>();
                     }
                 }
@@ -79,6 +78,7 @@ namespace LostInLeaves.Notifications
                             notificationTuples.Add((notification, frontend));
                         }
 
+                        Debug.Log($"NotificationScheduler: Returning next set, {frontend} must be alone, and has queued notifications");
                         return notificationTuples;
                     }
                 }
@@ -87,7 +87,7 @@ namespace LostInLeaves.Notifications
                 // and return all of them in the form of tuples
                 List<(Notification, INotificationFrontend)> activeNotificationTuples = new List<(Notification, INotificationFrontend)>();
 
-                foreach (var (frontend, notificationList) in _activeNotificationsByFrontend)
+                foreach (var (frontend, notificationList) in _queuedNotificationsByFrontend)
                 {
                     List<Notification> availableNotifications = GetQueuedNotifications(frontend);
 
@@ -97,26 +97,30 @@ namespace LostInLeaves.Notifications
                     }
                 }
 
+                Debug.Log($"NotificationScheduler: Returning next set, no notifications must be alone, and there are {(activeNotificationTuples.Count > 0 ? "queued" : "no queued")} notifications");
                 return activeNotificationTuples;
             }
 
             private List<Notification> GetQueuedNotifications(INotificationFrontend frontend)
             {
                 List<Notification> notifications = new List<Notification>();
-
+                Debug.Log($"NotificationScheduler: Grabbing queued notifications for {frontend}");
                 if (!_queuedNotificationsByFrontend.ContainsKey(frontend) || _queuedNotificationsByFrontend[frontend].Count == 0)
                 {
+                    Debug.Log($"NotificationScheduler: No queued notifications for {frontend}");
                     return notifications;
                 }
 
                 if (frontend.AllowMultipleNotifications)
                 {
                     // Grab all the queued notifications for this frontend
+                    Debug.Log($"NotificationScheduler: Grabbing all queued notifications for {frontend}");
                     notifications.AddRange(_queuedNotificationsByFrontend[frontend]);
                 }
                 else
                 {
                     // Grab the first queued notification for this frontend
+                    Debug.Log($"NotificationScheduler: Grabbing first queued notification for {frontend}");
                     notifications.Add(_queuedNotificationsByFrontend[frontend].Peek());
                 }
 
@@ -216,6 +220,7 @@ namespace LostInLeaves.Notifications
             Closed, Open, Displaying
         }
 
+        public bool DebugMessages = false;
         public NotificationSchedule Schedule { get; private set; } = new NotificationSchedule();
         public List<INotificationFrontend> NotificationFrontends => _frontendStates.Keys.ToList();
         public int ThreadCount => _notificationDisplayThreads.Count;
@@ -269,6 +274,7 @@ namespace LostInLeaves.Notifications
                 _coroutineRunner.StopCoroutine(_notificationDisplayThreads[frontend]);
             }
 
+            if (DebugMessages) UnityEngine.Debug.Log($"Opening {frontend}"); // TODO: remove this
             // update the state of the frontend
             _frontendStates[frontend] = NotificationFrontendState.Open;
             // now we need to start the thread that will manage the display of notifications for this frontend

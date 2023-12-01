@@ -32,6 +32,7 @@ namespace LostInLeaves.Notifications
         {
             while (Application.isPlaying && _shouldListen)
             {
+                Scheduler.DebugMessages = _debug;
                 Scheduler.HandleNotifications();
                 yield return null;
             }

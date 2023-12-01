@@ -35,9 +35,10 @@ namespace LostInLeaves.Notifications
 
     public abstract class NotificationFrontendObject : ScriptableObject, INotificationFrontend
     {
-        public bool AllowMultipleNotifications { get; set; } = false;
-        public bool MustBeAlone { get; set; } = false;
-        public float WaitTime { get; set; } = 0f;
+        [field: Header("Notification Display Options")]
+        [field: SerializeField] public bool AllowMultipleNotifications { get; set; } = false;
+        [field: SerializeField] public bool MustBeAlone { get; set; } = false;
+        [field: SerializeField] public float WaitTime { get; set; } = 0f;
         
         public virtual async Task BeginNotificationStream() {}
         public virtual async Task DisplayNotification(Notification notification) {}

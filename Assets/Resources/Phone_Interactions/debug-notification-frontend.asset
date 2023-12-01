@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47126e5c43348054dbc2da417159fe88, type: 3}
   m_Name: debug-notification-frontend
   m_EditorClassIdentifier: 
+  <AllowMultipleNotifications>k__BackingField: 0
+  <MustBeAlone>k__BackingField: 0
+  <WaitTime>k__BackingField: 0
   _logNotifications: 1
