@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using CurlyCore;
 using CurlyCore.CurlyApp;
 using CurlyUtility;
@@ -210,12 +211,14 @@ namespace LostInLeaves.Notifications
 
         }
 
-        private enum NotificationFrontendState
+        public enum NotificationFrontendState
         {
             Closed, Open, Displaying
         }
 
         public NotificationSchedule Schedule { get; private set; } = new NotificationSchedule();
+        public List<INotificationFrontend> NotificationFrontends => _frontendStates.Keys.ToList();
+        public int ThreadCount => _notificationDisplayThreads.Count;
 
         private CoroutineRunner _coroutineRunner => App.Instance.CoroutineRunner;
         private Dictionary<INotificationFrontend, NotificationFrontendState> _frontendStates = new Dictionary<INotificationFrontend, NotificationFrontendState>();
@@ -242,6 +245,16 @@ namespace LostInLeaves.Notifications
             {
                 RunNotifications(frontend);
             }
+        }
+
+        public NotificationFrontendState GetFrontendState(INotificationFrontend frontend)
+        {
+            if (!_frontendStates.ContainsKey(frontend))
+            {
+                return NotificationFrontendState.Closed;
+            }
+
+            return _frontendStates[frontend];
         }
 
         private void RunNotifications(INotificationFrontend frontend)

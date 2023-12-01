@@ -92,6 +92,7 @@ namespace LostInLeavesEditor.Notifications
                 // Show some information about the frontend
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.Toggle("Multiple", pair.Key.AllowMultipleNotifications);
+                EditorGUILayout.Space();
                 EditorGUILayout.Toggle("Alone", pair.Key.MustBeAlone);
                 EditorGUILayout.EndHorizontal();
 
