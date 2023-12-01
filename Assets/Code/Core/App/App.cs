@@ -66,7 +66,7 @@ namespace CurlyCore.CurlyApp
 
         public void RegisterDefaults()
         {
-            Debug.Log("Registering defaults...");
+            // Debug.Log("Registering defaults...");
             foreach (ScriptableObject so in _config.GlobalDefaultSystems)
             {
                 Type soType = so.GetType();

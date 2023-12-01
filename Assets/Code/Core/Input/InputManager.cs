@@ -45,7 +45,7 @@ namespace CurlyCore.Input
         }
         public void JoinDeviceSet(params InputDevice[] devices)
         {
-            Debug.Log("Joining Device");
+            // Debug.Log("Joining Device");
             InputActionAsset assetClone = Instantiate(MasterActionAsset);
             DeviceInputHandler handler = new DeviceInputHandler(assetClone, devices);
             _devices.Add(handler);
@@ -60,7 +60,7 @@ namespace CurlyCore.Input
 
             if (_playerDevices.Contains(handler)) return;
 
-            Debug.Log("Joining Player");
+            // Debug.Log("Joining Player");
             _playerDevices.Add(handler);
 
             ParsePath(_exitButton, out string disconnectMap, out string disconnectActionName);
