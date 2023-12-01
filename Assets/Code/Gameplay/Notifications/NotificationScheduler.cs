@@ -193,12 +193,12 @@ namespace LostInLeaves.Notifications
                 return notifications;
             }
 
-            public IReadOnlyDictionary<INotificationFrontend, Queue<Notification>> GetQueuedNotifications()
+            public Dictionary<INotificationFrontend, Queue<Notification>> GetQueuedNotifications()
             {
                 return _queuedNotificationsByFrontend;
             }
 
-            public IReadOnlyDictionary<INotificationFrontend, List<Notification>> GetActiveNotifications()
+            public Dictionary<INotificationFrontend, List<Notification>> GetActiveNotifications()
             {
                 return _activeNotificationsByFrontend;
             }
