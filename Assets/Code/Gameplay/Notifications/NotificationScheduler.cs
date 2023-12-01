@@ -151,6 +151,7 @@ namespace LostInLeaves.Notifications
                 Notification notification = _queuedNotificationsByFrontend[frontend].Dequeue();
                 _activeNotificationsByFrontend[frontend].Add(notification);
 
+                // remove from the queue
                 return notification;
             }
 
@@ -229,6 +230,7 @@ namespace LostInLeaves.Notifications
         private Dictionary<INotificationFrontend, NotificationFrontendState> _frontendStates = new Dictionary<INotificationFrontend, NotificationFrontendState>();
         // threads to manage the display of notifications; one for each frontend
         private Dictionary<INotificationFrontend, Coroutine> _notificationDisplayThreads = new Dictionary<INotificationFrontend, Coroutine>();
+        private HashSet<INotificationFrontend> _frontendsToClose = new HashSet<INotificationFrontend>();
 
         public NotificationScheduler()
         {
@@ -250,6 +252,17 @@ namespace LostInLeaves.Notifications
             {
                 RunNotifications(frontend);
             }
+
+            // now we need to close any frontends that are no longer displaying notifications
+            foreach (var frontend in _frontendsToClose)
+            {
+                if (DebugMessages) Debug.Log($"Closing {frontend}"); // TODO: remove this
+                Coroutine thread = _notificationDisplayThreads[frontend];
+                _coroutineRunner.StopCoroutine(thread);
+                _frontendStates.Remove(frontend);
+                _notificationDisplayThreads.Remove(frontend);
+            }
+            _frontendsToClose.Clear();
         }
 
         public NotificationFrontendState GetFrontendState(INotificationFrontend frontend)
@@ -316,6 +329,9 @@ namespace LostInLeaves.Notifications
                 }
             }
 
+            // update the state of the frontend
+            _frontendStates[frontend] = NotificationFrontendState.Closed; // this will tell the rest of the system that this frontend is currently closed
+            _frontendsToClose.Add(frontend);
             // close the frontend
             yield return TaskUtility.TaskAsCoroutine(frontend.EndNotificationStream());
         }
