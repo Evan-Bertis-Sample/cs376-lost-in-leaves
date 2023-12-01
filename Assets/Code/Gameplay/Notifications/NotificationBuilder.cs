@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using LostInLeaves.Notifications.Frontend;
 using UnityEngine;
 
 namespace LostInLeaves.Notifications
@@ -26,7 +27,8 @@ namespace LostInLeaves.Notifications
                 .AddProperty("pickupDelay", pickupDelay)
                 .AddProperty("conversationDialoguePath", conversationDialoguePath)
                 .AddProperty("reactionPath", phoneCallReactionPath)
-                .AddProperty("reactionDelay", reactionDelay);
+                .AddProperty("reactionDelay", reactionDelay)
+                .AddProperty("type", PhoneRenderer.PhoneScreen.Call);
             return notification;
         }
 
@@ -43,7 +45,8 @@ namespace LostInLeaves.Notifications
                 .AddProperty("contact", contact)
                 .AddProperty("message", message)
                 .AddProperty("reactionPath", playerReactionPath)
-                .AddProperty("reactionDelay", reactionDelay);
+                .AddProperty("reactionDelay", reactionDelay)
+                .AddProperty("type", PhoneRenderer.PhoneScreen.Text);
             return notification;
         }
     }

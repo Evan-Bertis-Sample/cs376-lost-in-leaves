@@ -301,6 +301,7 @@ namespace LostInLeaves.Notifications
 
             while (true)
             {
+                
                 List<Notification> notifications = Schedule.GetAllNotificationsForFrontend(frontend);
 
                 if (notifications.Count == 0)

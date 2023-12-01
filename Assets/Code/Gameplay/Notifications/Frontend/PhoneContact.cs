@@ -9,5 +9,6 @@ namespace LostInLeaves.Notifications
     {
         [field: SerializeField] public string Name { get; private set; }
         [field: SerializeField] public Sprite ContactPhoto { get; private set; }
+        [field: SerializeField] public string PhoneNumber { get; private set; }
     }
 }
