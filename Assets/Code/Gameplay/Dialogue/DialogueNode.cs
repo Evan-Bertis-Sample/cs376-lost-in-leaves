@@ -7,6 +7,7 @@ namespace LostInLeaves.Dialogue
     public class DialogueNode
     {
         public enum NodeType { Content, Branch, Option, Event, Exit }
+        public string Speaker { get; private set; }
         public NodeType Type { get; private set; }
         public string Content { get; private set; }
         public List<object> Parameters { get; private set; }
@@ -14,8 +15,9 @@ namespace LostInLeaves.Dialogue
         public DialogueNode Parent { get; private set; }
         public bool IsMeta { get; private set; }
 
-        public DialogueNode(string content, List<DialogueNode> children, DialogueNode parent = null)
+        public DialogueNode(string speaker, string content, List<DialogueNode> children, DialogueNode parent = null)
         {
+            Speaker = speaker;
             Type = NodeType.Content;
             Content = content; // if this is a meta node, this is the command
             Children = children;

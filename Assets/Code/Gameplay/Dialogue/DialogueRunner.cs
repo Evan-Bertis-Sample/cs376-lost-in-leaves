@@ -12,7 +12,7 @@ namespace LostInLeaves.Dialogue
         public static event DialogueEventHandler OnDialogueEvent;
 
 
-        public static DialogueTree BuildDialogueTree(string path)
+        public static DialogueTree BuildDialogueTree(string path, string defaultSpeaker)
         {
             Debug.Log($"DialogueRunner : Building dialogue tree from '{path}'"); // Log the path of the dialogue tree
             string actualPath = path.Replace("Assets/Resources/", "");
@@ -20,7 +20,7 @@ namespace LostInLeaves.Dialogue
             // Initialize and load dialogue tree
             if (!string.IsNullOrEmpty(actualPath))
             {
-                DialogueTree dialogueTree = new DialogueTree(actualPath);
+                DialogueTree dialogueTree = new DialogueTree(actualPath, defaultSpeaker);
                 return dialogueTree;
             }
 
@@ -30,7 +30,7 @@ namespace LostInLeaves.Dialogue
         public static IEnumerator RunDialogueCoroutine(DialogueEmitter emitter)
         {
             IDialogueFrontend frontend = emitter.DialogueFrontend;
-            DialogueTree tree = BuildDialogueTree(emitter.DialoguePath);
+            DialogueTree tree = BuildDialogueTree(emitter.DialoguePath, emitter.name);
             DialogueNode node = tree.Root;
 
             if (tree == null || frontend == null)

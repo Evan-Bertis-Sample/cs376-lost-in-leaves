@@ -10,12 +10,12 @@ namespace LostInLeaves.Dialogue
     {
         public DialogueNode Root { get; private set; }
 
-        public DialogueTree(string textFileName)
+        public DialogueTree(string textFileName, string defaultSpeaker)
         {
-            BuildDialogueTree(textFileName);
+            BuildDialogueTree(textFileName, defaultSpeaker);
         }
 
-        private void BuildDialogueTree(string textFileName)
+        private void BuildDialogueTree(string textFileName, string defaultSpeaker)
         {
             Debug.Log("Attempting to load dialogue tree from " + textFileName + ".");
             TextAsset textAsset = Resources.Load<TextAsset>(textFileName);
@@ -39,7 +39,6 @@ namespace LostInLeaves.Dialogue
             {
                 string trimmed = line.Trim();
                 if (trimmed.Length == 0 || trimmed[0] == '#') continue;
-
                 // Debug.Log("Parsing line: " + trimmed);
 
                 DialogueNode node;
@@ -51,7 +50,21 @@ namespace LostInLeaves.Dialogue
                 else
                 {
                     // this is just a dialogue node
-                    node = new DialogueNode(trimmed, new List<DialogueNode>(), null);
+                    // split trimmed by ":", if it has it
+                    string speaker = defaultSpeaker;
+                    string content = trimmed;
+
+                    if (trimmed.Contains(":"))
+                    {
+                        speaker = trimmed.Substring(0, trimmed.IndexOf(':'));
+                        content = trimmed.Substring(trimmed.IndexOf(':') + 1);
+                    }
+
+                    // trim the speaker and content
+                    speaker = speaker.Trim();
+                    content = content.Trim();
+                    
+                    node = new DialogueNode(speaker, content, new List<DialogueNode>(), null);
                 }
 
                 // check if this is the first node
