@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e50dcb2c270a3f49bbbcdac01100a91, type: 3}
+  m_Name: voice-bank
+  m_EditorClassIdentifier: 
+  _defaultSettings:
+    CharacterName: 
+    Folder: Assets/Audio/SoundFX/Voices/Player
+    Override: {fileID: 0}
+  _resortToDefault: 1
+  _voiceSettings:
+  - CharacterName: guy
+    Folder: Assets/Audio/SoundFX/Voices/Player
+    Override: {fileID: 11400000, guid: e43acc58a5ed12a4ab89322a7106aca9, type: 2}

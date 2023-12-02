@@ -211,6 +211,7 @@ namespace CurlyCore.Audio
                 if (_usersPerClip[clip] <= 0)
                 {
                     // it's time to free this resource
+                    _logger.Log(LoggingGroupID.APP, $"Releasing clip {clip.name}");
                     Addressables.Release(clip);
                     _alreadyLoaded.Remove(clipReference);
                 }

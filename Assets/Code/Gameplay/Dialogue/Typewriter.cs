@@ -21,6 +21,7 @@ namespace LostInLeaves.Dialogue
                 if (token.IsCancellationRequested || (inputManager != null && inputManager.GetInputDown(inputPrompt)))
                 {
                     textMesh.text = text; // Show full text if cancelled or input is detected
+                    onReveal?.Invoke(text[i]);
                     return;
                 }
 

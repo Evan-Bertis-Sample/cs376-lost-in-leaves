@@ -30,4 +30,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f20d00c5830d844faefde26c913202a, type: 2}
   - {fileID: 11400000, guid: d577fc83f5d8456478e3ae9f4d50ee27, type: 2}
   - {fileID: 11400000, guid: 6bdd9d1c4553bba40ab3e19e879cee8d, type: 2}
+  - {fileID: 11400000, guid: c8cd602003dd6a648b31c8e3010b8627, type: 2}
   PersistentObjects: []
