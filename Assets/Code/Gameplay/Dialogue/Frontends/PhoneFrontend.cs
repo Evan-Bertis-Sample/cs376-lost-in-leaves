@@ -20,14 +20,14 @@ namespace LostInLeaves
         [SerializeField] private float _fadeSpeed = 1f;
         [SerializeField] private float _textSpeed = 60f;
         [SerializeField, InputPath] private string _continuePrompt;
-        
+
         private Canvas _rootCanvas;
         private GameObject _prefabInstance;
         private TextMeshProUGUI _textInstance;
         private Image _background;
         [GlobalDefault] private InputManager _inputManager;
 
-        public override Task BeginDialogue()
+        public override async Task BeginDialogue()
         {
             if (_inputManager == null)
             {
@@ -42,6 +42,7 @@ namespace LostInLeaves
 
             if (_prefabInstance == null)
             {
+                Debug.Log("PhoneFrontend: Instantiating text prefab");
                 _prefabInstance = Instantiate(_textPrefab);
                 // find an image and text component somewhere in the prefab
                 _textInstance = _prefabInstance.GetComponentInChildren<TextMeshProUGUI>();
@@ -49,18 +50,18 @@ namespace LostInLeaves
                 _textInstance.transform.SetParent(_rootCanvas.transform, false);
             }
 
-            _background = _textInstance.GetComponentInParent<Image>();
-            if (_background) SetBackgroundAlpha(0f);
-
+            SetBackgroundAlpha(0f);
             _textInstance.text = "";
             _prefabInstance.SetActive(true);
-            return Task.CompletedTask;
+
+            await AnimateAlpha(_backgroundColorAlpha, _fadeSpeed);
+            SetBackgroundAlpha(_backgroundColorAlpha);
+
         }
 
         public override async Task<int> DisplayNode(DialogueNode node)
         {
             _textInstance.text = "";
-            await AnimateAlpha(_backgroundColorAlpha, _fadeSpeed);
             await Typewriter.ApplyTo(_textInstance, node.Content, _textSpeed);
 
             // await for the user to press the continue button
@@ -75,6 +76,7 @@ namespace LostInLeaves
         public override async Task EndDialogue()
         {
             await AnimateAlpha(0f, _fadeSpeed);
+            _textInstance.text = "";
             _prefabInstance.gameObject.SetActive(false);
         }
 
@@ -84,7 +86,7 @@ namespace LostInLeaves
 
             // skip if the alpha is already at the target
             if (Mathf.Approximately(_background.color.a, targetAlpha)) return;
-
+            Debug.Log("Animating alpha to " + targetAlpha);
             // use dotween to animate the alpha
             await _background.DOFade(targetAlpha, duration).AsyncWaitForCompletion();
         }

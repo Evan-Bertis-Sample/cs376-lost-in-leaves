@@ -144,15 +144,16 @@ namespace LostInLeaves.Dialogue
             {
                 if (_availableEmitters[node.Speaker].DialogueFrontend != null)
                 {
-                    IDialogueFrontend dialogueFrontend = _availableEmitters[node.Speaker].DialogueFrontend;
-                    if (frontend != dialogueFrontend)
+                    IDialogueFrontend newFrontend = _availableEmitters[node.Speaker].DialogueFrontend;
+                    if (frontend != newFrontend)
                     {
-                        Debug.Log($"DialogueRunner: Setting frontend to {dialogueFrontend}");
-                        await dialogueFrontend.EndDialogue();
-                        await dialogueFrontend.BeginDialogue();
-                        frontend = dialogueFrontend;
+                        Debug.Log($"DialogueRunner: Setting frontend to {newFrontend}");
+                        await frontend.EndDialogue(); // end the old frontend
+                        await newFrontend.BeginDialogue(); // start the new one
+                        frontend = newFrontend;
                     }
                 }
+
                 frontend.AnchorTransform = _availableEmitters[node.Speaker].AnchorTransform;
                 frontend.CharacterName = node.Speaker; // set the character name of the frontend
             }
