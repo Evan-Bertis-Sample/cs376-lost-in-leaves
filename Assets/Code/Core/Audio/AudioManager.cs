@@ -12,6 +12,8 @@ using UnityEngine.AddressableAssets;
 using CurlyCore.CurlyApp;
 using CurlyCore.Debugging;
 using CurlyUtility;
+using UnityEditor.PackageManager;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace CurlyCore.Audio
 {
@@ -45,6 +47,7 @@ namespace CurlyCore.Audio
         private List<AudioSource> _availableSources = new List<AudioSource>();
         private List<AudioSource> _unavailableSources = new List<AudioSource>();
         private Dictionary<AssetReference, AudioClip> _alreadyLoaded = new Dictionary<AssetReference, AudioClip>();
+        private Dictionary<AssetReference, AsyncOperationHandle<AudioClip>> _loadedHandles = new Dictionary<AssetReference, AsyncOperationHandle<AudioClip>>();
         private Dictionary<AudioClip, int> _usersPerClip = new Dictionary<AudioClip, int>();
 
         // Constants
@@ -176,17 +179,40 @@ namespace CurlyCore.Audio
             }
 
             AudioClip clip;
+            // check if the clip is already loaded
             if (_alreadyLoaded.ContainsKey(clipReference)) clip = _alreadyLoaded[clipReference];
             else
             {
                 try
                 {
-                    clip = await clipReference.LoadAssetAsync<AudioClip>().Task;
+                    AsyncOperationHandle<AudioClip> newHandle = clipReference.LoadAssetAsync<AudioClip>();
+                    clip = await newHandle.Task;
+                    _loadedHandles[clipReference] = newHandle;
                     _alreadyLoaded[clipReference] = clip;
                 }
-                catch
+                catch (Exception e)
                 {
-                    return null;
+                    // lets try to load it via the handle
+                    // disastrous code my god
+                    try
+                    {
+                        if (_loadedHandles.ContainsKey(clipReference))
+                        {
+                            AsyncOperationHandle<AudioClip> handle = _loadedHandles[clipReference];
+                            clip = handle.WaitForCompletion();
+                            _alreadyLoaded[clipReference] = clip;
+                        }
+                        else
+                        {
+                            _logger.Log(LoggingGroupID.APP, $"Something went wrong loading clip (cannot load via handle) {clipReference.RuntimeKey}: {e}", LogType.Warning);
+                            return null;
+                        }
+                    }
+                    catch (Exception e2)
+                    {
+                        _logger.Log(LoggingGroupID.APP, $"Something went wrong loading clip via handle {clipReference.RuntimeKey}: {e2}", LogType.Warning);
+                        return null;
+                    }
                 }
             }
 
