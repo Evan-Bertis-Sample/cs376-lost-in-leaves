@@ -15,7 +15,7 @@ MonoBehaviour:
   <IdentifyByFileName>k__BackingField: 1
   <UseRandomPitch>k__BackingField: 1
   <UseRandomVolume>k__BackingField: 0
-  <FlatVolumeMultiplier>k__BackingField: 0.1
+  <FlatVolumeMultiplier>k__BackingField: 0.3
   <FlatPitchMultiplier>k__BackingField: 1
   <PitchMultiplerRange>k__BackingField:
     Min: 1.1

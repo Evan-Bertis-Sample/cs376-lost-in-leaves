@@ -12,6 +12,7 @@ namespace LostInLeaves.Dialogue
         public static event DialogueEventHandler OnDialogueEvent;
 
         private static Dictionary<string, DialogueEmitter> _availableEmitters = new Dictionary<string, DialogueEmitter>();
+        private static HashSet<(DialogueEmitter, string)> _activeDialogues = new HashSet<(DialogueEmitter, string)>();
 
         public static DialogueTree BuildDialogueTree(string path, string defaultSpeaker)
         {
@@ -28,23 +29,40 @@ namespace LostInLeaves.Dialogue
             return null;
         }
 
-        public static IEnumerator RunDialogueCoroutine(DialogueEmitter emitter)
+        public static async Task RunDialogue(DialogueEmitter emitter, string dialoguePath = "", bool failOnBusy = true)
         {
             GetEmitters();
             IDialogueFrontend frontend = emitter.DialogueFrontend;
-            DialogueTree tree = BuildDialogueTree(emitter.DialoguePath, emitter.name);
+            string path = string.IsNullOrEmpty(dialoguePath) ? emitter.DialoguePath : dialoguePath;
+
+            if (string.IsNullOrEmpty(path))
+            {
+                Debug.LogError("DialogueRunner: No dialogue path was provided.");
+                return;
+            }
+
+            while (_activeDialogues.Count > 0 && failOnBusy)
+            {
+                Debug.LogWarning("DialogueRunner: Dialogue is already running. Adding to queue.");
+                await Task.Delay(1000);
+            }
+
+            // add this conversation to the queue
+            _activeDialogues.Add((emitter, path));
+
+            DialogueTree tree = BuildDialogueTree(path, emitter.name);
             DialogueNode node = tree.Root;
 
             if (tree == null || frontend == null)
             {
                 Debug.LogError("DialogueTree or DialogueFrontend is not set.");
-                yield break;
+                return;
             }
 
             if (tree == null || frontend == null)
             {
                 Debug.LogError("DialogueTree or DialogueFrontend is not set.");
-                yield break;
+                return;
             }
 
             frontend.CharacterName = emitter.CharacterName;
@@ -52,18 +70,41 @@ namespace LostInLeaves.Dialogue
 
             Debug.Log("Beginning Dialogue");
             Task beginDialogueTask = frontend.BeginDialogue();
-            yield return new TaskUtility.WaitForTask(beginDialogueTask);
+            await beginDialogueTask;
 
             Debug.Log("Running Dialogue");
             Task dialogueTask = TraverseDialogue(node, frontend);
-            yield return new TaskUtility.WaitForTask(dialogueTask);
+            await dialogueTask;
 
             Debug.Log("Ending Dialogue");
             Task endDialogueTask = frontend.EndDialogue();
-            yield return new TaskUtility.WaitForTask(endDialogueTask);
+            await endDialogueTask;
 
-            yield return null; // wait for the next frame
+            Debug.Log("Dialogue Complete");
+            // wait for the next frame
+            await Task.Yield();
 
+            // dequeue this conversation
+            _activeDialogues.Remove((emitter, path));
+        }
+
+        public static IEnumerator RunDialogueCoroutine(DialogueEmitter emitter, string dialoguePath = "", bool failOnBusy = true)
+        {
+            yield return new TaskUtility.WaitForTask(RunDialogue(emitter, dialoguePath, failOnBusy));
+        }
+
+        public static DialogueEmitter GetDialogueEmitter(string name)
+        {
+            GetEmitters();
+            if (_availableEmitters.ContainsKey(name))
+            {
+                return _availableEmitters[name];
+            }
+            else
+            {
+                Debug.LogError($"DialogueRunner: Could not find emitter for speaker {name}");
+                return null;
+            }
         }
 
         private static void GetEmitters()

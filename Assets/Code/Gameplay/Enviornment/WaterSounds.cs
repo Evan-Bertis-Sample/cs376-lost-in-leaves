@@ -69,7 +69,7 @@ namespace LostInLeaves.Enviornment
             }
             else if (_isPlaying)
             {
-                _callback.Source.volume = _waterVolume;
+                if (_callback != null) _callback.Source.volume = _waterVolume;
             }
         }
 

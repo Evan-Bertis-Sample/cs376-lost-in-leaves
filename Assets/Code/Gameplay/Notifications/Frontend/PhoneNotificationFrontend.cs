@@ -4,9 +4,12 @@ using UnityEngine;
 using LostInLeaves.Notifications;
 using System.Threading.Tasks;
 using DG.Tweening;
+using LostInLeaves.Dialogue;
+using CurlyCore.CurlyApp;
 
 namespace LostInLeaves.Notifications.Frontend
 {
+    [RequireComponent(typeof(DialogueEmitter))]
     [CreateAssetMenu(menuName = "Lost In Leaves/Notifications/Frontend/Phone Notification Frontend", order = 0, fileName = "phone-notification-frontend")]
     public class PhoneNotificationFrontend : NotificationFrontendObject
     {
@@ -133,11 +136,33 @@ namespace LostInLeaves.Notifications.Frontend
         {
             float pickupDelay = notification.GetProperty<float>("pickupDelay");
             Debug.Log($"PhoneNotificationFrontend: Pickup delay is {pickupDelay}");
+            float reactionDelay = notification.GetProperty<float>("reactionDelay");
+            string reactionPath = notification.GetProperty<string>("reactionPath");
+
             // visualize the phone ringing
-            await VibratePhone(pickupDelay);
+            List<Task> pickupTasks = new List<Task>();
 
+            Task reactionTask = new Task(async () => { 
+                if (reactionDelay > 0f)
+                {
+                    Debug.Log($"PhoneNotificationFrontend: Waiting {reactionDelay} seconds to react");
+                    Task.Delay((int)(reactionDelay * 1000)).Wait();
+                }
+                Debug.Log($"PhoneNotificationFrontend: Reacting to call");
+                if (!string.IsNullOrEmpty(reactionPath))
+                {
+                    Debug.Log($"PhoneNotificationFrontend: Playing reaction: {reactionPath}");
+                    DialogueEmitter playerEmitter = DialogueRunner.GetDialogueEmitter("Player");
+                    
+                    // await the the dialogue coroutine
+                    await DialogueRunner.RunDialogue(playerEmitter, reactionPath, false);
+                }
+            });
 
+            pickupTasks.Add(VibratePhone(pickupDelay));
+            pickupTasks.Add(reactionTask);
+
+            await Task.WhenAll(pickupTasks);
         }
-
     }
 }
