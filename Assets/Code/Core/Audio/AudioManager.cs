@@ -216,14 +216,14 @@ namespace CurlyCore.Audio
                 }
             }
 
-            if (_usersPerClip.ContainsKey(clip)) _usersPerClip[clip] = _usersPerClip[clip] + 1;
-            else _usersPerClip[clip] = 1;
-
             if (clip == null)
             {
                 _logger.Log(LoggingGroupID.APP, $"Could not find Audio Clip for path {soundPath}", LogType.Warning);
                 return null;
             }
+
+            if (_usersPerClip.ContainsKey(clip)) _usersPerClip[clip] = _usersPerClip[clip] + 1;
+            else _usersPerClip[clip] = 1;
 
             _logger.Log(LoggingGroupID.APP, $"Found clip: {clip.name}");
             source.clip = clip;

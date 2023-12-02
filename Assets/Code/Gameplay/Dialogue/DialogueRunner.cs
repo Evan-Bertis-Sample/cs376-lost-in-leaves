@@ -119,9 +119,10 @@ namespace LostInLeaves.Dialogue
 
             foreach (DialogueEmitter emitter in emitters)
             {
-                if (!_availableEmitters.ContainsKey(emitter.name.ToLower()))
+                if (!_availableEmitters.ContainsKey(emitter.CharacterName.ToLower()))
                 {
-                    _availableEmitters.Add(emitter.name.ToLower(), emitter);
+                    Debug.Log($"DialogueRunner: Adding emitter {emitter.CharacterName.ToLower()}");
+                    _availableEmitters.Add(emitter.CharacterName.ToLower(), emitter);
                 }
             }
         }
@@ -132,14 +133,26 @@ namespace LostInLeaves.Dialogue
 
             await Task.Yield(); // a frame between traversals 
             int choiceIndex = -1; // Default value when there are no choices
-            Debug.Log($"Traversing dialogue node -- {node.Content}");
+            Debug.Log($"DialogueRunner: Traversing node - {node.Speaker}: {node.Content}");
 
             foreach (DialogueNode child in node.Children)
                 Debug.Log("Children: " + child.Content);
 
             // set the anchor position of the frontend based on the emitter
+            GetEmitters();
             if (_availableEmitters.ContainsKey(node.Speaker))
             {
+                if (_availableEmitters[node.Speaker].DialogueFrontend != null)
+                {
+                    IDialogueFrontend dialogueFrontend = _availableEmitters[node.Speaker].DialogueFrontend;
+                    if (frontend != dialogueFrontend)
+                    {
+                        Debug.Log($"DialogueRunner: Setting frontend to {dialogueFrontend}");
+                        await dialogueFrontend.EndDialogue();
+                        await dialogueFrontend.BeginDialogue();
+                        frontend = dialogueFrontend;
+                    }
+                }
                 frontend.AnchorTransform = _availableEmitters[node.Speaker].AnchorTransform;
                 frontend.CharacterName = node.Speaker; // set the character name of the frontend
             }

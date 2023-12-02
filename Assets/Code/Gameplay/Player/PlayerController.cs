@@ -43,15 +43,24 @@ namespace LostInLeaves.Player
         [SerializeField] private PlayerContext _context = new PlayerContext();
         [SerializeField] private PlayerInputs _inputs;
         [SerializeField] private PlayerStates _states;
-
         [GlobalDefault] private InputManager _inputManager;
-
         private StateMachine<PlayerContext> _stateMachine;
 
         public PlayerContext Context => _context;
         public PlayerInputs Inputs => _inputs;
+        public static PlayerController Instance { get; private set; }
         public IState<PlayerContext> CurrentState => _stateMachine.CurrentState;
 
+        private void Awake()
+        {
+            if (Instance != null)
+            {
+                Debug.LogError("PlayerController: There is already an instance of PlayerController!");
+                return;
+            }
+
+            Instance = this;
+        }
         private void Start()
         {
             DependencyInjector.InjectDependencies(this);
