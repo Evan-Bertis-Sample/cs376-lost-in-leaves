@@ -17,5 +17,37 @@ namespace CurlyUtility
         {
             while (!task.IsCompleted) yield return null;
         }
+
+        public class WaitForTask : CustomYieldInstruction
+        {
+            private Task _task;
+
+            public WaitForTask(Task task)
+            {
+                _task = task;
+            }
+
+            public override bool keepWaiting
+            {
+                get
+                {
+                    if (_task.IsCompleted)
+                    {
+                        // check for errors, and debug message them
+                        if (_task.IsFaulted)
+                        {
+                            Debug.LogException(_task.Exception);
+                        }
+                        if (_task.IsCanceled)
+                        {
+                            Debug.LogWarning("Task was cancelled");
+                        }
+                        return false;
+                    }
+
+                    return true;
+                }
+            }
+        }
     }
 }

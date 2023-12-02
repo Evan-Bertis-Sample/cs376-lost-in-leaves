@@ -85,7 +85,7 @@ namespace LostInLeaves.Notifications.Frontend
         {
             foreach (PhoneScreenBase phoneScreen in _phoneScreens)
             {
-                phoneScreen.RootObject.SetActive(false);
+                phoneScreen?.RootObject?.SetActive(false);
             }
 
             _phoneScreens[(int)screen].RootObject.SetActive(true);

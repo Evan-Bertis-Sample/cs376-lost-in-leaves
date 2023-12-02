@@ -28,7 +28,7 @@ namespace LostInLeaves.Notifications
                 .AddProperty("conversationDialoguePath", conversationDialoguePath)
                 .AddProperty("reactionPath", phoneCallReactionPath)
                 .AddProperty("reactionDelay", reactionDelay)
-                .AddProperty("type", PhoneRenderer.PhoneScreen.Call);
+                .AddProperty("type", (int)PhoneRenderer.PhoneScreen.Call);
             return notification;
         }
 
@@ -46,7 +46,7 @@ namespace LostInLeaves.Notifications
                 .AddProperty("message", message)
                 .AddProperty("reactionPath", playerReactionPath)
                 .AddProperty("reactionDelay", reactionDelay)
-                .AddProperty("type", PhoneRenderer.PhoneScreen.Text);
+                .AddProperty("type", (int)PhoneRenderer.PhoneScreen.Text);
             return notification;
         }
     }

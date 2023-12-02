@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using CurlyCore;
 using CurlyCore.CurlyApp;
 using CurlyUtility;
@@ -297,7 +298,8 @@ namespace LostInLeaves.Notifications
         IEnumerator DisplayNotifications(INotificationFrontend frontend)
         {
             // open the frontend
-            yield return TaskUtility.TaskAsCoroutine(frontend.BeginNotificationStream());
+            Task openTask = frontend.BeginNotificationStream();
+            yield return new TaskUtility.WaitForTask(openTask);
 
             while (true)
             {
@@ -323,7 +325,8 @@ namespace LostInLeaves.Notifications
                 // we have things to display!!!
                 foreach (var notification in notifications)
                 {
-                    yield return TaskUtility.TaskAsCoroutine(frontend.DisplayNotification(notification));
+                    Task displayTask = frontend.DisplayNotification(notification);
+                    yield return new TaskUtility.WaitForTask(displayTask);
 
                     // tell the scheduler that this notification has been displayed
                     Schedule.CloseActiveNotification(frontend, notification);
@@ -334,7 +337,8 @@ namespace LostInLeaves.Notifications
             _frontendStates[frontend] = NotificationFrontendState.Closed; // this will tell the rest of the system that this frontend is currently closed
             _frontendsToClose.Add(frontend);
             // close the frontend
-            yield return TaskUtility.TaskAsCoroutine(frontend.EndNotificationStream());
+            Task closeTask = frontend.EndNotificationStream();
+            yield return new TaskUtility.WaitForTask(closeTask);
         }
     }
 }

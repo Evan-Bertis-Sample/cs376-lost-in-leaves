@@ -52,5 +52,16 @@ namespace LostInLeaves.Notifications
                 return default(T);
             }
         }
+
+        public override string ToString()
+        {
+            string str = $"Notification: {Title} - {Body}\nProperties:\n";
+            foreach (var property in NotificationData)
+            {
+                str += $"{property.Key}: {property.Value}\n";
+            }
+
+            return str;
+        }
     }
 }
