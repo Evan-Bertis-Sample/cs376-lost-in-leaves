@@ -13,3 +13,14 @@ MonoBehaviour:
   m_Name: AudioOverrideGroup
   m_EditorClassIdentifier: 
   <IdentifyByFileName>k__BackingField: 0
+  <UseRandomPitch>k__BackingField: 0
+  <UseRandomVolume>k__BackingField: 0
+  <FlatVolumeMultiplier>k__BackingField: 0.3
+  <FlatPitchMultiplier>k__BackingField: 1
+  <PitchMultiplerRange>k__BackingField:
+    Min: 0.5
+    Max: 0.75
+  <VolumeMultiplierRange>k__BackingField:
+    Min: 0.5
+    Max: 0.75
+  <Loop>k__BackingField: 0
