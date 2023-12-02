@@ -16,6 +16,7 @@ namespace LostInLeaves.Components
         [SerializeField] private Vector2 _maximumSize = new Vector2(5f, 5f);
         [SerializeField] private int _bevelSegments = 3;
         [SerializeField] private float _bubbleRaidus = 0.5f;
+        [SerializeField] private float _bubbleInterpolation = 0.5f;
 
         [Header("Tail Settings")]
         [SerializeField] private float _tailWidth = 0.5f;
@@ -28,13 +29,24 @@ namespace LostInLeaves.Components
 
         private List<Vector3> _vertices = new List<Vector3>();
         private List<int> _triangles = new List<int>();
-        private Vector3 _targetPosition;
+        private Vector3 _tailTargetPosition;
         private Mesh _bubbleMesh;
         private MeshFilter _mf;
+        private Transform _desireGoalTransform; // desired placement of the speech bubble
+        private Vector3 _desiredGoalOffset;
+        private Vector3 _desiredPosition;
 
         private void Start()
         {
             GetReferences();
+            _desiredPosition = transform.position;
+        }
+
+        private void Update()
+        {
+            Debug.Log(_desiredPosition);
+            _desiredPosition = Vector3.Lerp(transform.position, _desireGoalTransform.position + _desiredGoalOffset, _bubbleInterpolation);
+            transform.position = _desiredPosition;
         }
 
         private void GetReferences()
@@ -47,13 +59,19 @@ namespace LostInLeaves.Components
         public void Render(Vector3 target)
         {
             if (_mf == null) GetReferences();
-            _targetPosition = target;
+            _tailTargetPosition = target;
             GenerateBubble();
         }
 
-        public void SetTarget(Vector3 target)
+        public void SetTailTarget(Vector3 target)
         {
-            _targetPosition = target;
+            _tailTargetPosition = target;
+        }
+
+        public void SetBubblePosition(Transform transform, Vector3 offset = new Vector3())
+        {
+            _desireGoalTransform = transform;
+            _desiredGoalOffset = offset;
         }
 
         public void SetText(string text)
@@ -350,7 +368,7 @@ namespace LostInLeaves.Components
                 triangles = _triangles.ToArray()
             };
 
-            Mesh tailMesh = GenerateTail(_targetPosition);
+            Mesh tailMesh = GenerateTail(_tailTargetPosition);
             _bubbleMesh = MeshUtility.BasicCombineMeshes(new Mesh[] { _bubbleMesh, tailMesh });
             _bubbleMesh.RecalculateNormals();
             _mf.mesh = _bubbleMesh;

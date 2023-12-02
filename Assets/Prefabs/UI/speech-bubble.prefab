@@ -108,6 +108,7 @@ MonoBehaviour:
   _tailWidth: 0.5
   _maxTailOffset: {x: 0.5, y: 0.5, z: 0}
   TextMesh: {fileID: 2778043793252225707}
+  _desireGoalTransform: {fileID: 0}
 --- !u!114 &8455371761452646456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +131,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3893873122643066892}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 77483fd6b6bce724f8a091e71c512715, type: 3}
   m_Name: 

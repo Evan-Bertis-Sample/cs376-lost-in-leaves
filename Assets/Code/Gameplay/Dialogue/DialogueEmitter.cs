@@ -10,6 +10,9 @@ namespace LostInLeaves.Dialogue
     {
         [field: SerializeField] public string CharacterName { get; private set; } // Character's name field
         [field: SerializeField, FilePath] public string DialoguePath { get; private set; }
+
+        [Header("Detection")]
+        [SerializeField] private bool LookForInquirers = true;
         [SerializeField] private float _detectionRadius = 5f;
         [SerializeField] private LayerMask _interactableLayer;
         [SerializeField] private LayerMask _obstacleLayer;
@@ -17,7 +20,7 @@ namespace LostInLeaves.Dialogue
         public DialogueFrontendObject DialogueFrontend;
         public GameObject DialoguePosition;
 
-        public Vector3 AnchorPosition => DialoguePosition != null ? DialoguePosition.transform.position : transform.position;
+        public Transform AnchorTransform => DialoguePosition != null ? DialoguePosition.transform : transform;
         
         private List<DialogueInquirer> _regsteredInquirers = new List<DialogueInquirer>();
 
@@ -26,6 +29,7 @@ namespace LostInLeaves.Dialogue
 
         private void Update()
         {
+            if (!LookForInquirers) return;
             // Make sure to remove yourself from nearby DialogueInquirers
             List<DialogueInquirer> toRemove = new List<DialogueInquirer>();
             foreach (var inquirer in _regsteredInquirers)
@@ -64,6 +68,7 @@ namespace LostInLeaves.Dialogue
 
         private void OnDrawGizmos()
         {
+            if (!LookForInquirers) return;
             // Draw detection radius
             Gizmos.color = Color.blue;
             Gizmos.DrawWireSphere(transform.position, _detectionRadius);

@@ -11,6 +11,7 @@ namespace LostInLeaves.Dialogue
         public delegate void DialogueEventHandler(string eventName, object[] parameters);
         public static event DialogueEventHandler OnDialogueEvent;
 
+        private static Dictionary<string, DialogueEmitter> _availableEmitters = new Dictionary<string, DialogueEmitter>();
 
         public static DialogueTree BuildDialogueTree(string path, string defaultSpeaker)
         {
@@ -29,6 +30,7 @@ namespace LostInLeaves.Dialogue
 
         public static IEnumerator RunDialogueCoroutine(DialogueEmitter emitter)
         {
+            GetEmitters();
             IDialogueFrontend frontend = emitter.DialogueFrontend;
             DialogueTree tree = BuildDialogueTree(emitter.DialoguePath, emitter.name);
             DialogueNode node = tree.Root;
@@ -46,7 +48,7 @@ namespace LostInLeaves.Dialogue
             }
 
             frontend.CharacterName = emitter.CharacterName;
-            frontend.AnchorPosition = emitter.AnchorPosition;
+            frontend.AnchorTransform = emitter.gameObject.transform;
 
             Debug.Log("Beginning Dialogue");
             Task beginDialogueTask = frontend.BeginDialogue();
@@ -64,6 +66,23 @@ namespace LostInLeaves.Dialogue
 
         }
 
+        private static void GetEmitters()
+        {
+            // find all the dialogue emitters in the scene
+            DialogueEmitter[] emitters = GameObject.FindObjectsOfType<DialogueEmitter>();
+
+            // clear the dictionary -- get rid of any emitters that have been destroyed
+            _availableEmitters.Clear();
+
+            foreach (DialogueEmitter emitter in emitters)
+            {
+                if (!_availableEmitters.ContainsKey(emitter.name))
+                {
+                    _availableEmitters.Add(emitter.name, emitter);
+                }
+            }
+        }
+
         private static async Task TraverseDialogue(DialogueNode node, IDialogueFrontend frontend)
         {
             if (node == null) return;
@@ -74,6 +93,17 @@ namespace LostInLeaves.Dialogue
 
             foreach (DialogueNode child in node.Children)
                 Debug.Log("Children: " + child.Content);
+
+            // set the anchor position of the frontend based on the emitter
+            if (_availableEmitters.ContainsKey(node.Speaker))
+            {
+                frontend.AnchorTransform = _availableEmitters[node.Speaker].AnchorTransform;
+                frontend.CharacterName = node.Speaker; // set the character name of the frontend
+            }
+            else
+            {
+                Debug.LogError($"DialogueRunner: Could not find emitter for speaker {node.Speaker}");
+            }
 
             // If there are choices, follow the choice path, otherwise, iterate through all children
             switch (node.Type)

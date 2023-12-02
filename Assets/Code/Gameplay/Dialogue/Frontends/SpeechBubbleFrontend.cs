@@ -17,7 +17,7 @@ namespace LostInLeaves.Dialogue
         [SerializeField, InputPath] private string _continuePrompt;
         [SerializeField] private Vector3 _anchorOffset = new Vector3(0, 1.5f, 0);
 
-        public Vector3 SpeechPosition => AnchorPosition + _anchorOffset;
+        public Vector3 SpeechPosition => AnchorTransform.position + _anchorOffset;
 
         [GlobalDefault] private InputManager _inputManager;
         private SpeechBubble _speechBubbleInstance;
@@ -34,10 +34,11 @@ namespace LostInLeaves.Dialogue
                 _speechBubbleInstance = Instantiate(_speechBubblePrefab);
             }
 
+            _speechBubbleInstance.SetText("");
             _speechBubbleInstance.gameObject.SetActive(true);
             _speechBubbleInstance.transform.position = SpeechPosition;
-            _speechBubbleInstance.SetText("");
-            _speechBubbleInstance.SetTarget(AnchorPosition);
+            _speechBubbleInstance.SetBubblePosition(AnchorTransform, _anchorOffset);
+            _speechBubbleInstance.SetTailTarget(AnchorTransform.position);
 
             return Task.CompletedTask;
         }
@@ -55,6 +56,7 @@ namespace LostInLeaves.Dialogue
                         await TaskUtility.WaitUntil(() =>
                         {
                             // Debug.Log("Waiting for continue prompt");
+                            _speechBubbleInstance.SetBubblePosition(AnchorTransform, _anchorOffset);
                             return _inputManager.GetInputDown(_continuePrompt);
                         });
                     }
@@ -69,8 +71,8 @@ namespace LostInLeaves.Dialogue
 
         private void OnReveal()
         {
-            _speechBubbleInstance.Render(AnchorPosition);
-            // make sure that the speech bubble is facing the camera
+            _speechBubbleInstance.SetBubblePosition(AnchorTransform, _anchorOffset);
+            _speechBubbleInstance.Render(AnchorTransform.position);
         }
 
         public override Task EndDialogue()

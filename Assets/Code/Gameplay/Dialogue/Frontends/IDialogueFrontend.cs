@@ -8,7 +8,7 @@ namespace LostInLeaves.Dialogue
     public interface IDialogueFrontend
     {
         string CharacterName { get; set; }
-        Vector3 AnchorPosition { get; set; }
+        Transform AnchorTransform { get; set; }
 
         Task BeginDialogue();
         Task<int> DisplayNode(DialogueNode node); // Updated to return an int
@@ -18,7 +18,7 @@ namespace LostInLeaves.Dialogue
     public abstract class DialogueFrontendObject : ScriptableObject, IDialogueFrontend
     {
         public string CharacterName { get; set; }
-        public Vector3 AnchorPosition { get; set; }
+        public Transform AnchorTransform { get; set; }
 
         public virtual async Task BeginDialogue() {}
         public virtual async Task<int> DisplayNode(DialogueNode node) {return -1; } // Must return an int
