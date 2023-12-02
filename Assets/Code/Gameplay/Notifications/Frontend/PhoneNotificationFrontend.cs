@@ -141,28 +141,25 @@ namespace LostInLeaves.Notifications.Frontend
 
             // visualize the phone ringing
             List<Task> pickupTasks = new List<Task>();
-
-            Task reactionTask = new Task(async () => { 
-                if (reactionDelay > 0f)
-                {
-                    Debug.Log($"PhoneNotificationFrontend: Waiting {reactionDelay} seconds to react");
-                    Task.Delay((int)(reactionDelay * 1000)).Wait();
-                }
-                Debug.Log($"PhoneNotificationFrontend: Reacting to call");
-                if (!string.IsNullOrEmpty(reactionPath))
-                {
-                    Debug.Log($"PhoneNotificationFrontend: Playing reaction: {reactionPath}");
-                    DialogueEmitter playerEmitter = DialogueRunner.GetDialogueEmitter("Player");
-                    
-                    // await the the dialogue coroutine
-                    await DialogueRunner.RunDialogue(playerEmitter, reactionPath, false);
-                }
-            });
-
             pickupTasks.Add(VibratePhone(pickupDelay));
-            pickupTasks.Add(reactionTask);
+            pickupTasks.Add(PhoneReaction(pickupDelay, reactionPath));
 
+            // wait for both
             await Task.WhenAll(pickupTasks);
+        }
+
+        private async Task PhoneReaction(float delay, string reactionPath)
+        {
+            Debug.Log($"PhoneNotificationFrontend: Waiting {delay} seconds to react");
+            await Task.Delay((int)(delay * 1000));
+            Debug.Log($"PhoneNotificationFrontend: Reacting to call");
+            if (!string.IsNullOrEmpty(reactionPath))
+            {
+                Debug.Log($"PhoneNotificationFrontend: Playing reaction: {reactionPath}");
+                DialogueEmitter playerEmitter = DialogueRunner.GetDialogueEmitter("Player");
+                // await the the dialogue coroutine
+                await DialogueRunner.RunDialogue(playerEmitter, reactionPath, false);
+            }
         }
     }
 }

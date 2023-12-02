@@ -51,7 +51,7 @@ namespace LostInLeaves.Dialogue
                 {
                     // this is just a dialogue node
                     // split trimmed by ":", if it has it
-                    string speaker = defaultSpeaker;
+                    string speaker = defaultSpeaker.ToLower();
                     string content = trimmed;
 
                     if (trimmed.Contains(":"))
@@ -61,7 +61,7 @@ namespace LostInLeaves.Dialogue
                     }
 
                     // trim the speaker and content
-                    speaker = speaker.Trim();
+                    speaker = speaker.Trim().ToLower();
                     content = content.Trim();
                     
                     node = new DialogueNode(speaker, content, new List<DialogueNode>(), null);

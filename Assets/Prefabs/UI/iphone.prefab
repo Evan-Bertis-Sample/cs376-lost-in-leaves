@@ -1102,9 +1102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09a71c05394bc5d46923ad41fc659a60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <CharacterName>k__BackingField: phone
+  <CharacterName>k__BackingField: Phone
   <DialoguePath>k__BackingField: 
-  LookForInquirers: 1
+  LookForInquirers: 0
   _detectionRadius: 5
   _interactableLayer:
     serializedVersion: 2
@@ -1112,7 +1112,7 @@ MonoBehaviour:
   _obstacleLayer:
     serializedVersion: 2
     m_Bits: 0
-  DialogueFrontend: {fileID: 0}
+  DialogueFrontend: {fileID: 11400000, guid: 509e8a382637ad447bdeb2e668ab783c, type: 2}
   DialoguePosition: {fileID: 9153844286276436164}
 --- !u!1 &2894958442371292095
 GameObject:

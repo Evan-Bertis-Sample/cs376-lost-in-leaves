@@ -53,17 +53,18 @@ namespace LostInLeaves.Dialogue
             DialogueTree tree = BuildDialogueTree(path, emitter.name);
             DialogueNode node = tree.Root;
 
-            if (tree == null || frontend == null)
+            if (tree == null)
             {
-                Debug.LogError("DialogueTree or DialogueFrontend is not set.");
+                Debug.LogError("DialogueTree not set.");
                 return;
             }
 
-            if (tree == null || frontend == null)
+            if (frontend == null)
             {
-                Debug.LogError("DialogueTree or DialogueFrontend is not set.");
+                Debug.LogError("DialogueFrontend not set.");
                 return;
             }
+
 
             frontend.CharacterName = emitter.CharacterName;
             frontend.AnchorTransform = emitter.gameObject.transform;
@@ -96,6 +97,7 @@ namespace LostInLeaves.Dialogue
         public static DialogueEmitter GetDialogueEmitter(string name)
         {
             GetEmitters();
+            name = name.ToLower();
             if (_availableEmitters.ContainsKey(name))
             {
                 return _availableEmitters[name];
@@ -117,9 +119,9 @@ namespace LostInLeaves.Dialogue
 
             foreach (DialogueEmitter emitter in emitters)
             {
-                if (!_availableEmitters.ContainsKey(emitter.name))
+                if (!_availableEmitters.ContainsKey(emitter.name.ToLower()))
                 {
-                    _availableEmitters.Add(emitter.name, emitter);
+                    _availableEmitters.Add(emitter.name.ToLower(), emitter);
                 }
             }
         }
@@ -160,7 +162,8 @@ namespace LostInLeaves.Dialogue
                     break;
                 case DialogueNode.NodeType.Option:
                     Debug.Log("Displaying dialogue node -- option");
-                    await TraverseDialogue(node.Children[0], frontend); // don't display this node, just move on
+                    if (node.Children.Count > 0)
+                        await TraverseDialogue(node.Children[0], frontend); // don't display this node, just move on
                     break;
                 case DialogueNode.NodeType.Event:
                     Debug.Log("Displaying dialogue node -- event");
@@ -178,19 +181,22 @@ namespace LostInLeaves.Dialogue
                     }
                     Debug.Log("Firing DialogueEvent: " + eventName + " with parameters: " + parameters.Length + " parameters.");
                     OnDialogueEvent?.Invoke(eventName, parameters);
-                    await TraverseDialogue(node.Children[0], frontend); // continue on
+                    if (node.Children.Count > 0)
+                        await TraverseDialogue(node.Children[0], frontend); // continue on
                     // choiceIndex = await dialogueFrontend.DisplayNode(node, _characterName);
                     // await TraverseDialogue(node.Children[0]);
                     break;
                 case DialogueNode.NodeType.Exit:
                     Debug.Log("Displaying dialogue node -- exit");
                     choiceIndex = await frontend.DisplayNode(node);
-                    await TraverseDialogue(node.Children[0], frontend); // just go on to the next node
+                    if (node.Children.Count > 0)
+                        await TraverseDialogue(node.Children[0], frontend); // just go on to the next node
                     break;
                 default:
                     Debug.Log("Displaying dialogue node -- standard text");
                     choiceIndex = await frontend.DisplayNode(node);
-                    await TraverseDialogue(node.Children[0], frontend);
+                    if (node.Children.Count > 0)
+                        await TraverseDialogue(node.Children[0], frontend);
                     break;
             }
         }
