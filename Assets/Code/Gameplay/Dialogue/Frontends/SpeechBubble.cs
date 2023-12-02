@@ -44,7 +44,6 @@ namespace LostInLeaves.Components
 
         private void Update()
         {
-            Debug.Log(_desiredPosition);
             _desiredPosition = Vector3.Lerp(transform.position, _desireGoalTransform.position + _desiredGoalOffset, _bubbleInterpolation);
             transform.position = _desiredPosition;
         }

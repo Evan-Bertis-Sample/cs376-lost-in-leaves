@@ -11,7 +11,7 @@ namespace LostInLeaves.Dialogue
     {
         public static async Task ApplyTo(TMP_Text textMesh, string text, float charactersPerSecond, 
                                         CancellationToken token = default, InputManager inputManager = null, string inputPrompt = null,
-                                        Action onReveal = null)
+                                        Action<char> onReveal = null)
         {
             textMesh.text = "";
             var characterDelay = 1f / charactersPerSecond;
@@ -25,7 +25,7 @@ namespace LostInLeaves.Dialogue
                 }
 
                 textMesh.text += text[i];
-                onReveal?.Invoke();
+                onReveal?.Invoke(text[i]);
                 await Task.Delay((int)(characterDelay * 1000), token);
             }
         }

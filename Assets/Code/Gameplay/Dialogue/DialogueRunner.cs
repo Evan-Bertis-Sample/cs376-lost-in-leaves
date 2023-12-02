@@ -52,15 +52,15 @@ namespace LostInLeaves.Dialogue
 
             Debug.Log("Beginning Dialogue");
             Task beginDialogueTask = frontend.BeginDialogue();
-            while (!beginDialogueTask.IsCompleted) yield return null;
+            yield return new TaskUtility.WaitForTask(beginDialogueTask);
 
             Debug.Log("Running Dialogue");
             Task dialogueTask = TraverseDialogue(node, frontend);
-            while (!dialogueTask.IsCompleted) yield return null;
+            yield return new TaskUtility.WaitForTask(dialogueTask);
 
             Debug.Log("Ending Dialogue");
             Task endDialogueTask = frontend.EndDialogue();
-            while (!endDialogueTask.IsCompleted) yield return null;
+            yield return new TaskUtility.WaitForTask(endDialogueTask);
 
             yield return null; // wait for the next frame
 

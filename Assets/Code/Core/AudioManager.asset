@@ -25,7 +25,7 @@ MonoBehaviour:
     - Assets/Audio/SoundFX/Enviornment/Lightning
     - Assets/Audio/SoundFX/Enviornment/Rain
     - Assets/Audio/SoundFX/Footsteps/Grass
-    - Assets/Audio/SoundFX/Voices/Evan
+    - Assets/Audio/SoundFX/Voices/Player
     m_values:
     - {fileID: 0}
     - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
@@ -36,7 +36,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
     - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
     - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
-    - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
+    - {fileID: 11400000, guid: 8ef940d84d40491429f639589a21ffa9, type: 2}
   <GroupCache>k__BackingField:
     m_keys:
     - Assets/Audio/Music
@@ -48,7 +48,7 @@ MonoBehaviour:
     - Assets/Audio/SoundFX/Enviornment/Lightning
     - Assets/Audio/SoundFX/Enviornment/Rain
     - Assets/Audio/SoundFX/Footsteps/Grass
-    - Assets/Audio/SoundFX/Voices/Evan
+    - Assets/Audio/SoundFX/Voices/Player
     m_values:
     - Override: {fileID: 0}
       <AudioReferences>k__BackingField: []
@@ -284,7 +284,7 @@ MonoBehaviour:
           m_SubObjectName: 
           m_SubObjectType: 
           m_EditorAssetChanged: 0
-    - Override: {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
+    - Override: {fileID: 11400000, guid: 8ef940d84d40491429f639589a21ffa9, type: 2}
       <AudioReferences>k__BackingField:
       - m_AssetGUID: 8005b2f177ae5f546bf5dc1f01e302f1
         m_SubObjectName: 
@@ -392,32 +392,32 @@ MonoBehaviour:
         m_EditorAssetChanged: 0
       PathToReference:
         m_keys:
-        - Assets/Audio/SoundFX/Voices/Evan/EvanA.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanB.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanC.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanD.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanE.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanF.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanG.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanH.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanI.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanJ.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanK.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanL.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanM.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanN.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanO.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanP.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanQ.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanR.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanS.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanT.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanU.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanV.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanW.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanX.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanY.mp3
-        - Assets/Audio/SoundFX/Voices/Evan/EvanZ.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_A.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_B.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_C.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_D.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_E.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_F.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_G.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_H.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_I.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_J.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_K.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_L.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_M.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_N.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_O.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_P.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_Q.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_R.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_S.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_T.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_U.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_V.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_W.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_X.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_Y.mp3
+        - Assets/Audio/SoundFX/Voices/Player/Player_Z.mp3
         m_values:
         - m_AssetGUID: 8005b2f177ae5f546bf5dc1f01e302f1
           m_SubObjectName: 

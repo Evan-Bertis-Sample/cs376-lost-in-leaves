@@ -134,6 +134,7 @@ namespace CurlyCore.Audio
             App.Instance.CoroutineRunner.StartGlobalCoroutine(coroutine);
         }
 
+
         #region PlayOneShot Internals
         private IEnumerator PlayOneShotRoutine(string soundPath, Vector3 position = default, IAudioOverride iOverride = null, Action<AudioCallback> OnPlay = null)
         {
@@ -244,13 +245,21 @@ namespace CurlyCore.Audio
 
         private bool IsFile(string path)
         {
-            FileAttributes attr = File.GetAttributes(path);
+            try
+            {
+                FileAttributes attr = File.GetAttributes(path);
 
-            //detect whether its a directory or file  
-            if ((attr & FileAttributes.Directory) == FileAttributes.Directory)
+                //detect whether its a directory or file  
+                if ((attr & FileAttributes.Directory) == FileAttributes.Directory)
+                    return false;
+                else
+                    return true;
+            }
+            catch
+            {
+                _logger.Log(LoggingGroupID.APP, $"Could not find file at path {path}", LogType.Warning);
                 return false;
-            else
-                return true;
+            }
         }
 
         private void GenerateOneShotSources(GameObject parent, int count)

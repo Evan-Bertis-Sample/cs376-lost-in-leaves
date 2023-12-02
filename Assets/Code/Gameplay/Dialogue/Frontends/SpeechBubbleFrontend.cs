@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using CurlyCore;
+using CurlyCore.Audio;
 using CurlyCore.Input;
 using CurlyUtility;
 using LostInLeaves.Components;
@@ -17,14 +18,22 @@ namespace LostInLeaves.Dialogue
         [SerializeField, InputPath] private string _continuePrompt;
         [SerializeField] private Vector3 _anchorOffset = new Vector3(0, 1.5f, 0);
 
+        [Header("Voice")]
+        [SerializeField, DirectoryPath] private string _voiceFolder;
+        [SerializeField] private bool _useCharacterName = true; 
+        [SerializeField] private string _defaultCharacterName = "Player";
+
         public Vector3 SpeechPosition => AnchorTransform.position + _anchorOffset;
 
         [GlobalDefault] private InputManager _inputManager;
+        [GlobalDefault] private AudioManager _audioManager;
+
         private SpeechBubble _speechBubbleInstance;
+        private string _characterName;
 
         public override Task BeginDialogue()
         {
-            if (_inputManager == null)
+            if (_inputManager == null || _audioManager == null)
             {
                 DependencyInjector.InjectDependencies(this);
             }
@@ -69,10 +78,22 @@ namespace LostInLeaves.Dialogue
             return await Task.FromResult(0);
         }
 
-        private void OnReveal()
+        private void OnReveal(char c)
         {
             _speechBubbleInstance.SetBubblePosition(AnchorTransform, _anchorOffset);
             _speechBubbleInstance.Render(AnchorTransform.position);
+
+            // if character is a letter, play voice
+            if (char.IsLetter(c) == false) return;
+
+            string characterName = _useCharacterName ? _characterName : _defaultCharacterName;
+            string voicePath = GetVoicePath(characterName, c);
+            _audioManager.PlayOneShot(voicePath, position: AnchorTransform.position);
+        }
+
+        private string GetVoicePath(string characterName, char c)
+        {
+            return $"{_voiceFolder}/{characterName}/{characterName}_{char.ToUpper(c)}.mp3";
         }
 
         public override Task EndDialogue()
