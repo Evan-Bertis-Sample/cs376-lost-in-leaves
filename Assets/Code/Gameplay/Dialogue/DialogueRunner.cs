@@ -178,6 +178,7 @@ namespace LostInLeaves.Dialogue
                     Debug.Log("Displaying dialogue node -- option");
                     if (node.Children.Count > 0)
                         await TraverseDialogue(node.Children[0], frontend); // don't display this node, just move on
+                    else await frontend.EndDialogue(); // end the dialogue
                     break;
                 case DialogueNode.NodeType.Event:
                     Debug.Log("Displaying dialogue node -- event");
@@ -197,6 +198,7 @@ namespace LostInLeaves.Dialogue
                     OnDialogueEvent?.Invoke(eventName, parameters);
                     if (node.Children.Count > 0)
                         await TraverseDialogue(node.Children[0], frontend); // continue on
+                    else await frontend.EndDialogue(); // end the dialogue
                     // choiceIndex = await dialogueFrontend.DisplayNode(node, _characterName);
                     // await TraverseDialogue(node.Children[0]);
                     break;
@@ -205,12 +207,14 @@ namespace LostInLeaves.Dialogue
                     choiceIndex = await frontend.DisplayNode(node);
                     if (node.Children.Count > 0)
                         await TraverseDialogue(node.Children[0], frontend); // just go on to the next node
+                    else await frontend.EndDialogue(); // end the dialogue
                     break;
                 default:
                     Debug.Log("Displaying dialogue node -- standard text");
                     choiceIndex = await frontend.DisplayNode(node);
                     if (node.Children.Count > 0)
                         await TraverseDialogue(node.Children[0], frontend);
+                    else await frontend.EndDialogue(); // end the dialogue
                     break;
             }
         }

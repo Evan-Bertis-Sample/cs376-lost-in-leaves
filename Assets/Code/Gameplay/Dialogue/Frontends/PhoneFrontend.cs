@@ -23,6 +23,7 @@ namespace LostInLeaves
 
         private Canvas _rootCanvas;
         private GameObject _prefabInstance;
+        private RectTransform _rectTransform;
         private TextMeshProUGUI _textInstance;
         private Image _background;
         [GlobalDefault] private InputManager _inputManager;
@@ -46,9 +47,12 @@ namespace LostInLeaves
                 _prefabInstance = Instantiate(_textPrefab);
                 // find an image and text component somewhere in the prefab
                 _textInstance = _prefabInstance.GetComponentInChildren<TextMeshProUGUI>();
+                _rectTransform = _prefabInstance.GetComponent<RectTransform>();
                 _background = _prefabInstance.GetComponentInChildren<Image>();
-                _textInstance.transform.SetParent(_rootCanvas.transform, false);
+                _rectTransform.SetParent(_rootCanvas.transform, false);
             }
+
+            if (_background) _background.color = _backgroundColor;
 
             SetBackgroundAlpha(0f);
             _textInstance.text = "";
