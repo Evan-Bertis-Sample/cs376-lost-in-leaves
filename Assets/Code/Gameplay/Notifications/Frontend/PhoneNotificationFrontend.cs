@@ -115,8 +115,9 @@ namespace LostInLeaves.Notifications.Frontend
                 _phoneMotionTween.Kill();
             }
 
-            // shake the phone for the duration
-            _phoneMotionTween = _phoneRectTransform.DOShakeAnchorPos(float.MaxValue, _phoneShakeStrength, _phoneShakeVibrato, _phoneShakeRandomness);
+            // shake the phone rect transform forever, and repeat when finished and with delay
+            _phoneMotionTween = _phoneRectTransform.DOShakeAnchorPos(1f, _phoneShakeStrength, _phoneShakeVibrato, _phoneShakeRandomness, true);
+            _phoneMotionTween.SetLoops(-1, LoopType.Restart);
         }
 
         private void EndPhoneShake()
@@ -124,6 +125,8 @@ namespace LostInLeaves.Notifications.Frontend
             if (_phoneMotionTween != null)
             {
                 _phoneMotionTween.Kill();
+                // reset the position of the phone
+                _phoneRectTransform.anchoredPosition = _phoneShowPosition;
             }
         }
 
@@ -207,5 +210,6 @@ namespace LostInLeaves.Notifications.Frontend
 
             return 0;
         }
+        
     }
 }

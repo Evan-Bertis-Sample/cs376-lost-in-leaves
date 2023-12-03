@@ -26,11 +26,18 @@ namespace LostInLeaves
         private RectTransform _rectTransform;
         private TextMeshProUGUI _textInstance;
         private Image _background;
+        private string _speakerName;
         [GlobalDefault] private InputManager _inputManager;
+        [GlobalDefault] private VoiceBank _voiceBank;
 
         public override async Task BeginDialogue()
         {
             if (_inputManager == null)
+            {
+                DependencyInjector.InjectDependencies(this);
+            }
+
+            if (_voiceBank == null)
             {
                 DependencyInjector.InjectDependencies(this);
             }
@@ -65,8 +72,9 @@ namespace LostInLeaves
 
         public override async Task<int> DisplayNode(DialogueNode node)
         {
+            _speakerName = node.Speaker;
             _textInstance.text = "";
-            await Typewriter.ApplyTo(_textInstance, node.Content, _textSpeed);
+            await Typewriter.ApplyTo(_textInstance, node.Content, _textSpeed, onReveal : OnReveal);
 
             // await for the user to press the continue button
             while (!_inputManager.GetInputDown(_continuePrompt))
@@ -102,6 +110,11 @@ namespace LostInLeaves
             Color color = _background.color;
             color.a = alpha;
             _background.color = color;
+        }
+
+        private void OnReveal(char c)
+        {
+            _voiceBank.PlayVoice(_speakerName, c);
         }
     }
 }
