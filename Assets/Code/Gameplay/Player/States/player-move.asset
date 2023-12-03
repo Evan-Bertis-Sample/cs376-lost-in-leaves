@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc5d3fb1288ee5a43af475dd2114d0f4, type: 3}
   m_Name: player-move
   m_EditorClassIdentifier: 
-  _moveSpeed: 8
+  _moveSpeed: 25
   _accelerationCurve:
     serializedVersion: 2
     m_Curve:
