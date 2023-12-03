@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: phone-frontend
   m_EditorClassIdentifier: 
   _textPrefab: {fileID: 7499839077724631793, guid: ed0e1b9a8d61d324dad620b4a79e9f74, type: 3}
-  _backgroundColorAlpha: 1
-  _backgroundColor: {r: 0.21555711, g: 0.26415092, b: 0.24546197, a: 1}
+  _backgroundColorAlpha: 0.8
+  _backgroundColor: {r: 0.091313615, g: 0.11320752, b: 0.10590955, a: 1}
   _fadeSpeed: 0.1
   _textSpeed: 30
   _continuePrompt: Player/Interact
