@@ -19,7 +19,7 @@ namespace LostInLeaves.Notifications
         /// <param name="startDialogueOnPickup"> Whether or not to start the dialogue when the player picks up (false means start immediately after ring) </param>
         /// <returns></returns>
         public static Notification BuildPhoneCallNotification(PhoneContact contact, string conversationDialoguePath, string phoneCallReactionPath = "",
-                                                              bool pickup = true, float pickupDelay = 0f, float reactionDelay = 0f)
+                                                              bool pickup = true, float pickupDelay = 0f, float reactionDelay = 0f, float postCallDelay = 0f, string postCallConversationPath = "")
         {
             var notification = new Notification($"Incoming call from {contact.Name}")
                 .AddProperty("contact", contact)
@@ -28,7 +28,9 @@ namespace LostInLeaves.Notifications
                 .AddProperty("conversationDialoguePath", conversationDialoguePath)
                 .AddProperty("reactionPath", phoneCallReactionPath)
                 .AddProperty("reactionDelay", reactionDelay)
-                .AddProperty("type", (int)PhoneRenderer.PhoneScreen.Call);
+                .AddProperty("type", (int)PhoneRenderer.PhoneScreen.Call)
+                .AddProperty("postCallDelay", postCallDelay)
+                .AddProperty("postCallConversationPath", postCallConversationPath);
             return notification;
         }
 

@@ -107,7 +107,7 @@ namespace LostInLeaves.Notifications.Frontend
             await _phoneMotionTween.AsyncWaitForCompletion();
         }
 
-        private async Task VibratePhone(float duration)
+        private void BeginPhoneShake()
         {
             // vibrate the rect transform
             if (_phoneMotionTween != null)
@@ -116,8 +116,15 @@ namespace LostInLeaves.Notifications.Frontend
             }
 
             // shake the phone for the duration
-            _phoneMotionTween = _phoneRectTransform.DOShakeAnchorPos(duration, _phoneShakeStrength, _phoneShakeVibrato, _phoneShakeRandomness);
-            await _phoneMotionTween.AsyncWaitForCompletion();
+            _phoneMotionTween = _phoneRectTransform.DOShakeAnchorPos(float.MaxValue, _phoneShakeStrength, _phoneShakeVibrato, _phoneShakeRandomness);
+        }
+
+        private void EndPhoneShake()
+        {
+            if (_phoneMotionTween != null)
+            {
+                _phoneMotionTween.Kill();
+            }
         }
 
         private async Task HandlePhoneScreen(PhoneRenderer.PhoneScreen screenType, Notification notification)
@@ -134,32 +141,71 @@ namespace LostInLeaves.Notifications.Frontend
 
         private async Task HandleCallScreen(Notification notification)
         {
+            // visualize the phone ringing
+            string reactionPath = notification.GetProperty<string>("reactionPath");
+            float reactionDelay = notification.GetProperty<float>("reactionDelay");
+
+            float timeForReaction = await PhoneReaction(reactionPath, reactionDelay);
+
             float pickupDelay = notification.GetProperty<float>("pickupDelay");
             Debug.Log($"PhoneNotificationFrontend: Pickup delay is {pickupDelay}");
-            float reactionDelay = notification.GetProperty<float>("reactionDelay");
-            string reactionPath = notification.GetProperty<string>("reactionPath");
 
-            // visualize the phone ringing
-            List<Task> pickupTasks = new List<Task>();
-            pickupTasks.Add(VibratePhone(pickupDelay));
-            pickupTasks.Add(PhoneReaction(pickupDelay, reactionPath));
+            float timeToWait = pickupDelay - timeForReaction;
+            Debug.Log($"PhoneNotificationFrontend: Waiting {timeToWait} seconds to pickup");
+            
+            if (timeToWait > 0)
+            {
+                await Task.Delay((int)(timeToWait * 1000));
+            }
 
-            // wait for both
-            await Task.WhenAll(pickupTasks);
+            bool pickup = notification.GetProperty<bool>("pickup");
+            if (pickup)
+            {
+                _phoneInstance.AcceptCall();
+                DialogueEmitter player = DialogueRunner.GetDialogueEmitter("Player");
+                string conversationDialoguePath = notification.GetProperty<string>("conversationDialoguePath");
+                await DialogueRunner.RunDialogue(player, conversationDialoguePath, false);
+            }
+            else
+            {
+                _phoneInstance.DeclineCall();
+            }
+
+            float postCallDelay = notification.GetProperty<float>("postCallDelay");
+            string postCallConversationPath = notification.GetProperty<string>("postCallConversationPath");
+
+            if (postCallDelay > 0)
+            {
+                await Task.Delay((int)(postCallDelay * 1000));
+            }
+
+            if (!string.IsNullOrEmpty(postCallConversationPath))
+            {
+                DialogueEmitter player = DialogueRunner.GetDialogueEmitter("Player");
+                await DialogueRunner.RunDialogue(player, postCallConversationPath, false);
+            }
         }
 
-        private async Task PhoneReaction(float delay, string reactionPath)
+        private async Task<float> PhoneReaction(string reactionPath, float reactionDelay)
         {
-            Debug.Log($"PhoneNotificationFrontend: Waiting {delay} seconds to react");
-            await Task.Delay((int)(delay * 1000));
             Debug.Log($"PhoneNotificationFrontend: Reacting to call");
             if (!string.IsNullOrEmpty(reactionPath))
             {
+                float start = Time.time;
                 Debug.Log($"PhoneNotificationFrontend: Playing reaction: {reactionPath}");
                 DialogueEmitter playerEmitter = DialogueRunner.GetDialogueEmitter("Player");
                 // await the the dialogue coroutine
+                BeginPhoneShake();
+                await Task.Delay((int)(reactionDelay * 1000));
                 await DialogueRunner.RunDialogue(playerEmitter, reactionPath, false);
+                EndPhoneShake();
+
+                float end = Time.time;
+                Debug.Log($"PhoneNotificationFrontend: Finished reaction: {reactionPath}");
+                return end - start; // return the time it took to play the reaction
             }
+
+            return 0;
         }
     }
 }

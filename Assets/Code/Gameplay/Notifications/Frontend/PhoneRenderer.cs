@@ -38,6 +38,7 @@ namespace LostInLeaves.Notifications.Frontend
         [SerializeField] private PhoneTextReferences _phoneTextScreenObjects;
 
         private List<PhoneScreenBase> _phoneScreens = new List<PhoneScreenBase>();
+        private PhoneScreen _currentScreen;
 
         private void Awake()
         {
@@ -58,6 +59,17 @@ namespace LostInLeaves.Notifications.Frontend
                     RenderTextNotification(notification);
                     break;
             }
+            _currentScreen = screen;
+        }
+
+        public void AcceptCall()
+        {
+            Debug.Log("PhoneRenderer: Accepting call");
+        }
+
+        public void DeclineCall()
+        {
+            Debug.Log("PhoneRenderer: Declining call");
         }
 
         private void RenderCallNotification(Notification notification)
