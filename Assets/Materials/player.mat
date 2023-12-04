@@ -104,6 +104,9 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _Displacement_Magnitude: 0
+    - _Displacement_Noise_Density: 0.1
+    - _Displacement_Speed: 3
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
@@ -111,6 +114,9 @@ Material:
     - _GlossyReflections: 0
     - _Metallic: 0
     - _OcclusionStrength: 1
+    - _Outline_Animation_Speed: 0.1
+    - _Outline_Noise_Scale: 22
+    - _Outline_Width: 1.5
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -132,6 +138,8 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Primary_Color: {r: 1, g: 1, b: 1, a: 0}
+    - _Secondary_Color: {r: 0.8773585, g: 0.64055127, b: 0.32694018, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _Toon_Ramp_Tinting: {r: 0, g: 0.03934165, b: 0.2641509, a: 0}
   m_BuildTextureStacks: []

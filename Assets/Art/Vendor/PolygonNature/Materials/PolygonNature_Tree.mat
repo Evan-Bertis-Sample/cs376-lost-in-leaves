@@ -115,6 +115,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AO: 2.4
+    - _BaseLight: 0.35
     - _Big_Wave: 7.7
     - _Big_WindAmount: 0.4
     - _Big_Windspeed: 0.75
@@ -127,12 +129,14 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _LeafColorSecondary: 0
     - _Leaves_Wave: 6.06
     - _Leaves_WindAmount: 0.26
     - _Leaves_WindSpeed: 0.2
     - _Metallic: 0
     - _Mode: 0
     - _Noise_Scale: 5
+    - _Occlusion: 7.5
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _QueueControl: 0
@@ -142,6 +146,7 @@ Material:
     - _Small_WindSpeed: 0.1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _SquashAmount: 1
     - _SrcBlend: 1
     - _Steps: 4
     - _Toon_Ramp_Offset: 0.1
@@ -160,12 +165,18 @@ Material:
     - _ZWrite: 1
     - __dirty: 1
     m_Colors:
+    - TOD_TreeBillboardColor: {r: 0, g: 0, b: 0, a: 0}
     - _AlbedoColor: {r: 1, g: 1, b: 1, a: 0}
     - _Ambient: {r: 0.5754717, g: 0.530197, b: 0.3013083, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorTint: {r: 1, g: 1, b: 1, a: 0}
     - _Crosswind_Direction: {r: -1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _LeafColor: {r: 0.5943396, g: 0.26853743, b: 0.20465466, a: 1}
+    - _LeafColorBasis: {r: 1, g: 0.6509804, b: 0.18039216, a: 1}
+    - _TOD_TreeBillboardColor: {r: 0, g: 0, b: 0, a: 0}
     - _Toon_Ramp_Tinting: {r: 0.19948435, g: 0.055802785, b: 0.3584906, a: 0}
+    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
     - _Wind_Direction: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
