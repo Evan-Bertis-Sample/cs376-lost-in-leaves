@@ -148,11 +148,11 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Path_Primary_Color: {r: 0.8867924, g: 0.5172409, b: 0.25516194, a: 0}
     - _Path_Secondary_Color: {r: 0.7735849, g: 0.42279655, b: 0.22258809, a: 0}
-    - _Primary_Color: {r: 0.63676226, g: 0.745283, b: 0.34100214, a: 1}
+    - _Primary_Color: {r: 0.566142, g: 0.754717, b: 0.43787825, a: 1}
     - _Sand_Primary_Color: {r: 0.8784314, g: 0.7764706, b: 0.3686275, a: 0}
     - _Sand_Rock_Color: {r: 0.509434, g: 0.3408057, b: 0.1994482, a: 1}
     - _Sand_Secondary_Color: {r: 0.7529412, g: 0.6039216, b: 0.3019608, a: 0}
-    - _Secondary_Color: {r: 0.5122774, g: 0.7075472, b: 0.3037113, a: 1}
+    - _Secondary_Color: {r: 0.4794746, g: 0.7169812, b: 0.38216448, a: 1}
     - _Slope_Highlight_Color: {r: 0.9433962, g: 0.76878804, b: 0.14684942, a: 0}
     - _Slope_Shading_Color: {r: 0.27971223, g: 0.1462264, b: 0.5849056, a: 0}
     - _Slope_Shading_Direction: {r: -1, g: 0, b: 1, a: 0}

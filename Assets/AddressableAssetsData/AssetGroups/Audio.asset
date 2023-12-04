@@ -26,7 +26,7 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 66b10e98edcea1443a13f34d1d70b0c3
-    m_Address: Assets/Audio/SoundFX/Enviornment
+    m_Address: Assets/Audio/Enviornment
     m_ReadOnly: 0
     m_SerializedLabels:
     - Assets/Audio/SoundFX
@@ -35,31 +35,31 @@ MonoBehaviour:
     m_Address: Assets/Audio/SoundFX/Enviornment/Lightning.wav
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Assets/Audio/SoundFX/Enviornment/Lightning
+    - Assets/Audio/Enviornment/Lightning
     - Clips
   - m_GUID: d4a1d22bfee002c4ba55a82cac4ac7e1
     m_Address: Assets/Audio/SoundFX/Enviornment/Lightning2.wav
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Assets/Audio/SoundFX/Enviornment/Lightning
+    - Assets/Audio/Enviornment/Lightning
     - Clips
   - m_GUID: 8a77b4d5c5d1bbd458cc4307e16e4059
     m_Address: Assets/Audio/SoundFX/Enviornment/Lightning3.wav
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Assets/Audio/SoundFX/Enviornment/Lightning
+    - Assets/Audio/Enviornment/Lightning
     - Clips
   - m_GUID: 69a18aa5bf7f1624fb1e5bbbc3553e76
     m_Address: Assets/Audio/SoundFX/Enviornment/Lightning4.wav
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Assets/Audio/SoundFX/Enviornment/Lightning
+    - Assets/Audio/Enviornment/Lightning
     - Clips
   - m_GUID: 852f22fcbf943d64c89ef75bc734571e
     m_Address: Assets/Audio/SoundFX/Enviornment/Rain.wav
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Assets/Audio/SoundFX/Enviornment/Rain
+    - Assets/Audio/Enviornment/Rain
     - Clips
   - m_GUID: e8f72cffbe1be394ea6759870e18e25c
     m_Address: Assets/Audio/SoundFX/Enviornment/AudioOverrideGroup.asset
@@ -368,22 +368,290 @@ MonoBehaviour:
     - Assets/Audio/SoundFX/Voices/Player
     - Clips
   - m_GUID: a88b04ef6b882754f8ae452071474034
-    m_Address: Assets/Audio/SoundFX/Enviornment/Lightning
+    m_Address: Assets/Audio/Enviornment/Lightning
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Assets/Audio/SoundFX/Enviornment
+    - Assets/Audio/Enviornment
     - AudioDirectory
   - m_GUID: 6c29fd20159e8f444966059e5b21843a
-    m_Address: Assets/Audio/SoundFX/Enviornment/Rain
+    m_Address: Assets/Audio/Enviornment/Rain
     m_ReadOnly: 0
     m_SerializedLabels:
-    - Assets/Audio/SoundFX/Enviornment
+    - Assets/Audio/Enviornment
     - AudioDirectory
   - m_GUID: 8ef940d84d40491429f639589a21ffa9
     m_Address: Assets/Audio/SoundFX/Voices/Player/AudioOverrideGroup.asset
     m_ReadOnly: 0
     m_SerializedLabels:
     - Assets/Audio/SoundFX/Voices/Player
+    - Override
+  - m_GUID: a81832d78794cbd43969814852f5685a
+    m_Address: Assets/Audio/Nature Sound FX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 78a9b4275202d6f4290d587aec1106ef
+    m_Address: Assets/Audio/Nature Sound FX/Beach
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX
+    - AudioDirectory
+  - m_GUID: 47a4ec0ea5f743d41bb9a42872222679
+    m_Address: Assets/Audio/Nature Sound FX/Beach/Beach (1).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Beach
+    - Clips
+  - m_GUID: dc3cc0fedb6d586418fa1790b317b8c0
+    m_Address: Assets/Audio/Nature Sound FX/Beach/Beach (2).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Beach
+    - Clips
+  - m_GUID: 2bb03b1f80f50e04388710ae901ae607
+    m_Address: Assets/Audio/Nature Sound FX/Beach/Beach (3).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Beach
+    - Clips
+  - m_GUID: 940f0244c5ae7a0498fbe59b474dc2f2
+    m_Address: Assets/Audio/Nature Sound FX/Beach/Beach (4).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Beach
+    - Clips
+  - m_GUID: 230484ec2d577a845bd208c81aab7c58
+    m_Address: Assets/Audio/Nature Sound FX/Beach/Beach (5).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Beach
+    - Clips
+  - m_GUID: 839cff8dfc1f2ad42b2d79b86172c48e
+    m_Address: Assets/Audio/Nature Sound FX/Beach/Beach (6).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Beach
+    - Clips
+  - m_GUID: 88bd76943a363c94d9e6ef61033bae97
+    m_Address: Assets/Audio/Nature Sound FX/Beach/Beach (7) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Beach
+    - Clips
+  - m_GUID: 4d0857ae9c9b26947bda7acaa6d3b790
+    m_Address: Assets/Audio/Nature Sound FX/Beach/Beach (8) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Beach
+    - Clips
+  - m_GUID: 7b005ace122a5a04ab13c39fe56a26cc
+    m_Address: Assets/Audio/Nature Sound FX/Beach/Beach (9) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Beach
+    - Clips
+  - m_GUID: c3ac9998a1890844ca1719c51613f55a
+    m_Address: Assets/Audio/Nature Sound FX/Fire
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX
+    - AudioDirectory
+  - m_GUID: 8fff534c015b12f40b5525049fa47eba
+    m_Address: Assets/Audio/Nature Sound FX/Fire/Fire (1) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Fire
+    - Clips
+  - m_GUID: 43c9f1fcd965b324fadf0fcfad4b9286
+    m_Address: Assets/Audio/Nature Sound FX/Fire/Fire (2) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Fire
+    - Clips
+  - m_GUID: 8d97fd5d1ab1a414f85bf0d270312403
+    m_Address: Assets/Audio/Nature Sound FX/Fire/Fire (3) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Fire
+    - Clips
+  - m_GUID: f0e080bf2a212bc4ba9e09b27c42714b
+    m_Address: Assets/Audio/Nature Sound FX/Fire/Fire (4) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Fire
+    - Clips
+  - m_GUID: 0fd10244b77d12c49b736fcb75ab559d
+    m_Address: Assets/Audio/Nature Sound FX/Fire/Fire (5) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Fire
+    - Clips
+  - m_GUID: 28804819065b1be4abca53c61d5e11dc
+    m_Address: Assets/Audio/Nature Sound FX/Jungle
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX
+    - AudioDirectory
+  - m_GUID: 41c30371244903d41809b05d726bd536
+    m_Address: Assets/Audio/Nature Sound FX/Jungle/Jungle (1).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Jungle
+    - Clips
+  - m_GUID: 450c3e7d3828d504b91051b413760a25
+    m_Address: Assets/Audio/Nature Sound FX/Jungle/Jungle (2) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Jungle
+    - Clips
+  - m_GUID: 91b40a88daaebac44a6932c55c375a9c
+    m_Address: Assets/Audio/Nature Sound FX/Jungle/Jungle (3) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Jungle
+    - Clips
+  - m_GUID: 27392ddbb9f7fe8428c09ea2f1c238d2
+    m_Address: Assets/Audio/Nature Sound FX/Jungle/Jungle (4).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Jungle
+    - Clips
+  - m_GUID: d3eef78b2ad3aae40aea818a64d706de
+    m_Address: Assets/Audio/Nature Sound FX/Jungle/Jungle (5).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Jungle
+    - Clips
+  - m_GUID: 77e37ed91994fd54d9c2c7c3eaeba428
+    m_Address: Assets/Audio/Nature Sound FX/Jungle/Jungle (6).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Jungle
+    - Clips
+  - m_GUID: 877c538ed56cfaa419eb897df7b5ae90
+    m_Address: Assets/Audio/Nature Sound FX/Jungle/Jungle (7) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Jungle
+    - Clips
+  - m_GUID: 7aec63fe0b0a79644b5278195b391fdc
+    m_Address: Assets/Audio/Nature Sound FX/Jungle/Jungle (8) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Jungle
+    - Clips
+  - m_GUID: 54e725959bed90c47b601615a5d3aeee
+    m_Address: Assets/Audio/Nature Sound FX/Jungle/jungle (9).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Jungle
+    - Clips
+  - m_GUID: 1153a4de4127afb429aab2de076deafe
+    m_Address: Assets/Audio/Nature Sound FX/Water
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX
+    - AudioDirectory
+  - m_GUID: a4f8175a1c1a1f2409c543c991e22a8e
+    m_Address: Assets/Audio/Nature Sound FX/Water/Water (1) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Water
+    - Clips
+  - m_GUID: 86b896c1c3b2e0548a87a49725a6ebeb
+    m_Address: Assets/Audio/Nature Sound FX/Water/Water (2) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Water
+    - Clips
+  - m_GUID: be6670dbc31eac44082041f24f0b6394
+    m_Address: Assets/Audio/Nature Sound FX/Water/Water (3) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Water
+    - Clips
+  - m_GUID: b3e352e8585b26045ba59942563c5e30
+    m_Address: Assets/Audio/Nature Sound FX/Water/Water (4) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Water
+    - Clips
+  - m_GUID: a9208fae579825d408924eb64b9df5aa
+    m_Address: Assets/Audio/Nature Sound FX/Water/Water (5) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Water
+    - Clips
+  - m_GUID: 07bb92ee9db78484e913e79461525151
+    m_Address: Assets/Audio/Nature Sound FX/Water/Water (6) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Water
+    - Clips
+  - m_GUID: cc12a9386d54d4947ab8a9dae0a77c82
+    m_Address: Assets/Audio/Nature Sound FX/Water/Water (7) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Water
+    - Clips
+  - m_GUID: 540e6ac96b889dd43973be7126cb0de0
+    m_Address: Assets/Audio/Nature Sound FX/Wind
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX
+    - AudioDirectory
+  - m_GUID: b0f0a88b8267e91409f420bc013f0642
+    m_Address: Assets/Audio/Nature Sound FX/Wind/Wind (1) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Wind
+    - Clips
+  - m_GUID: db129c23f1af60c4ea5a189afb04a719
+    m_Address: Assets/Audio/Nature Sound FX/Wind/Wind (2).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Wind
+    - Clips
+  - m_GUID: b61a804d641650f4fbce1355bf341f24
+    m_Address: Assets/Audio/Nature Sound FX/Wind/Wind (3) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Wind
+    - Clips
+  - m_GUID: 5dc9332973a60134f857335aded1b510
+    m_Address: Assets/Audio/Nature Sound FX/Wind/Wind (4) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Wind
+    - Clips
+  - m_GUID: a6c623c3ca85e644b80fba553b48b9fb
+    m_Address: Assets/Audio/Nature Sound FX/Wind/Wind (5) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Wind
+    - Clips
+  - m_GUID: ce9b98ba572ca214e88e53dff27d395b
+    m_Address: Assets/Audio/Nature Sound FX/Wind/Wind (6) Loop.wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Wind
+    - Clips
+  - m_GUID: 29ad41b1d0741e64bb1e43eeccd2358a
+    m_Address: Assets/Audio/Nature Sound FX/Wind/Wind (7).wav
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Wind
+    - Clips
+  - m_GUID: 1e2f48d8b6ea8f348b646db6e06a488d
+    m_Address: Assets/Audio/Nature Sound FX/Water/AudioOverride.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Water
+    - Override
+  - m_GUID: 9fe33012c7a6b774c89561e6a435d795
+    m_Address: Assets/Audio/Nature Sound FX/Fire/AudioOverrideGroup.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Assets/Audio/Nature Sound FX/Fire
     - Override
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 8bf41b2f4f13e9b42a85e4f9bc8cecca, type: 2}

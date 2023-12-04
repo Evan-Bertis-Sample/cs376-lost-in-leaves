@@ -16,41 +16,69 @@ MonoBehaviour:
   <DefaultGroupSettings>k__BackingField: {fileID: 0}
   <OverrideCache>k__BackingField:
     m_keys:
+    - Assets/Audio/Enviornment
     - Assets/Audio/Music
+    - Assets/Audio/Nature Sound FX
     - Assets/Audio/SoundFX
-    - Assets/Audio/SoundFX/Enviornment
+    - Assets/Audio/Enviornment/Lightning
+    - Assets/Audio/Enviornment/Rain
+    - Assets/Audio/Nature Sound FX/Beach
+    - Assets/Audio/Nature Sound FX/Fire
+    - Assets/Audio/Nature Sound FX/Jungle
+    - Assets/Audio/Nature Sound FX/Water
+    - Assets/Audio/Nature Sound FX/Wind
     - Assets/Audio/SoundFX/Footsteps
     - Assets/Audio/SoundFX/Misc
     - Assets/Audio/SoundFX/Voices
-    - Assets/Audio/SoundFX/Enviornment/Lightning
-    - Assets/Audio/SoundFX/Enviornment/Rain
     - Assets/Audio/SoundFX/Footsteps/Grass
     - Assets/Audio/SoundFX/Voices/Player
     m_values:
+    - {fileID: 11400000, guid: e8f72cffbe1be394ea6759870e18e25c, type: 2}
     - {fileID: 0}
+    - {fileID: 11400000, guid: 9b6726e58670e624faaac49d3ecb2d27, type: 2}
     - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
     - {fileID: 11400000, guid: e8f72cffbe1be394ea6759870e18e25c, type: 2}
+    - {fileID: 11400000, guid: e8f72cffbe1be394ea6759870e18e25c, type: 2}
+    - {fileID: 11400000, guid: 9b6726e58670e624faaac49d3ecb2d27, type: 2}
+    - {fileID: 11400000, guid: 9fe33012c7a6b774c89561e6a435d795, type: 2}
+    - {fileID: 11400000, guid: 9b6726e58670e624faaac49d3ecb2d27, type: 2}
+    - {fileID: 11400000, guid: 1e2f48d8b6ea8f348b646db6e06a488d, type: 2}
+    - {fileID: 11400000, guid: 9b6726e58670e624faaac49d3ecb2d27, type: 2}
     - {fileID: 11400000, guid: 831f3267d3fc43f4ab85e20ca541beb6, type: 2}
     - {fileID: 11400000, guid: 0245bfba9b280b94a9c58d0dcab0f218, type: 2}
     - {fileID: 11400000, guid: 76854146a36f6534489903e3c9f30e7b, type: 2}
     - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
-    - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
-    - {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
     - {fileID: 11400000, guid: 8ef940d84d40491429f639589a21ffa9, type: 2}
   <GroupCache>k__BackingField:
     m_keys:
+    - Assets/Audio/Enviornment
     - Assets/Audio/Music
+    - Assets/Audio/Nature Sound FX
     - Assets/Audio/SoundFX
-    - Assets/Audio/SoundFX/Enviornment
+    - Assets/Audio/Enviornment/Lightning
+    - Assets/Audio/Enviornment/Rain
+    - Assets/Audio/Nature Sound FX/Beach
+    - Assets/Audio/Nature Sound FX/Fire
+    - Assets/Audio/Nature Sound FX/Jungle
+    - Assets/Audio/Nature Sound FX/Water
+    - Assets/Audio/Nature Sound FX/Wind
     - Assets/Audio/SoundFX/Footsteps
     - Assets/Audio/SoundFX/Misc
     - Assets/Audio/SoundFX/Voices
-    - Assets/Audio/SoundFX/Enviornment/Lightning
-    - Assets/Audio/SoundFX/Enviornment/Rain
     - Assets/Audio/SoundFX/Footsteps/Grass
     - Assets/Audio/SoundFX/Voices/Player
     m_values:
+    - Override: {fileID: 11400000, guid: e8f72cffbe1be394ea6759870e18e25c, type: 2}
+      <AudioReferences>k__BackingField: []
+      PathToReference:
+        m_keys: []
+        m_values: []
     - Override: {fileID: 0}
+      <AudioReferences>k__BackingField: []
+      PathToReference:
+        m_keys: []
+        m_values: []
+    - Override: {fileID: 11400000, guid: 9b6726e58670e624faaac49d3ecb2d27, type: 2}
       <AudioReferences>k__BackingField: []
       PathToReference:
         m_keys: []
@@ -61,10 +89,418 @@ MonoBehaviour:
         m_keys: []
         m_values: []
     - Override: {fileID: 11400000, guid: e8f72cffbe1be394ea6759870e18e25c, type: 2}
-      <AudioReferences>k__BackingField: []
+      <AudioReferences>k__BackingField:
+      - m_AssetGUID: c11df33324e1a114daad5279ecaa42ad
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: d4a1d22bfee002c4ba55a82cac4ac7e1
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 8a77b4d5c5d1bbd458cc4307e16e4059
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 69a18aa5bf7f1624fb1e5bbbc3553e76
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
       PathToReference:
-        m_keys: []
-        m_values: []
+        m_keys:
+        - Assets/Audio/Enviornment/Lightning/Lightning.wav
+        - Assets/Audio/Enviornment/Lightning/Lightning2.wav
+        - Assets/Audio/Enviornment/Lightning/Lightning3.wav
+        - Assets/Audio/Enviornment/Lightning/Lightning4.wav
+        m_values:
+        - m_AssetGUID: c11df33324e1a114daad5279ecaa42ad
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: d4a1d22bfee002c4ba55a82cac4ac7e1
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 8a77b4d5c5d1bbd458cc4307e16e4059
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 69a18aa5bf7f1624fb1e5bbbc3553e76
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+    - Override: {fileID: 11400000, guid: e8f72cffbe1be394ea6759870e18e25c, type: 2}
+      <AudioReferences>k__BackingField:
+      - m_AssetGUID: 852f22fcbf943d64c89ef75bc734571e
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      PathToReference:
+        m_keys:
+        - Assets/Audio/Enviornment/Rain/Rain.wav
+        m_values:
+        - m_AssetGUID: 852f22fcbf943d64c89ef75bc734571e
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+    - Override: {fileID: 11400000, guid: 9b6726e58670e624faaac49d3ecb2d27, type: 2}
+      <AudioReferences>k__BackingField:
+      - m_AssetGUID: 47a4ec0ea5f743d41bb9a42872222679
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: dc3cc0fedb6d586418fa1790b317b8c0
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 2bb03b1f80f50e04388710ae901ae607
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 940f0244c5ae7a0498fbe59b474dc2f2
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 230484ec2d577a845bd208c81aab7c58
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 839cff8dfc1f2ad42b2d79b86172c48e
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 88bd76943a363c94d9e6ef61033bae97
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 4d0857ae9c9b26947bda7acaa6d3b790
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 7b005ace122a5a04ab13c39fe56a26cc
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      PathToReference:
+        m_keys:
+        - Assets/Audio/Nature Sound FX/Beach/Beach (1).wav
+        - Assets/Audio/Nature Sound FX/Beach/Beach (2).wav
+        - Assets/Audio/Nature Sound FX/Beach/Beach (3).wav
+        - Assets/Audio/Nature Sound FX/Beach/Beach (4).wav
+        - Assets/Audio/Nature Sound FX/Beach/Beach (5).wav
+        - Assets/Audio/Nature Sound FX/Beach/Beach (6).wav
+        - Assets/Audio/Nature Sound FX/Beach/Beach (7) Loop.wav
+        - Assets/Audio/Nature Sound FX/Beach/Beach (8) Loop.wav
+        - Assets/Audio/Nature Sound FX/Beach/Beach (9) Loop.wav
+        m_values:
+        - m_AssetGUID: 47a4ec0ea5f743d41bb9a42872222679
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: dc3cc0fedb6d586418fa1790b317b8c0
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 2bb03b1f80f50e04388710ae901ae607
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 940f0244c5ae7a0498fbe59b474dc2f2
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 230484ec2d577a845bd208c81aab7c58
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 839cff8dfc1f2ad42b2d79b86172c48e
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 88bd76943a363c94d9e6ef61033bae97
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 4d0857ae9c9b26947bda7acaa6d3b790
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 7b005ace122a5a04ab13c39fe56a26cc
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+    - Override: {fileID: 11400000, guid: 9fe33012c7a6b774c89561e6a435d795, type: 2}
+      <AudioReferences>k__BackingField:
+      - m_AssetGUID: 8fff534c015b12f40b5525049fa47eba
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 43c9f1fcd965b324fadf0fcfad4b9286
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 8d97fd5d1ab1a414f85bf0d270312403
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: f0e080bf2a212bc4ba9e09b27c42714b
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 0fd10244b77d12c49b736fcb75ab559d
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      PathToReference:
+        m_keys:
+        - Assets/Audio/Nature Sound FX/Fire/Fire (1) Loop.wav
+        - Assets/Audio/Nature Sound FX/Fire/Fire (2) Loop.wav
+        - Assets/Audio/Nature Sound FX/Fire/Fire (3) Loop.wav
+        - Assets/Audio/Nature Sound FX/Fire/Fire (4) Loop.wav
+        - Assets/Audio/Nature Sound FX/Fire/Fire (5) Loop.wav
+        m_values:
+        - m_AssetGUID: 8fff534c015b12f40b5525049fa47eba
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 43c9f1fcd965b324fadf0fcfad4b9286
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 8d97fd5d1ab1a414f85bf0d270312403
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: f0e080bf2a212bc4ba9e09b27c42714b
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 0fd10244b77d12c49b736fcb75ab559d
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+    - Override: {fileID: 11400000, guid: 9b6726e58670e624faaac49d3ecb2d27, type: 2}
+      <AudioReferences>k__BackingField:
+      - m_AssetGUID: 41c30371244903d41809b05d726bd536
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 450c3e7d3828d504b91051b413760a25
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 91b40a88daaebac44a6932c55c375a9c
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 27392ddbb9f7fe8428c09ea2f1c238d2
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: d3eef78b2ad3aae40aea818a64d706de
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 77e37ed91994fd54d9c2c7c3eaeba428
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 877c538ed56cfaa419eb897df7b5ae90
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 7aec63fe0b0a79644b5278195b391fdc
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 54e725959bed90c47b601615a5d3aeee
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      PathToReference:
+        m_keys:
+        - Assets/Audio/Nature Sound FX/Jungle/Jungle (1).wav
+        - Assets/Audio/Nature Sound FX/Jungle/Jungle (2) Loop.wav
+        - Assets/Audio/Nature Sound FX/Jungle/Jungle (3) Loop.wav
+        - Assets/Audio/Nature Sound FX/Jungle/Jungle (4).wav
+        - Assets/Audio/Nature Sound FX/Jungle/Jungle (5).wav
+        - Assets/Audio/Nature Sound FX/Jungle/Jungle (6).wav
+        - Assets/Audio/Nature Sound FX/Jungle/Jungle (7) Loop.wav
+        - Assets/Audio/Nature Sound FX/Jungle/Jungle (8) Loop.wav
+        - Assets/Audio/Nature Sound FX/Jungle/jungle (9).wav
+        m_values:
+        - m_AssetGUID: 41c30371244903d41809b05d726bd536
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 450c3e7d3828d504b91051b413760a25
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 91b40a88daaebac44a6932c55c375a9c
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 27392ddbb9f7fe8428c09ea2f1c238d2
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: d3eef78b2ad3aae40aea818a64d706de
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 77e37ed91994fd54d9c2c7c3eaeba428
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 877c538ed56cfaa419eb897df7b5ae90
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 7aec63fe0b0a79644b5278195b391fdc
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 54e725959bed90c47b601615a5d3aeee
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+    - Override: {fileID: 11400000, guid: 1e2f48d8b6ea8f348b646db6e06a488d, type: 2}
+      <AudioReferences>k__BackingField:
+      - m_AssetGUID: a4f8175a1c1a1f2409c543c991e22a8e
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 86b896c1c3b2e0548a87a49725a6ebeb
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: be6670dbc31eac44082041f24f0b6394
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: b3e352e8585b26045ba59942563c5e30
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: a9208fae579825d408924eb64b9df5aa
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 07bb92ee9db78484e913e79461525151
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: cc12a9386d54d4947ab8a9dae0a77c82
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      PathToReference:
+        m_keys:
+        - Assets/Audio/Nature Sound FX/Water/Water (1) Loop.wav
+        - Assets/Audio/Nature Sound FX/Water/Water (2) Loop.wav
+        - Assets/Audio/Nature Sound FX/Water/Water (3) Loop.wav
+        - Assets/Audio/Nature Sound FX/Water/Water (4) Loop.wav
+        - Assets/Audio/Nature Sound FX/Water/Water (5) Loop.wav
+        - Assets/Audio/Nature Sound FX/Water/Water (6) Loop.wav
+        - Assets/Audio/Nature Sound FX/Water/Water (7) Loop.wav
+        m_values:
+        - m_AssetGUID: a4f8175a1c1a1f2409c543c991e22a8e
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 86b896c1c3b2e0548a87a49725a6ebeb
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: be6670dbc31eac44082041f24f0b6394
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: b3e352e8585b26045ba59942563c5e30
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: a9208fae579825d408924eb64b9df5aa
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 07bb92ee9db78484e913e79461525151
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: cc12a9386d54d4947ab8a9dae0a77c82
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+    - Override: {fileID: 11400000, guid: 9b6726e58670e624faaac49d3ecb2d27, type: 2}
+      <AudioReferences>k__BackingField:
+      - m_AssetGUID: b0f0a88b8267e91409f420bc013f0642
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: db129c23f1af60c4ea5a189afb04a719
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: b61a804d641650f4fbce1355bf341f24
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 5dc9332973a60134f857335aded1b510
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: a6c623c3ca85e644b80fba553b48b9fb
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: ce9b98ba572ca214e88e53dff27d395b
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      - m_AssetGUID: 29ad41b1d0741e64bb1e43eeccd2358a
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+      PathToReference:
+        m_keys:
+        - Assets/Audio/Nature Sound FX/Wind/Wind (1) Loop.wav
+        - Assets/Audio/Nature Sound FX/Wind/Wind (2).wav
+        - Assets/Audio/Nature Sound FX/Wind/Wind (3) Loop.wav
+        - Assets/Audio/Nature Sound FX/Wind/Wind (4) Loop.wav
+        - Assets/Audio/Nature Sound FX/Wind/Wind (5) Loop.wav
+        - Assets/Audio/Nature Sound FX/Wind/Wind (6) Loop.wav
+        - Assets/Audio/Nature Sound FX/Wind/Wind (7).wav
+        m_values:
+        - m_AssetGUID: b0f0a88b8267e91409f420bc013f0642
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: db129c23f1af60c4ea5a189afb04a719
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: b61a804d641650f4fbce1355bf341f24
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 5dc9332973a60134f857335aded1b510
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: a6c623c3ca85e644b80fba553b48b9fb
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: ce9b98ba572ca214e88e53dff27d395b
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+        - m_AssetGUID: 29ad41b1d0741e64bb1e43eeccd2358a
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
     - Override: {fileID: 11400000, guid: 831f3267d3fc43f4ab85e20ca541beb6, type: 2}
       <AudioReferences>k__BackingField: []
       PathToReference:
@@ -98,61 +534,6 @@ MonoBehaviour:
       PathToReference:
         m_keys: []
         m_values: []
-    - Override: {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
-      <AudioReferences>k__BackingField:
-      - m_AssetGUID: c11df33324e1a114daad5279ecaa42ad
-        m_SubObjectName: 
-        m_SubObjectType: 
-        m_EditorAssetChanged: 0
-      - m_AssetGUID: d4a1d22bfee002c4ba55a82cac4ac7e1
-        m_SubObjectName: 
-        m_SubObjectType: 
-        m_EditorAssetChanged: 0
-      - m_AssetGUID: 8a77b4d5c5d1bbd458cc4307e16e4059
-        m_SubObjectName: 
-        m_SubObjectType: 
-        m_EditorAssetChanged: 0
-      - m_AssetGUID: 69a18aa5bf7f1624fb1e5bbbc3553e76
-        m_SubObjectName: 
-        m_SubObjectType: 
-        m_EditorAssetChanged: 0
-      PathToReference:
-        m_keys:
-        - Assets/Audio/SoundFX/Enviornment/Lightning/Lightning.wav
-        - Assets/Audio/SoundFX/Enviornment/Lightning/Lightning2.wav
-        - Assets/Audio/SoundFX/Enviornment/Lightning/Lightning3.wav
-        - Assets/Audio/SoundFX/Enviornment/Lightning/Lightning4.wav
-        m_values:
-        - m_AssetGUID: c11df33324e1a114daad5279ecaa42ad
-          m_SubObjectName: 
-          m_SubObjectType: 
-          m_EditorAssetChanged: 0
-        - m_AssetGUID: d4a1d22bfee002c4ba55a82cac4ac7e1
-          m_SubObjectName: 
-          m_SubObjectType: 
-          m_EditorAssetChanged: 0
-        - m_AssetGUID: 8a77b4d5c5d1bbd458cc4307e16e4059
-          m_SubObjectName: 
-          m_SubObjectType: 
-          m_EditorAssetChanged: 0
-        - m_AssetGUID: 69a18aa5bf7f1624fb1e5bbbc3553e76
-          m_SubObjectName: 
-          m_SubObjectType: 
-          m_EditorAssetChanged: 0
-    - Override: {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
-      <AudioReferences>k__BackingField:
-      - m_AssetGUID: 852f22fcbf943d64c89ef75bc734571e
-        m_SubObjectName: 
-        m_SubObjectType: 
-        m_EditorAssetChanged: 0
-      PathToReference:
-        m_keys:
-        - Assets/Audio/SoundFX/Enviornment/Rain/Rain.wav
-        m_values:
-        - m_AssetGUID: 852f22fcbf943d64c89ef75bc734571e
-          m_SubObjectName: 
-          m_SubObjectType: 
-          m_EditorAssetChanged: 0
     - Override: {fileID: 11400000, guid: c5b9c860ad079a3459a3ab91d51943bd, type: 2}
       <AudioReferences>k__BackingField:
       - m_AssetGUID: f766a0bea3a08e34eb80d6d95daf51b9

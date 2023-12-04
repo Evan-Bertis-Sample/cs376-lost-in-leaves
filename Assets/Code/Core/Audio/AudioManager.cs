@@ -168,7 +168,7 @@ namespace CurlyCore.Audio
             IAudioOverride appliedOverride = (iOverride == null) ? groupOverride : iOverride;
             AudioSource source = GetOneShotSource();
             _logger.Log(LoggingGroupID.APP, $"Found source: {source.gameObject.name}");
-            appliedOverride.ApplyOverride(source);
+            if (appliedOverride != null) appliedOverride.ApplyOverride(source);
 
             AssetReference clipReference = (groupOverride.IdentifyByFileName) ? group.ChooseClip(soundPath) : group.ChooseRandom();
 

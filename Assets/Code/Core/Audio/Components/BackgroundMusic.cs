@@ -14,12 +14,16 @@ namespace CurlyCore.Audio
         public AudioTransitionObject TransitionOut;
         public AudioOverride AudioOverride;
 
-        [SerializeField] private AudioManager _audioManager;
+        [GlobalDefault] private AudioManager _audioManager;
 
         private void Awake()
         {
             DependencyInjector.InjectDependencies(this);
-            _audioManager.SetBackgroundMusicAsync(MusicPath, TransitionIn, TransitionOut, AudioOverride);
+        }
+
+        private void Start()
+        {
+            _audioManager?.SetBackgroundMusicAsync(MusicPath, TransitionIn, TransitionOut, AudioOverride);
         }
     }
 }

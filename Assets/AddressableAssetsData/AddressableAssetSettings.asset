@@ -98,6 +98,15 @@ MonoBehaviour:
     - Assets/Audio/SoundFX/Enviornment/Lightning
     - Assets/Audio/SoundFX/Enviornment/Rain
     - Assets/Audio/SoundFX/Voices/Player
+    - Assets/Audio/Enviornment
+    - Assets/Audio/Enviornment/Lightning
+    - Assets/Audio/Enviornment/Rain
+    - Assets/Audio/Nature Sound FX
+    - Assets/Audio/Nature Sound FX/Beach
+    - Assets/Audio/Nature Sound FX/Fire
+    - Assets/Audio/Nature Sound FX/Jungle
+    - Assets/Audio/Nature Sound FX/Water
+    - Assets/Audio/Nature Sound FX/Wind
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 05614fbd79b15f74fb0e5ceede8b67d2, type: 2}
