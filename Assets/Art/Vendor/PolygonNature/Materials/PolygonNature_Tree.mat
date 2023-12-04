@@ -172,11 +172,11 @@ Material:
     - _ColorTint: {r: 1, g: 1, b: 1, a: 0}
     - _Crosswind_Direction: {r: -1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _LeafColor: {r: 0.5943396, g: 0.26853743, b: 0.20465466, a: 1}
+    - _LeafColor: {r: 0.5188679, g: 0.30711105, b: 0.2667764, a: 1}
     - _LeafColorBasis: {r: 1, g: 0.6509804, b: 0.18039216, a: 1}
     - _TOD_TreeBillboardColor: {r: 0, g: 0, b: 0, a: 0}
     - _Toon_Ramp_Tinting: {r: 0.19948435, g: 0.055802785, b: 0.3584906, a: 0}
-    - _TreeInstanceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TreeInstanceColor: {r: 0, g: 0, b: 0, a: 0}
     - _TreeInstanceScale: {r: 1, g: 1, b: 1, a: 1}
     - _Wind_Direction: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
