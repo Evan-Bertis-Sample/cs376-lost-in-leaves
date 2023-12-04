@@ -50,7 +50,7 @@ namespace LostInLeaves.Dialogue
             // add this conversation to the queue
             _activeDialogues.Add((emitter, path));
 
-            DialogueTree tree = BuildDialogueTree(path, emitter.name);
+            DialogueTree tree = BuildDialogueTree(path, emitter.CharacterName);
             DialogueNode node = tree.Root;
 
             if (tree == null)

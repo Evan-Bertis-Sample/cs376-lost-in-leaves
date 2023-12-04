@@ -50,5 +50,6 @@
         "Temp/": true
     },
     "dotnet.defaultSolution": "cs376-lost-in-leaves.sln",
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "cSpell.enabled": true
 }

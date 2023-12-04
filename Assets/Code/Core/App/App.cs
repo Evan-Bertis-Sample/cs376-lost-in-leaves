@@ -56,6 +56,12 @@ namespace CurlyCore.CurlyApp
                 return Task.CompletedTask;
             }
 
+            // disable the default debug logger if debugging is disabled
+            if (!_config.EnableDebugging)
+            {
+                Debug.unityLogger.logEnabled = false;
+            }
+
             SpawnCoroutineMaster();
             RegisterDefaults();
             HandleBooters();

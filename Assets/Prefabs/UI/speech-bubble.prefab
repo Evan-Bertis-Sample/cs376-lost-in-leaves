@@ -102,13 +102,13 @@ MonoBehaviour:
   _bubbleScale: {x: 0, y: 0, z: 0}
   _textPadding: {x: 0.25, y: 0.25}
   _minimumSize: {x: 1, y: 1}
-  _maximumSize: {x: 22, y: 5}
+  _maximumSize: {x: 18, y: 5}
   _bevelSegments: 3
   _bubbleRaidus: 0.5
+  _bubbleInterpolation: 0.5
   _tailWidth: 0.5
   _maxTailOffset: {x: 0.5, y: 0.5, z: 0}
   TextMesh: {fileID: 2778043793252225707}
-  _desireGoalTransform: {fileID: 0}
 --- !u!114 &8455371761452646456
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -136,11 +136,11 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Instersection_Foam_Cutoff: 0.5
-    - _Intersection_Foam_Border_Size: 2
-    - _Intersection_Foam_Cutoff: 0.4
+    - _Intersection_Foam_Border_Size: 1.36
+    - _Intersection_Foam_Cutoff: 0.1
     - _Intersection_Foam_Distance: 1
     - _Intersection_Foam_Distortion_Strength: 0.2
-    - _Intersection_Foam_Steps: 2
+    - _Intersection_Foam_Steps: 3
     - _Intersection_Foam_Texture_Scale: 0.01
     - _Light_Strength: 3
     - _Metallic: 0

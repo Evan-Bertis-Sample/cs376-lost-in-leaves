@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc5d3fb1288ee5a43af475dd2114d0f4, type: 3}
   m_Name: player-move
   m_EditorClassIdentifier: 
-  _moveSpeed: 20
+  _moveSpeed: 10
   _accelerationCurve:
     serializedVersion: 2
     m_Curve:
@@ -38,3 +38,5 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _accelerationTime: 0.2
+  _maxHeightDifference: 0.25
+  _waterLevel: 3.4
