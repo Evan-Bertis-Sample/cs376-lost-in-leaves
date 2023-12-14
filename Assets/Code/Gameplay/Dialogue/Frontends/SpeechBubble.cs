@@ -273,11 +273,11 @@ namespace LostInLeaves.Components
 
             int[] sideVertices =
             {
-            3, 0,
-            1, 0,
-            2, 1,
-            2, 3
-        };
+                3, 0,
+                1, 0,
+                2, 1,
+                2, 3
+            };
 
             //Use the side index to find the verticies using the look up table
             //These points are in local scale
